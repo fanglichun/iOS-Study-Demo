@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D90703111C5B32E300747701 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90703101C5B32E300747701 /* AppDelegate.swift */; };
+		D90703131C5B32E300747701 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90703121C5B32E300747701 /* ViewController.swift */; };
+		D90703161C5B32E300747701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90703141C5B32E300747701 /* Main.storyboard */; };
+		D90703181C5B32E300747701 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90703171C5B32E300747701 /* Assets.xcassets */; };
+		D907031B1C5B32E300747701 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90703191C5B32E300747701 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D907030D1C5B32E300747701 /* 自动计算cell高度.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "自动计算cell高度.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90703101C5B32E300747701 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D90703121C5B32E300747701 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D90703151C5B32E300747701 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D90703171C5B32E300747701 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D907031A1C5B32E300747701 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D907031C1C5B32E300747701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D907030A1C5B32E300747701 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D90703041C5B32E300747701 = {
+			isa = PBXGroup;
+			children = (
+				D907030F1C5B32E300747701 /* 自动计算cell高度 */,
+				D907030E1C5B32E300747701 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D907030E1C5B32E300747701 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D907030D1C5B32E300747701 /* 自动计算cell高度.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D907030F1C5B32E300747701 /* 自动计算cell高度 */ = {
+			isa = PBXGroup;
+			children = (
+				D90703101C5B32E300747701 /* AppDelegate.swift */,
+				D90703121C5B32E300747701 /* ViewController.swift */,
+				D90703141C5B32E300747701 /* Main.storyboard */,
+				D90703171C5B32E300747701 /* Assets.xcassets */,
+				D90703191C5B32E300747701 /* LaunchScreen.storyboard */,
+				D907031C1C5B32E300747701 /* Info.plist */,
+			);
+			path = "自动计算cell高度";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D907030C1C5B32E300747701 /* 自动计算cell高度 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D907031F1C5B32E300747701 /* Build configuration list for PBXNativeTarget "自动计算cell高度" */;
+			buildPhases = (
+				D90703091C5B32E300747701 /* Sources */,
+				D907030A1C5B32E300747701 /* Frameworks */,
+				D907030B1C5B32E300747701 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "自动计算cell高度";
+			productName = "自动计算cell高度";
+			productReference = D907030D1C5B32E300747701 /* 自动计算cell高度.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D90703051C5B32E300747701 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = mfang032;
+				TargetAttributes = {
+					D907030C1C5B32E300747701 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 7EESHMQVLF;
+					};
+				};
+			};
+			buildConfigurationList = D90703081C5B32E300747701 /* Build configuration list for PBXProject "自动计算cell高度" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D90703041C5B32E300747701;
+			productRefGroup = D907030E1C5B32E300747701 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D907030C1C5B32E300747701 /* 自动计算cell高度 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D907030B1C5B32E300747701 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D907031B1C5B32E300747701 /* LaunchScreen.storyboard in Resources */,
+				D90703181C5B32E300747701 /* Assets.xcassets in Resources */,
+				D90703161C5B32E300747701 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D90703091C5B32E300747701 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D90703131C5B32E300747701 /* ViewController.swift in Sources */,
+				D90703111C5B32E300747701 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D90703141C5B32E300747701 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D90703151C5B32E300747701 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D90703191C5B32E300747701 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D907031A1C5B32E300747701 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D907031D1C5B32E300747701 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D907031E1C5B32E300747701 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D90703201C5B32E300747701 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "自动计算cell高度/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mfang032.----cell--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D90703211C5B32E300747701 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "自动计算cell高度/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mfang032.----cell--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D90703081C5B32E300747701 /* Build configuration list for PBXProject "自动计算cell高度" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D907031D1C5B32E300747701 /* Debug */,
+				D907031E1C5B32E300747701 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D907031F1C5B32E300747701 /* Build configuration list for PBXNativeTarget "自动计算cell高度" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D90703201C5B32E300747701 /* Debug */,
+				D90703211C5B32E300747701 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D90703051C5B32E300747701 /* Project object */;
+}

@@ -1,0 +1,13 @@
+PODS:
+  - DOAlertController (1.0.0)
+  - Kamagari (1.0.0)
+
+DEPENDENCIES:
+  - DOAlertController
+  - Kamagari
+
+SPEC CHECKSUMS:
+  DOAlertController: d22fca7cd83b5eeeb24b78a1c6c76ed08cc28dac
+  Kamagari: 543ddfaef7b4ba25d5d322538c59bfda22ebeb80
+
+COCOAPODS: 0.39.0

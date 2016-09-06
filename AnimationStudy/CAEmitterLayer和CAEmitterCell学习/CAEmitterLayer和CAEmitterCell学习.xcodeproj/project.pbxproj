@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D97DEA9E1CD7979800866086 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97DEA9D1CD7979800866086 /* AppDelegate.swift */; };
+		D97DEAA01CD7979800866086 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97DEA9F1CD7979800866086 /* ViewController.swift */; };
+		D97DEAA31CD7979800866086 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D97DEAA11CD7979800866086 /* Main.storyboard */; };
+		D97DEAA51CD7979800866086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D97DEAA41CD7979800866086 /* Assets.xcassets */; };
+		D97DEAA81CD7979800866086 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D97DEAA61CD7979800866086 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D97DEA9A1CD7979800866086 /* CAEmitterLayer和CAEmitterCell学习.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CAEmitterLayer和CAEmitterCell学习.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D97DEA9D1CD7979800866086 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D97DEA9F1CD7979800866086 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D97DEAA21CD7979800866086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D97DEAA41CD7979800866086 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D97DEAA71CD7979800866086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D97DEAA91CD7979800866086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D97DEA971CD7979800866086 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D97DEA911CD7979800866086 = {
+			isa = PBXGroup;
+			children = (
+				D97DEA9C1CD7979800866086 /* CAEmitterLayer和CAEmitterCell学习 */,
+				D97DEA9B1CD7979800866086 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D97DEA9B1CD7979800866086 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D97DEA9A1CD7979800866086 /* CAEmitterLayer和CAEmitterCell学习.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D97DEA9C1CD7979800866086 /* CAEmitterLayer和CAEmitterCell学习 */ = {
+			isa = PBXGroup;
+			children = (
+				D97DEA9D1CD7979800866086 /* AppDelegate.swift */,
+				D97DEA9F1CD7979800866086 /* ViewController.swift */,
+				D97DEAA11CD7979800866086 /* Main.storyboard */,
+				D97DEAA41CD7979800866086 /* Assets.xcassets */,
+				D97DEAA61CD7979800866086 /* LaunchScreen.storyboard */,
+				D97DEAA91CD7979800866086 /* Info.plist */,
+			);
+			path = "CAEmitterLayer和CAEmitterCell学习";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D97DEA991CD7979800866086 /* CAEmitterLayer和CAEmitterCell学习 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D97DEAAC1CD7979800866086 /* Build configuration list for PBXNativeTarget "CAEmitterLayer和CAEmitterCell学习" */;
+			buildPhases = (
+				D97DEA961CD7979800866086 /* Sources */,
+				D97DEA971CD7979800866086 /* Frameworks */,
+				D97DEA981CD7979800866086 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CAEmitterLayer和CAEmitterCell学习";
+			productName = "CAEmitterLayer和CAEmitterCell学习";
+			productReference = D97DEA9A1CD7979800866086 /* CAEmitterLayer和CAEmitterCell学习.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D97DEA921CD7979800866086 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = mfang032;
+				TargetAttributes = {
+					D97DEA991CD7979800866086 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = D97DEA951CD7979800866086 /* Build configuration list for PBXProject "CAEmitterLayer和CAEmitterCell学习" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D97DEA911CD7979800866086;
+			productRefGroup = D97DEA9B1CD7979800866086 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D97DEA991CD7979800866086 /* CAEmitterLayer和CAEmitterCell学习 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D97DEA981CD7979800866086 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D97DEAA81CD7979800866086 /* LaunchScreen.storyboard in Resources */,
+				D97DEAA51CD7979800866086 /* Assets.xcassets in Resources */,
+				D97DEAA31CD7979800866086 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D97DEA961CD7979800866086 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D97DEAA01CD7979800866086 /* ViewController.swift in Sources */,
+				D97DEA9E1CD7979800866086 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D97DEAA11CD7979800866086 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D97DEAA21CD7979800866086 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D97DEAA61CD7979800866086 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D97DEAA71CD7979800866086 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D97DEAAA1CD7979800866086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D97DEAAB1CD7979800866086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D97DEAAD1CD7979800866086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "CAEmitterLayer和CAEmitterCell学习/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mfang032.CAEmitterLayer-CAEmitterCell--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D97DEAAE1CD7979800866086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "CAEmitterLayer和CAEmitterCell学习/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mfang032.CAEmitterLayer-CAEmitterCell--";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D97DEA951CD7979800866086 /* Build configuration list for PBXProject "CAEmitterLayer和CAEmitterCell学习" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D97DEAAA1CD7979800866086 /* Debug */,
+				D97DEAAB1CD7979800866086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D97DEAAC1CD7979800866086 /* Build configuration list for PBXNativeTarget "CAEmitterLayer和CAEmitterCell学习" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D97DEAAD1CD7979800866086 /* Debug */,
+				D97DEAAE1CD7979800866086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D97DEA921CD7979800866086 /* Project object */;
+}

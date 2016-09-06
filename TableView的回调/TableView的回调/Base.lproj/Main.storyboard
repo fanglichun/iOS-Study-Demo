@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vU8-yb-DkJ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--美女列表-->
+        <scene sceneID="S6s-M1-7fv">
+            <objects>
+                <tableViewController id="BvP-6X-Dkt" customClass="TableViewController" customModule="TableView的回调" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" id="JB2-1F-38e">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="75" id="eF6-XE-SbZ">
+                                <rect key="frame" x="0.0" y="92" width="600" height="75"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eF6-XE-SbZ" id="Tsm-5D-VvF">
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="74.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="000" translatesAutoresizingMaskIntoConstraints="NO" id="Bic-52-DAr">
+                                            <rect key="frame" x="33" y="10" width="54.5" height="54.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Bic-52-DAr" secondAttribute="height" multiplier="1:1" id="tZw-gW-sfm"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="美女" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AM-Dh-erm">
+                                            <rect key="frame" x="107.5" y="25" width="426.5" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="25" id="m5K-Qs-hJn"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="7AM-Dh-erm" firstAttribute="centerY" secondItem="Tsm-5D-VvF" secondAttribute="centerY" id="2kS-TB-cDp"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Bic-52-DAr" secondAttribute="bottom" constant="2" id="5Vj-Yj-77u"/>
+                                        <constraint firstItem="Bic-52-DAr" firstAttribute="top" secondItem="Tsm-5D-VvF" secondAttribute="topMargin" constant="2" id="RPy-om-saf"/>
+                                        <constraint firstItem="Bic-52-DAr" firstAttribute="leading" secondItem="Tsm-5D-VvF" secondAttribute="leadingMargin" constant="25" id="Y9j-gm-R3g"/>
+                                        <constraint firstItem="7AM-Dh-erm" firstAttribute="leading" secondItem="Bic-52-DAr" secondAttribute="trailing" constant="20" id="kFf-VU-bfr"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="7AM-Dh-erm" secondAttribute="trailing" constant="25" id="tkW-WN-PUa"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BvP-6X-Dkt" id="sUg-hK-mWp"/>
+                            <outlet property="delegate" destination="BvP-6X-Dkt" id="Y0s-fL-VnC"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="美女列表" id="JLH-Nw-Fo4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2bY-x5-aTp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1933" y="241"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MJf-DZ-NgS">
+            <objects>
+                <navigationController id="vU8-yb-DkJ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="91R-bZ-p1D">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BvP-6X-Dkt" kind="relationship" relationship="rootViewController" id="DlA-I7-xG6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PMR-hq-FFi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2753" y="241"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="000" width="220" height="220"/>
+    </resources>
+</document>

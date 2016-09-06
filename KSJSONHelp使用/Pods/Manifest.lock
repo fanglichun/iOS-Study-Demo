@@ -1,0 +1,25 @@
+PODS:
+  - EasyAnimation (1.0.3)
+  - IQKeyboardManagerSwift (4.0.0)
+  - KSJSONHelp (0.4.3)
+  - Material (1.32.2)
+  - RAMAnimatedTabBarController (1.1.1)
+  - TKSubmitTransition (0.3)
+
+DEPENDENCIES:
+  - EasyAnimation
+  - IQKeyboardManagerSwift
+  - KSJSONHelp
+  - Material (~> 1.0)
+  - RAMAnimatedTabBarController (~> 1.1.1)
+  - TKSubmitTransition
+
+SPEC CHECKSUMS:
+  EasyAnimation: eadb6ea36f4c7c0717ace71c1ceee1bde75df261
+  IQKeyboardManagerSwift: ede2a27b4e1ce053d03073b9c7fa439322f5e405
+  KSJSONHelp: 42c1fc24f7cdb4d30814dade95c21a0eb1f2b334
+  Material: c2752a84929229e904dc4b131f3564722ed22498
+  RAMAnimatedTabBarController: 41ccdc3592ec154b869262d876eff60b03574943
+  TKSubmitTransition: 6634e4fb07288db861b66d70fa4c4a7b96d0e6b2
+
+COCOAPODS: 0.39.0

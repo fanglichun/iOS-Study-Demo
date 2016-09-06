@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Classy.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ClassyLiveLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Masonry.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>032BA900368E5FEBD0675DEEA24B5099</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0883392DC914A29BBA2D47FDEC9F2AC5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3AC91C2B258EE2E1F3D1259B2FCDA0C8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5C9A065F4440884D3A23DD30C6B0802A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

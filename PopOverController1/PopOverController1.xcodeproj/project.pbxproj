@@ -1,0 +1,299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9889F821CE7768F00E7CC78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9889F811CE7768F00E7CC78 /* AppDelegate.swift */; };
+		D9889F841CE7768F00E7CC78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9889F831CE7768F00E7CC78 /* ViewController.swift */; };
+		D9889F871CE7768F00E7CC78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9889F851CE7768F00E7CC78 /* Main.storyboard */; };
+		D9889F891CE7768F00E7CC78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9889F881CE7768F00E7CC78 /* Assets.xcassets */; };
+		D9889F8C1CE7768F00E7CC78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9889F8A1CE7768F00E7CC78 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D9889F7E1CE7768F00E7CC78 /* PopOverController1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopOverController1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9889F811CE7768F00E7CC78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D9889F831CE7768F00E7CC78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D9889F861CE7768F00E7CC78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9889F881CE7768F00E7CC78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9889F8B1CE7768F00E7CC78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D9889F8D1CE7768F00E7CC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9889F7B1CE7768F00E7CC78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D9889F751CE7768F00E7CC78 = {
+			isa = PBXGroup;
+			children = (
+				D9889F801CE7768F00E7CC78 /* PopOverController1 */,
+				D9889F7F1CE7768F00E7CC78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9889F7F1CE7768F00E7CC78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9889F7E1CE7768F00E7CC78 /* PopOverController1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9889F801CE7768F00E7CC78 /* PopOverController1 */ = {
+			isa = PBXGroup;
+			children = (
+				D9889F811CE7768F00E7CC78 /* AppDelegate.swift */,
+				D9889F831CE7768F00E7CC78 /* ViewController.swift */,
+				D9889F851CE7768F00E7CC78 /* Main.storyboard */,
+				D9889F881CE7768F00E7CC78 /* Assets.xcassets */,
+				D9889F8A1CE7768F00E7CC78 /* LaunchScreen.storyboard */,
+				D9889F8D1CE7768F00E7CC78 /* Info.plist */,
+			);
+			path = PopOverController1;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9889F7D1CE7768F00E7CC78 /* PopOverController1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9889F901CE7768F00E7CC78 /* Build configuration list for PBXNativeTarget "PopOverController1" */;
+			buildPhases = (
+				D9889F7A1CE7768F00E7CC78 /* Sources */,
+				D9889F7B1CE7768F00E7CC78 /* Frameworks */,
+				D9889F7C1CE7768F00E7CC78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PopOverController1;
+			productName = PopOverController1;
+			productReference = D9889F7E1CE7768F00E7CC78 /* PopOverController1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9889F761CE7768F00E7CC78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = mfang032;
+				TargetAttributes = {
+					D9889F7D1CE7768F00E7CC78 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = D9889F791CE7768F00E7CC78 /* Build configuration list for PBXProject "PopOverController1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9889F751CE7768F00E7CC78;
+			productRefGroup = D9889F7F1CE7768F00E7CC78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9889F7D1CE7768F00E7CC78 /* PopOverController1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9889F7C1CE7768F00E7CC78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9889F8C1CE7768F00E7CC78 /* LaunchScreen.storyboard in Resources */,
+				D9889F891CE7768F00E7CC78 /* Assets.xcassets in Resources */,
+				D9889F871CE7768F00E7CC78 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9889F7A1CE7768F00E7CC78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9889F841CE7768F00E7CC78 /* ViewController.swift in Sources */,
+				D9889F821CE7768F00E7CC78 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D9889F851CE7768F00E7CC78 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9889F861CE7768F00E7CC78 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D9889F8A1CE7768F00E7CC78 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9889F8B1CE7768F00E7CC78 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9889F8E1CE7768F00E7CC78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9889F8F1CE7768F00E7CC78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9889F911CE7768F00E7CC78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PopOverController1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mfang032.PopOverController1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9889F921CE7768F00E7CC78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PopOverController1/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mfang032.PopOverController1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9889F791CE7768F00E7CC78 /* Build configuration list for PBXProject "PopOverController1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9889F8E1CE7768F00E7CC78 /* Debug */,
+				D9889F8F1CE7768F00E7CC78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9889F901CE7768F00E7CC78 /* Build configuration list for PBXNativeTarget "PopOverController1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9889F911CE7768F00E7CC78 /* Debug */,
+				D9889F921CE7768F00E7CC78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9889F761CE7768F00E7CC78 /* Project object */;
+}

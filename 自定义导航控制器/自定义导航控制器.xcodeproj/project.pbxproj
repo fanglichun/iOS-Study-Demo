@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D986CF601BD8BB1200D27492 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D986CF5F1BD8BB1200D27492 /* AppDelegate.swift */; };
+		D986CF621BD8BB1200D27492 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D986CF611BD8BB1200D27492 /* ViewController.swift */; };
+		D986CF651BD8BB1200D27492 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D986CF631BD8BB1200D27492 /* Main.storyboard */; };
+		D986CF671BD8BB1200D27492 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D986CF661BD8BB1200D27492 /* Assets.xcassets */; };
+		D986CF6A1BD8BB1200D27492 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D986CF681BD8BB1200D27492 /* LaunchScreen.storyboard */; };
+		D986CF751BD8BB1200D27492 /* ________Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D986CF741BD8BB1200D27492 /* ________Tests.swift */; };
+		D986CF801BD8BB1300D27492 /* ________UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D986CF7F1BD8BB1300D27492 /* ________UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D986CF711BD8BB1200D27492 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D986CF541BD8BB1200D27492 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D986CF5B1BD8BB1200D27492;
+			remoteInfo = "自定义导航控制器";
+		};
+		D986CF7C1BD8BB1300D27492 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D986CF541BD8BB1200D27492 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D986CF5B1BD8BB1200D27492;
+			remoteInfo = "自定义导航控制器";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D986CF5C1BD8BB1200D27492 /* 自定义导航控制器.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "自定义导航控制器.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D986CF5F1BD8BB1200D27492 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D986CF611BD8BB1200D27492 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D986CF641BD8BB1200D27492 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D986CF661BD8BB1200D27492 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D986CF691BD8BB1200D27492 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D986CF6B1BD8BB1200D27492 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D986CF701BD8BB1200D27492 /* 自定义导航控制器Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "自定义导航控制器Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D986CF741BD8BB1200D27492 /* ________Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "________Tests.swift"; sourceTree = "<group>"; };
+		D986CF761BD8BB1300D27492 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D986CF7B1BD8BB1300D27492 /* 自定义导航控制器UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "自定义导航控制器UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D986CF7F1BD8BB1300D27492 /* ________UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "________UITests.swift"; sourceTree = "<group>"; };
+		D986CF811BD8BB1300D27492 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D986CF591BD8BB1200D27492 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D986CF6D1BD8BB1200D27492 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D986CF781BD8BB1300D27492 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D986CF531BD8BB1200D27492 = {
+			isa = PBXGroup;
+			children = (
+				D986CF5E1BD8BB1200D27492 /* 自定义导航控制器 */,
+				D986CF731BD8BB1200D27492 /* 自定义导航控制器Tests */,
+				D986CF7E1BD8BB1300D27492 /* 自定义导航控制器UITests */,
+				D986CF5D1BD8BB1200D27492 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D986CF5D1BD8BB1200D27492 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D986CF5C1BD8BB1200D27492 /* 自定义导航控制器.app */,
+				D986CF701BD8BB1200D27492 /* 自定义导航控制器Tests.xctest */,
+				D986CF7B1BD8BB1300D27492 /* 自定义导航控制器UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D986CF5E1BD8BB1200D27492 /* 自定义导航控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				D986CF5F1BD8BB1200D27492 /* AppDelegate.swift */,
+				D986CF611BD8BB1200D27492 /* ViewController.swift */,
+				D986CF631BD8BB1200D27492 /* Main.storyboard */,
+				D986CF661BD8BB1200D27492 /* Assets.xcassets */,
+				D986CF681BD8BB1200D27492 /* LaunchScreen.storyboard */,
+				D986CF6B1BD8BB1200D27492 /* Info.plist */,
+			);
+			path = "自定义导航控制器";
+			sourceTree = "<group>";
+		};
+		D986CF731BD8BB1200D27492 /* 自定义导航控制器Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D986CF741BD8BB1200D27492 /* ________Tests.swift */,
+				D986CF761BD8BB1300D27492 /* Info.plist */,
+			);
+			path = "自定义导航控制器Tests";
+			sourceTree = "<group>";
+		};
+		D986CF7E1BD8BB1300D27492 /* 自定义导航控制器UITests */ = {
+			isa = PBXGroup;
+			children = (
+				D986CF7F1BD8BB1300D27492 /* ________UITests.swift */,
+				D986CF811BD8BB1300D27492 /* Info.plist */,
+			);
+			path = "自定义导航控制器UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D986CF5B1BD8BB1200D27492 /* 自定义导航控制器 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D986CF841BD8BB1300D27492 /* Build configuration list for PBXNativeTarget "自定义导航控制器" */;
+			buildPhases = (
+				D986CF581BD8BB1200D27492 /* Sources */,
+				D986CF591BD8BB1200D27492 /* Frameworks */,
+				D986CF5A1BD8BB1200D27492 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "自定义导航控制器";
+			productName = "自定义导航控制器";
+			productReference = D986CF5C1BD8BB1200D27492 /* 自定义导航控制器.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D986CF6F1BD8BB1200D27492 /* 自定义导航控制器Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D986CF871BD8BB1300D27492 /* Build configuration list for PBXNativeTarget "自定义导航控制器Tests" */;
+			buildPhases = (
+				D986CF6C1BD8BB1200D27492 /* Sources */,
+				D986CF6D1BD8BB1200D27492 /* Frameworks */,
+				D986CF6E1BD8BB1200D27492 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D986CF721BD8BB1200D27492 /* PBXTargetDependency */,
+			);
+			name = "自定义导航控制器Tests";
+			productName = "自定义导航控制器Tests";
+			productReference = D986CF701BD8BB1200D27492 /* 自定义导航控制器Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D986CF7A1BD8BB1300D27492 /* 自定义导航控制器UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D986CF8A1BD8BB1300D27492 /* Build configuration list for PBXNativeTarget "自定义导航控制器UITests" */;
+			buildPhases = (
+				D986CF771BD8BB1300D27492 /* Sources */,
+				D986CF781BD8BB1300D27492 /* Frameworks */,
+				D986CF791BD8BB1300D27492 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D986CF7D1BD8BB1300D27492 /* PBXTargetDependency */,
+			);
+			name = "自定义导航控制器UITests";
+			productName = "自定义导航控制器UITests";
+			productReference = D986CF7B1BD8BB1300D27492 /* 自定义导航控制器UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D986CF541BD8BB1200D27492 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = mfang032;
+				TargetAttributes = {
+					D986CF5B1BD8BB1200D27492 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					D986CF6F1BD8BB1200D27492 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = D986CF5B1BD8BB1200D27492;
+					};
+					D986CF7A1BD8BB1300D27492 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = D986CF5B1BD8BB1200D27492;
+					};
+				};
+			};
+			buildConfigurationList = D986CF571BD8BB1200D27492 /* Build configuration list for PBXProject "自定义导航控制器" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D986CF531BD8BB1200D27492;
+			productRefGroup = D986CF5D1BD8BB1200D27492 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D986CF5B1BD8BB1200D27492 /* 自定义导航控制器 */,
+				D986CF6F1BD8BB1200D27492 /* 自定义导航控制器Tests */,
+				D986CF7A1BD8BB1300D27492 /* 自定义导航控制器UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D986CF5A1BD8BB1200D27492 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D986CF6A1BD8BB1200D27492 /* LaunchScreen.storyboard in Resources */,
+				D986CF671BD8BB1200D27492 /* Assets.xcassets in Resources */,
+				D986CF651BD8BB1200D27492 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D986CF6E1BD8BB1200D27492 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D986CF791BD8BB1300D27492 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D986CF581BD8BB1200D27492 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D986CF621BD8BB1200D27492 /* ViewController.swift in Sources */,
+				D986CF601BD8BB1200D27492 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D986CF6C1BD8BB1200D27492 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D986CF751BD8BB1200D27492 /* ________Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D986CF771BD8BB1300D27492 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D986CF801BD8BB1300D27492 /* ________UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D986CF721BD8BB1200D27492 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D986CF5B1BD8BB1200D27492 /* 自定义导航控制器 */;
+			targetProxy = D986CF711BD8BB1200D27492 /* PBXContainerItemProxy */;
+		};
+		D986CF7D1BD8BB1300D27492 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D986CF5B1BD8BB1200D27492 /* 自定义导航控制器 */;
+			targetProxy = D986CF7C1BD8BB1300D27492 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D986CF631BD8BB1200D27492 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D986CF641BD8BB1200D27492 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D986CF681BD8BB1200D27492 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D986CF691BD8BB1200D27492 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D986CF821BD8BB1300D27492 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D986CF831BD8BB1300D27492 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D986CF851BD8BB1300D27492 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "自定义导航控制器/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mfang032.--------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D986CF861BD8BB1300D27492 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "自定义导航控制器/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mfang032.--------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D986CF881BD8BB1300D27492 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "自定义导航控制器Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mfang032.--------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/自定义导航控制器.app/自定义导航控制器";
+			};
+			name = Debug;
+		};
+		D986CF891BD8BB1300D27492 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "自定义导航控制器Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mfang032.--------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/自定义导航控制器.app/自定义导航控制器";
+			};
+			name = Release;
+		};
+		D986CF8B1BD8BB1300D27492 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "自定义导航控制器UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mfang032.--------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "自定义导航控制器";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D986CF8C1BD8BB1300D27492 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "自定义导航控制器UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mfang032.--------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "自定义导航控制器";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D986CF571BD8BB1200D27492 /* Build configuration list for PBXProject "自定义导航控制器" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D986CF821BD8BB1300D27492 /* Debug */,
+				D986CF831BD8BB1300D27492 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D986CF841BD8BB1300D27492 /* Build configuration list for PBXNativeTarget "自定义导航控制器" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D986CF851BD8BB1300D27492 /* Debug */,
+				D986CF861BD8BB1300D27492 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D986CF871BD8BB1300D27492 /* Build configuration list for PBXNativeTarget "自定义导航控制器Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D986CF881BD8BB1300D27492 /* Debug */,
+				D986CF891BD8BB1300D27492 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D986CF8A1BD8BB1300D27492 /* Build configuration list for PBXNativeTarget "自定义导航控制器UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D986CF8B1BD8BB1300D27492 /* Debug */,
+				D986CF8C1BD8BB1300D27492 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D986CF541BD8BB1200D27492 /* Project object */;
+}
