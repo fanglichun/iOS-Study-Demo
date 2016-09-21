@@ -11,12 +11,14 @@ import UIKit
 class MFGuideViewController: UIViewController {
     
     private(set) lazy var pageControl: UIPageControl = {
-        let rect = CGRect(x: (self.view.bounds.width - 200) / 2, y: self.view.bounds.height - 20 - 10, width: 200, height: 20)
+        let rect = CGRect(x: (self.view.bounds.width - 200) / 2, y: self.view.bounds.height - 50, width: 200, height: 20)
         let pageControl = UIPageControl(frame: rect)
-        pageControl.pageIndicatorTintColor = UIColor.white
+        pageControl.pageIndicatorTintColor = UIColor.black
         pageControl.currentPageIndicatorTintColor = UIColor.orange
         return pageControl
     }()
+    
+    var updateRootVCCallback: ( ()-> Void)?
     
     
     
@@ -42,13 +44,13 @@ class MFGuideViewController: UIViewController {
     }
     
     dynamic private func removeGuidePageView() {
-        view.removeFromSuperview()
+       view.removeFromSuperview()
         self.removeFromParentViewController()
-        
+        updateRootVCCallback?()
     }
     
     private func loadGuidePageView() {
-        let guideViewController = MFGuidePageViewController(transitionStyle: .pageCurl, navigationOrientation: .horizontal, options: nil, pageCount: { (guide:MFGuidePageViewController, count: NSInteger) in
+        let guideViewController = MFGuidePageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil, pageCount: { (guide:MFGuidePageViewController, count: NSInteger) in
             self.pageControl.numberOfPages = count
         }) { (guide: MFGuidePageViewController, index: NSInteger) in
                 self.pageControl.currentPage = index

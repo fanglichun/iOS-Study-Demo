@@ -24,8 +24,8 @@ class MFGuideImageViewController: UIViewController {
         view.addSubview(self.imageView)
         imageView.image = UIImage(named: imgName)
         
-        beginBtn.frame = CGRect(x: (view.bounds.width - 174) / 2, y: view.bounds.height - 40 - 42, width: 174, height: 42)
-        beginBtn.setImage(UIImage(named:"home_btn_startup"), for: .normal)
+        beginBtn.frame = CGRect(x: (view.bounds.width - 174) / 2, y: view.bounds.height - 100 - 42, width: 174, height: 42)
+        beginBtn.setImage(UIImage(named:"java"), for: .normal)
         beginBtn.addTarget(self, action:#selector(beginBtnClicked), for: .touchUpInside)
         view.addSubview(self.beginBtn)
         beginBtn.isHidden = !showBtn

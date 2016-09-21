@@ -16,9 +16,9 @@ class MFGuidePageViewController: UIPageViewController {
     var pageViewControllerUpdatePageIndex: ( (MFGuidePageViewController, NSInteger ) ->Void)?
     
     private(set) lazy var allViewControllers:[UIViewController] = {
-        return [MFGuideImageViewController(imgName: "start1Background",frame: self.view.bounds, showBtn:true),
-                MFGuideImageViewController(imgName: "start2Background",frame: self.view.bounds, showBtn:true),
-                MFGuideImageViewController(imgName: "start3Background",frame: self.view.bounds,showBtn:true)]
+        return [MFGuideImageViewController(imgName: "java",frame: self.view.bounds, showBtn:false),
+                MFGuideImageViewController(imgName: "scala",frame: self.view.bounds, showBtn:false),
+                MFGuideImageViewController(imgName: "swift",frame: self.view.bounds,showBtn:true)]
     }()
     
     init(transitionStyle style: UIPageViewControllerTransitionStyle, navigationOrientation: UIPageViewControllerNavigationOrientation, options: [String : AnyObject]?, pageCount:((MFGuidePageViewController,NSInteger)->Void)?, pageIndex:((MFGuidePageViewController,NSInteger)->Void)?) {
@@ -39,15 +39,11 @@ class MFGuidePageViewController: UIPageViewController {
         dataSource = self
         delegate = self
         //setup home
-        if let firstViewController = viewControllers?.first {
+        if let firstViewController = allViewControllers.first {
             setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
         }
         
-        pageViewControllerUpdatePageCount?(self, viewControllers?.count ?? 0)
-        
-        
-        
-        
+        pageViewControllerUpdatePageCount?(self, allViewControllers.count)
         
     }
 
@@ -63,7 +59,7 @@ extension MFGuidePageViewController: UIPageViewControllerDelegate {
     
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
         
-        if let firstViewController = viewControllers?.first, let index = viewControllers?.index(of: firstViewController) {
+        if let firstViewController = viewControllers?.first, let index = allViewControllers.index(of: firstViewController) {
             pageViewControllerUpdatePageIndex?(self, index)
         }
     }
@@ -72,26 +68,23 @@ extension MFGuidePageViewController: UIPageViewControllerDelegate {
 extension MFGuidePageViewController: UIPageViewControllerDataSource {
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        guard let viewControllerIndex = viewControllers?.index(of: viewController) else {
+        guard let viewControllerIndex = allViewControllers.index(of: viewController) else {
             return nil
         }
         let previousIndex = viewControllerIndex - 1
         guard previousIndex >= 0 else {
             return nil
         }
-        guard let count = viewControllers?.count else {
+        guard allViewControllers.count > previousIndex else {
             return nil
         }
-        guard count > previousIndex else {
-            return nil
-        }
-        return viewControllers?[previousIndex]
+        return allViewControllers[previousIndex]
     }
     
     
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        guard let viewControllerIndex = viewControllers?.index(of: viewController) else {
+        guard let viewControllerIndex = allViewControllers.index(of: viewController) else {
             return nil
         }
         let nextIndex = viewControllerIndex + 1
@@ -102,10 +95,6 @@ extension MFGuidePageViewController: UIPageViewControllerDataSource {
         guard orderedViewControllersCount > nextIndex else {
             return nil
         }
-        return viewControllers?[nextIndex]
+        return allViewControllers[nextIndex]
     }
-    
-
-    
-
 }
