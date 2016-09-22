@@ -13,8 +13,9 @@ class MFGuideViewController: UIViewController {
     private(set) lazy var pageControl: UIPageControl = {
         let rect = CGRect(x: (self.view.bounds.width - 200) / 2, y: self.view.bounds.height - 50, width: 200, height: 20)
         let pageControl = UIPageControl(frame: rect)
-        pageControl.pageIndicatorTintColor = UIColor.black
+        pageControl.pageIndicatorTintColor = UIColor.white
         pageControl.currentPageIndicatorTintColor = UIColor.orange
+        pageControl.addTarget(self, action: #selector(nextGuideImagePage(pageControl:)), for: .valueChanged)
         return pageControl
     }()
     
@@ -48,6 +49,11 @@ class MFGuideViewController: UIViewController {
         self.removeFromParentViewController()
         updateRootVCCallback?()
     }
+    
+    dynamic private func nextGuideImagePage(pageControl: UIPageControl) {
+        
+    }
+    
     
     private func loadGuidePageView() {
         let guideViewController = MFGuidePageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil, pageCount: { (guide:MFGuidePageViewController, count: NSInteger) in

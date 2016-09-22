@@ -106,7 +106,8 @@
 				TargetAttributes = {
 					9FF0DE1A1D8E63EE005790F5 = {
 						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 897YJNJHUU;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -197,7 +198,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lingzhao Mao (C66P3MXU39)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -247,7 +248,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Lingzhao Mao (897YJNJHUU)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -273,10 +274,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 897YJNJHUU;
 				INFOPLIST_FILE = "使用UIPageController实现新特性/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "flc.--UIPageController-----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pwc.REX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4b2211a2-3c64-4811-a7b1-cedbe2cd5cd3";
+				PROVISIONING_PROFILE_SPECIFIER = "Provisioning Profile_Rex_Dev";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -285,10 +289,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 897YJNJHUU;
 				INFOPLIST_FILE = "使用UIPageController实现新特性/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "flc.--UIPageController-----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pwc.REX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "486907b8-0ae6-4af2-a720-d827ff064537";
+				PROVISIONING_PROFILE_SPECIFIER = "Provisioning Profile REX Adhoc";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

@@ -14,11 +14,13 @@ class MFGuidePageViewController: UIPageViewController {
     var pageViewControllerUpdatePageCount: ( (MFGuidePageViewController, NSInteger ) ->Void)?
     //as callback when page index has a change
     var pageViewControllerUpdatePageIndex: ( (MFGuidePageViewController, NSInteger ) ->Void)?
+    //as callback when pageControl responsed to clicking event 
+    var currentPageCallback: ( (MFGuidePageViewController, NSInteger) ->Void)?
     
     private(set) lazy var allViewControllers:[UIViewController] = {
-        return [MFGuideImageViewController(imgName: "java",frame: self.view.bounds, showBtn:false),
-                MFGuideImageViewController(imgName: "scala",frame: self.view.bounds, showBtn:false),
-                MFGuideImageViewController(imgName: "swift",frame: self.view.bounds,showBtn:true)]
+        return [MFGuideImageViewController(imgName: "start1Background",frame: self.view.bounds, showBtn:false),
+                MFGuideImageViewController(imgName: "start2Background",frame: self.view.bounds, showBtn:false),
+                MFGuideImageViewController(imgName: "start3Background",frame: self.view.bounds,showBtn:true)]
     }()
     
     init(transitionStyle style: UIPageViewControllerTransitionStyle, navigationOrientation: UIPageViewControllerNavigationOrientation, options: [String : AnyObject]?, pageCount:((MFGuidePageViewController,NSInteger)->Void)?, pageIndex:((MFGuidePageViewController,NSInteger)->Void)?) {
@@ -51,6 +53,7 @@ class MFGuidePageViewController: UIPageViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
 }
 
 
@@ -62,6 +65,13 @@ extension MFGuidePageViewController: UIPageViewControllerDelegate {
         if let firstViewController = viewControllers?.first, let index = allViewControllers.index(of: firstViewController) {
             pageViewControllerUpdatePageIndex?(self, index)
         }
+        
+    }
+    
+    public func pageViewController(_ pageViewController: UIPageViewController, willTransitionTo pendingViewControllers: [UIViewController]) {
+        
+        print(pendingViewControllers.count)
+
     }
 }
 
