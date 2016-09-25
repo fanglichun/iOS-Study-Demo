@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        if traitCollection.forceTouchCapability == .available {
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
