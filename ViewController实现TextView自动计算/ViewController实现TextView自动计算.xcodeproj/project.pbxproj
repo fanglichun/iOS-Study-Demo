@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D93B6DEC1D9912250059186A /* LabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93B6DEA1D9912250059186A /* LabelTableViewCell.swift */; };
+		D93B6DED1D9912250059186A /* LabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D93B6DEB1D9912250059186A /* LabelTableViewCell.xib */; };
 		D9EB24821D990A5D002CA348 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB24811D990A5D002CA348 /* AppDelegate.swift */; };
 		D9EB24841D990A5D002CA348 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EB24831D990A5D002CA348 /* ViewController.swift */; };
 		D9EB24871D990A5D002CA348 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9EB24851D990A5D002CA348 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D93B6DEA1D9912250059186A /* LabelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelTableViewCell.swift; sourceTree = "<group>"; };
+		D93B6DEB1D9912250059186A /* LabelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelTableViewCell.xib; sourceTree = "<group>"; };
 		D9EB247E1D990A5D002CA348 /* ViewController实现TextView自动计算.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ViewController实现TextView自动计算.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9EB24811D990A5D002CA348 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9EB24831D990A5D002CA348 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 				D9EB24831D990A5D002CA348 /* ViewController.swift */,
 				D9EB24931D990A9F002CA348 /* TextViewCell.swift */,
 				D9EB24941D990A9F002CA348 /* TextViewCell.xib */,
+				D93B6DEA1D9912250059186A /* LabelTableViewCell.swift */,
+				D93B6DEB1D9912250059186A /* LabelTableViewCell.xib */,
 				D9EB24851D990A5D002CA348 /* Main.storyboard */,
 				D9EB24881D990A5D002CA348 /* Assets.xcassets */,
 				D9EB248A1D990A5D002CA348 /* LaunchScreen.storyboard */,
@@ -97,12 +103,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = mfang032;
 				TargetAttributes = {
 					D9EB247D1D990A5D002CA348 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 7EESHMQVLF;
+						DevelopmentTeam = L69EWG2AYC;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -130,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9EB248C1D990A5D002CA348 /* LaunchScreen.storyboard in Resources */,
+				D93B6DED1D9912250059186A /* LabelTableViewCell.xib in Resources */,
 				D9EB24961D990A9F002CA348 /* TextViewCell.xib in Resources */,
 				D9EB24891D990A5D002CA348 /* Assets.xcassets in Resources */,
 				D9EB24871D990A5D002CA348 /* Main.storyboard in Resources */,
@@ -145,6 +153,7 @@
 			files = (
 				D9EB24951D990A9F002CA348 /* TextViewCell.swift in Sources */,
 				D9EB24841D990A5D002CA348 /* ViewController.swift in Sources */,
+				D93B6DEC1D9912250059186A /* LabelTableViewCell.swift in Sources */,
 				D9EB24821D990A5D002CA348 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,8 +194,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -231,8 +242,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -251,6 +264,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -260,10 +274,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "ViewController实现TextView自动计算/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pwc.Rex.ViewController--TextView----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pwc.REX.michael;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -271,10 +290,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "ViewController实现TextView自动计算/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.pwc.Rex.ViewController--TextView----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pwc.REX.michael;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -297,6 +321,7 @@
 				D9EB24921D990A5D002CA348 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

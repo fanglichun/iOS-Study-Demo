@@ -8,17 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var tableView: UITableView!
     
     var tableViewOffset: CGFloat = 0
-    var textIndexPath: NSIndexPath?
+    var textIndexPath: IndexPath?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let nib = UINib(nibName: "TextViewCell", bundle: nil)
-        tableView.registerNib(nib, forCellReuseIdentifier: "TextViewCell")
+        var nib = UINib(nibName: "TextViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "TextViewCell")
+        nib = UINib(nibName: "LabelTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "LabelTableViewCell")
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableViewAutomaticDimension
         registerForKeyboardNotifications()
@@ -31,22 +33,22 @@ class ViewController: UIViewController {
     }
     
     func registerForKeyboardNotifications() {
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(keyboardWillShowNotification(_:)), name: UIKeyboardWillShowNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(keyboardWillHideNotification(_:)), name: UIKeyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShowNotification(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHideNotification(_:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
 
     
-    func keyboardWillShowNotification(notification: NSNotification) {
+    func keyboardWillShowNotification(_ notification: Notification) {
         
-        guard let userInfo = notification.userInfo else { return }
-        let keyBoardFrame = (userInfo[UIKeyboardFrameBeginUserInfoKey] as! NSValue).CGRectValue()
+        guard let userInfo = (notification as NSNotification).userInfo else { return }
+        let keyBoardFrame = (userInfo[UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
         if let indexPath = textIndexPath {
-            let cell = self.tableView.cellForRowAtIndexPath(indexPath)
-            if let rect = cell?.convertRect((cell?.contentView.frame)!, toView: self.view) {
-                let yValue = CGRectGetMaxY(rect)
+            let cell = self.tableView.cellForRow(at: indexPath)
+            if let rect = cell?.convert((cell?.contentView.frame)!, to: self.view) {
+                let yValue = rect.maxY
                 if self.view.bounds.height - yValue < keyBoardFrame.height {
                     let offSetY = (yValue + keyBoardFrame.height - self.view.bounds.height) + 20
-                    UIView.animateKeyframesWithDuration(0.5, delay: 0.2, options: UIViewKeyframeAnimationOptions.CalculationModeLinear, animations: {
+                    UIView.animateKeyframes(withDuration: 0.5, delay: 0.2, options: UIViewKeyframeAnimationOptions(), animations: {
                         self.tableView.contentOffset.y += offSetY
                         self.tableView.contentInset = UIEdgeInsetsMake(0, 0, offSetY, 0)
                         self.tableViewOffset = offSetY
@@ -56,39 +58,52 @@ class ViewController: UIViewController {
         }
     }
     
-    func keyboardWillHideNotification(notification: NSNotification) {
+    func keyboardWillHideNotification(_ notification: Notification) {
         
-        UIView.animateKeyframesWithDuration(0.3, delay: 0.0, options: UIViewKeyframeAnimationOptions.CalculationModeLinear, animations: {
+        UIView.animateKeyframes(withDuration: 0.3, delay: 0.0, options: UIViewKeyframeAnimationOptions(), animations: {
             if self.tableView.contentOffset.y - self.tableViewOffset <= 0 {
                 self.tableView.contentOffset.y = 0
             } else {
                 self.tableView.contentOffset.y -= self.tableViewOffset
             }
-            self.tableView.contentInset = UIEdgeInsetsZero
+            self.tableView.contentInset = UIEdgeInsets.zero
             self.tableViewOffset = 0
             }, completion: nil)
     }
-
+    
+    
+//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        view.endEditing(true)
+//    }
 }
 
 extension ViewController: UITableViewDataSource {
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("TextViewCell") as! TextViewCell
-        cell.tableView = tableView
-        cell.selectionStyle = .None
-        cell.beginEditCallback = { [weak self] in
-            self?.textIndexPath = indexPath
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if (indexPath as NSIndexPath).row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "LabelTableViewCell") as! LabelTableViewCell
+            return cell
+        } else  {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TextViewCell") as! TextViewCell
+            cell.tableView = tableView
+            cell.selectionStyle = .none
+            cell.beginEditCallback = { [weak self] in
+                self?.textIndexPath = indexPath
+            }
+            return cell
         }
-        return cell
+//        else {
+//            let cell = tableView.dequeueReusableCellWithIdentifier("LabelTableViewCell") as! LabelTableViewCell
+//            return cell
+//        }
     }
 }
 

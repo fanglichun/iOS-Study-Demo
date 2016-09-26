@@ -20,13 +20,15 @@ class TextViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         textView.delegate = self
-        textView.scrollEnabled = false
+        textView.isScrollEnabled = false
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
+        
+        let btn = UIButton()
+        btn.isSelected = false
     }
     
 }
@@ -34,21 +36,28 @@ class TextViewCell: UITableViewCell {
 
 extension TextViewCell: UITextViewDelegate {
     
-    func textViewShouldBeginEditing(textView: UITextView) -> Bool {
+    func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
         beginEditCallback?()
+        let btn = UIButton()
+        btn.isSelected = false
+        btn.isSelected = true
         return true
     }
     
-    func textViewDidChange(textView: UITextView) {
+    func textViewDidChange(_ textView: UITextView) {
         let size = textView.sizeThatFits(CGSize(width: frame.size.width, height: CGFloat(MAXFLOAT)))
         let height = size.height
-        if height < 14 {
-            heightConstraint.constant = 14
+        if height < 75 {
+            heightConstraint.constant = 75
         } else {
             heightConstraint.constant = height
         }
-        tableView.beginUpdates()
-        tableView.endUpdates()
+        if (UIDevice.current.systemVersion as NSString).doubleValue < 9.0 {
+            tableView.beginUpdates()
+            tableView.endUpdates()
+        } else {
+            tableView.reloadData()
+        }
     }
     
 }
