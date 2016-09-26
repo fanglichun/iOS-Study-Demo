@@ -12,10 +12,28 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var isNewVersion = true
+    
+    private func setRootViewController(tootVC: UIViewController?) {
+        self.window?.rootViewController = tootVC
+        window?.makeKeyAndVisible()
+    }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        if isNewVersion {
+            let guideVC = MFGuideViewController()
+            guideVC.updateRootVCCallback = {
+                let vc = ViewController()
+                self.setRootViewController(tootVC: vc)
+            }
+            setRootViewController(tootVC: guideVC)
+        } else {
+            let vc = ViewController()
+            setRootViewController(tootVC: vc)
+        }
         return true
     }
 

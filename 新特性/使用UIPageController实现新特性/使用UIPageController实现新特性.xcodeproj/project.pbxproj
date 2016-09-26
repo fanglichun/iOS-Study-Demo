@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F0CBB471D917D5300113DE3 /* MFGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0CBB461D917D5300113DE3 /* MFGuideViewController.swift */; };
+		9F36B2891D917847007A7A92 /* MFGuideImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F36B2881D917847007A7A92 /* MFGuideImageViewController.swift */; };
+		9FCCDE8F1D9032AE00DDE040 /* MFGuidePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCCDE8E1D9032AE00DDE040 /* MFGuidePageViewController.swift */; };
 		9FF0DE1F1D8E63EE005790F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF0DE1E1D8E63EE005790F5 /* AppDelegate.swift */; };
 		9FF0DE211D8E63EE005790F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF0DE201D8E63EE005790F5 /* ViewController.swift */; };
 		9FF0DE241D8E63EE005790F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF0DE221D8E63EE005790F5 /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F0CBB461D917D5300113DE3 /* MFGuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFGuideViewController.swift; sourceTree = "<group>"; };
+		9F36B2881D917847007A7A92 /* MFGuideImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFGuideImageViewController.swift; sourceTree = "<group>"; };
+		9FCCDE8E1D9032AE00DDE040 /* MFGuidePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MFGuidePageViewController.swift; path = ../MFGuidePageViewController.swift; sourceTree = "<group>"; };
 		9FF0DE1B1D8E63EE005790F5 /* 使用UIPageController实现新特性.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "使用UIPageController实现新特性.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FF0DE1E1D8E63EE005790F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FF0DE201D8E63EE005790F5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				9FF0DE1E1D8E63EE005790F5 /* AppDelegate.swift */,
+				9FCCDE8E1D9032AE00DDE040 /* MFGuidePageViewController.swift */,
+				9F36B2881D917847007A7A92 /* MFGuideImageViewController.swift */,
+				9F0CBB461D917D5300113DE3 /* MFGuideViewController.swift */,
 				9FF0DE201D8E63EE005790F5 /* ViewController.swift */,
 				9FF0DE221D8E63EE005790F5 /* Main.storyboard */,
 				9FF0DE251D8E63EE005790F5 /* Assets.xcassets */,
@@ -90,13 +99,15 @@
 		9FF0DE131D8E63EE005790F5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MF;
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = flc;
 				TargetAttributes = {
 					9FF0DE1A1D8E63EE005790F5 = {
 						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 897YJNJHUU;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -136,7 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F36B2891D917847007A7A92 /* MFGuideImageViewController.swift in Sources */,
+				9F0CBB471D917D5300113DE3 /* MFGuideViewController.swift in Sources */,
 				9FF0DE211D8E63EE005790F5 /* ViewController.swift in Sources */,
+				9FCCDE8F1D9032AE00DDE040 /* MFGuidePageViewController.swift in Sources */,
 				9FF0DE1F1D8E63EE005790F5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,7 +198,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Lingzhao Mao (C66P3MXU39)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -234,7 +248,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Lingzhao Mao (897YJNJHUU)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -260,10 +274,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 897YJNJHUU;
 				INFOPLIST_FILE = "使用UIPageController实现新特性/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "flc.--UIPageController-----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pwc.REX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4b2211a2-3c64-4811-a7b1-cedbe2cd5cd3";
+				PROVISIONING_PROFILE_SPECIFIER = "Provisioning Profile_Rex_Dev";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -272,10 +289,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 897YJNJHUU;
 				INFOPLIST_FILE = "使用UIPageController实现新特性/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "flc.--UIPageController-----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pwc.REX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "486907b8-0ae6-4af2-a720-d827ff064537";
+				PROVISIONING_PROFILE_SPECIFIER = "Provisioning Profile REX Adhoc";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -299,6 +319,7 @@
 				9FF0DE2F1D8E63EE005790F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
