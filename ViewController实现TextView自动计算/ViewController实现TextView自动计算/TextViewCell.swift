@@ -26,9 +26,6 @@ class TextViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
-        
-        let btn = UIButton()
-        btn.isSelected = false
     }
     
 }
@@ -38,9 +35,6 @@ extension TextViewCell: UITextViewDelegate {
     
     func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
         beginEditCallback?()
-        let btn = UIButton()
-        btn.isSelected = false
-        btn.isSelected = true
         return true
     }
     
@@ -52,7 +46,7 @@ extension TextViewCell: UITextViewDelegate {
         } else {
             heightConstraint.constant = height
         }
-        if (UIDevice.current.systemVersion as NSString).doubleValue < 9.0 {
+        if (UIDevice.current.systemVersion as NSString).doubleValue >= 9.0 {
             tableView.beginUpdates()
             tableView.endUpdates()
         } else {
