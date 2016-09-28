@@ -1,10 +1,10 @@
 /*
-    Copyright (C) 2016 Apple Inc. All Rights Reserved.
-    See LICENSE.txt for this sample’s licensing information
-    
-    Abstract:
-    The detail view controller for viewing and editing shortcut information (localized title, localized subtitle, and icon)
-*/
+ Copyright (C) 2016 Apple Inc. All Rights Reserved.
+ See LICENSE.txt for this sample’s licensing information
+ 
+ Abstract:
+ The detail view controller for viewing and editing shortcut information (localized title, localized subtitle, and icon)
+ */
 
 import UIKit
 
@@ -36,6 +36,7 @@ class ShortcutDetailViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         // Initialize the UI to reflect the values of the `shortcutItem`.
         guard let selectedShortcutItem = shortcutItem else {
             fatalError("The `selectedShortcutItem` was not set.")
@@ -45,12 +46,12 @@ class ShortcutDetailViewController: UITableViewController {
         
         titleTextField.text = selectedShortcutItem.localizedTitle
         subtitleTextField.text = selectedShortcutItem.localizedSubtitle
-            
+        
         // Extract the raw value representing the icon from the userInfo dictionary, if provided.
         guard let iconRawValue = selectedShortcutItem.userInfo?[AppDelegate.applicationShortcutUserInfoIconKey] as? Int else { return }
         
         // Select the matching row in the picker for the icon type.
-        let iconType = iconTypeForSelectedRow(iconRawValue)
+        let iconType = iconTypeForSelectedRow(row: iconRawValue)
         
         // The `iconType` returned may not align to the `iconRawValue` so use the `iconType`'s `rawValue`.
         pickerView.selectRow(iconType.rawValue, inComponent:0, animated:false)
@@ -58,37 +59,15 @@ class ShortcutDetailViewController: UITableViewController {
         let notificationCenter = NotificationCenter.default
         textFieldObserverToken = notificationCenter.addObserver(forName: NSNotification.Name.UITextFieldTextDidChange, object: nil, queue: nil) { [weak self] _ in
             guard let strongSelf = self else { return }
-
+            
             // You cannot dismiss the view controller without a valid shortcut title.
             let titleTextLength = strongSelf.titleTextField.text?.characters.count ?? 0
             strongSelf.doneButton.isEnabled = titleTextLength > 0
         }
     }
     
-    // MARK: UITextFieldDelegate
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-
-        return true
-    }
-    
-    // MARK: UIPickerViewDataSource
-    
-    func numberOfComponentsInPickerView(_ pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerItems.count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return pickerItems[row]
-    }
-
     /// Constructs a UIApplicationShortcutIconType based on the integer result from our picker.
-    func iconTypeForSelectedRow(_ row: Int) -> UIApplicationShortcutIconType {
+    func iconTypeForSelectedRow(row: Int) -> UIApplicationShortcutIconType {
         return UIApplicationShortcutIconType(rawValue: row) ?? .compose
     }
     
@@ -98,17 +77,49 @@ class ShortcutDetailViewController: UITableViewController {
         guard let selectedShortcutItem = shortcutItem else {
             fatalError("The `selectedShortcutItem` was not set.")
         }
-           
+        
         if segue.identifier == "ShortcutDetailUpdated" {
             // In the updated case, create a shortcut item to represent the final state of the view controller.
-            let iconType = iconTypeForSelectedRow(pickerView.selectedRow(inComponent: 0))
+            let iconType = iconTypeForSelectedRow(row: pickerView.selectedRow(inComponent: 0))
             
             let icon = UIApplicationShortcutIcon(type: iconType)
             
             shortcutItem = UIApplicationShortcutItem(type: selectedShortcutItem.type, localizedTitle: titleTextField.text ?? "", localizedSubtitle: subtitleTextField.text, icon: icon, userInfo: [
-                    AppDelegate.applicationShortcutUserInfoIconKey: pickerView.selectedRow(inComponent: 0)
+                AppDelegate.applicationShortcutUserInfoIconKey: pickerView.selectedRow(inComponent: 0)
                 ]
             )
         }
+    }
+    
+    @IBAction func cancel(sender: UIStoryboardSegue) {
+        
+    }
+    
+    
+}
+
+
+extension ShortcutDetailViewController: UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerItems.count
+    }
+}
+
+extension ShortcutDetailViewController: UIPickerViewDelegate {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerItems[row]
+    }
+}
+
+extension ShortcutDetailViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        return true
     }
 }

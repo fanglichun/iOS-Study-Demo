@@ -49,7 +49,7 @@ class ShortcutsTableViewController: UITableViewController {
     lazy var dynamicShortcuts = UIApplication.shared.shortcutItems ?? []
     
     // MARK: UITableViewDataSource
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
@@ -62,58 +62,56 @@ class ShortcutsTableViewController: UITableViewController {
         return section == 0 ? staticShortcuts.count : dynamicShortcuts.count
     }
     
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CellID", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CellID", for: indexPath as IndexPath)
         
         let shortcut: UIApplicationShortcutItem
-
-        if (indexPath as NSIndexPath).section == 0 {
+        
+        if indexPath.section == 0 {
             // Static shortcuts (cannot be edited).
-            shortcut = staticShortcuts[(indexPath as NSIndexPath).row]
+            shortcut = staticShortcuts[indexPath.row]
             cell.accessoryType = .none
             cell.selectionStyle = .none
         }
         else {
             // Dynamic shortcuts.
-            shortcut = dynamicShortcuts[(indexPath as NSIndexPath).row]
+            shortcut = dynamicShortcuts[indexPath.row]
         }
         
         cell.textLabel?.text = shortcut.localizedTitle
         cell.detailTextLabel?.text = shortcut.localizedSubtitle
         
         return cell
-    }
 
-    // MARK: Navigation
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Supply the `shortcutItem` matching the selected row from the data source.
-        if segue.identifier == "ShowShortcutDetail" {
-            guard let indexPath = tableView.indexPathForSelectedRow,
-                  let controller = segue.destination as? ShortcutDetailViewController else { return }
-
-            controller.shortcutItem = dynamicShortcuts[(indexPath as NSIndexPath).row]
-        }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowShortcutDetail" {
+            guard let indexPath = tableView.indexPathForSelectedRow,
+                let controller = segue.destination as? ShortcutDetailViewController else { return }
+            
+            controller.shortcutItem = dynamicShortcuts[indexPath.row]
+        }
+
+    }
+    
+    // MARK: Navigation
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        // Block navigating to detail view controller for static shortcuts (which are not editable).
         guard let selectedIndexPath = tableView.indexPathForSelectedRow else { return false }
-        
-        return (selectedIndexPath as NSIndexPath).section > 0
+        return selectedIndexPath.section > 0
     }
     
     // MARK: Actions
-    
     // Unwind segue action called when the user taps 'Done' after navigating to the detail controller.
-    @IBAction func done(_ sender: UIStoryboardSegue) {
+    @IBAction func done(sender: UIStoryboardSegue) {
         // Obtain the edited shortcut from our source view controller.
         guard let sourceViewController = sender.source as? ShortcutDetailViewController,
               let selected = tableView.indexPathForSelectedRow,
               let updatedShortcutItem = sourceViewController.shortcutItem else { return }
         
         // Update our data source.
-        dynamicShortcuts[(selected as NSIndexPath).row] = updatedShortcutItem
+        dynamicShortcuts[selected.row] = updatedShortcutItem
         
         // Update the application's `shortcutItems`.
         UIApplication.shared.shortcutItems = dynamicShortcuts
@@ -122,5 +120,7 @@ class ShortcutsTableViewController: UITableViewController {
     }
     
     // Unwind segue action called when the user taps 'Cancel' after navigating to the detail controller.
-    @IBAction func cancel(_ sender: UIStoryboardSegue) {}
+    @IBAction func cancel(sender: UIStoryboardSegue) {
+        
+    }
 }
