@@ -15,7 +15,7 @@ class Node<T> {
         self.value = value
     }
     
-    func add(child: Node) {
+    func add(child: Node<T>) {
         children.append(child)
         child.parent = self
     }
@@ -24,8 +24,13 @@ class Node<T> {
 extension Node: CustomStringConvertible {
     var description: String {
         var text = "\(value)"
-        if children.isEmpty {
-            text += " {" + children.map { $0.description }.joined(separator: ", ") + "} "
+        if !children.isEmpty {
+            //text += " {" + children.map { $0.description }.joined(separator: ", ") + "} "// equal to belows
+            text += "{"
+            for child in children {
+                text += child.description + ","
+            }
+            text += "}"
         }
         return text
     }
@@ -76,6 +81,51 @@ beverages.search(value: "cocoa")?.description
 
 
 
+
+
+public class TreeNode<T> {
+    public var value: T
+    
+    public var parent: TreeNode?
+    public var children = [TreeNode<T>]()
+    
+    public init(value: T) {
+        self.value = value
+    }
+    
+    public func addChild(_ node: TreeNode<T>) {
+        children.append(node)
+        node.parent = self
+    }
+}
+
+extension TreeNode: CustomStringConvertible {
+    public var description: String {
+        var s = "\(value)"
+        if !children.isEmpty {
+            s += " {" + children.map { $0.description }.joined(separator: ", ") + "}"
+        }
+        return s
+    }
+}
+extension TreeNode where T: Equatable {
+    func search(_ value: T) -> TreeNode? {
+        if value == self.value {
+            return self
+        }
+        for child in children {
+            if let found = child.search(value) {
+                return found
+            }
+        }
+        return nil
+    }
+}
+
+let animal = TreeNode(value: "animal")//drink
+let number = TreeNode(value: 5)
+let number1 = TreeNode(value: 10)
+number.addChild(number1)
 
 
 
