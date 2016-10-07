@@ -9,13 +9,13 @@
 import UIKit
 
 
-func createImageWithColor(color: UIColor) -> UIImage? {
+func createImageWithColor(_ color: UIColor) -> UIImage? {
     
-    let rect = CGRectMake(0.0, 0.0, 1.0, 1.0)
+    let rect = CGRect(x: 0.0, y: 0.0, width: 1.0, height: 1.0)
     UIGraphicsBeginImageContext(rect.size)
     let context = UIGraphicsGetCurrentContext()
-    CGContextSetFillColorWithColor(context, color.CGColor)
-    CGContextFillRect(context, rect)
+    context?.setFillColor(color.cgColor)
+    context?.fill(rect)
     let theImage = UIGraphicsGetImageFromCurrentImageContext()
     UIGraphicsEndImageContext()
     return theImage
@@ -32,7 +32,7 @@ extension UIButton {
         }
         set(newValue) {
             objc_setAssociatedObject(self, &key, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-            layer.borderColor = borderColor?.CGColor
+            layer.borderColor = borderColor?.cgColor
         }
     }
     
@@ -64,7 +64,7 @@ extension UIButton {
         }
         set(newValue) {
             objc_setAssociatedObject(self, &key, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-            setBackGroundColor(normalColor ?? UIColor.whiteColor(), state: .Normal)
+            setBackGroundColor(normalColor ?? UIColor.white, state: UIControlState())
         }
     }
     
@@ -74,12 +74,12 @@ extension UIButton {
         }
         set(newValue) {
             objc_setAssociatedObject(self, &key, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-            setBackGroundColor(highlightedColor ?? UIColor.lightGrayColor(), state: .Highlighted)
+            setBackGroundColor(highlightedColor ?? UIColor.lightGray, state: .highlighted)
         }
     }
     
-    private func setBackGroundColor(backGroundColor: UIColor, state: UIControlState) {
+    fileprivate func setBackGroundColor(_ backGroundColor: UIColor, state: UIControlState) {
         let image = createImageWithColor(backGroundColor)
-        setBackgroundImage(image, forState: state)
+        setBackgroundImage(image, for: state)
     }
 }
