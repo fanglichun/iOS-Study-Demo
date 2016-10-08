@@ -14,7 +14,6 @@ import UIKit
         didSet {
             let normalImage = createImageWithColor(self.frame, color: normalColor)
             setBackgroundImage(normalImage, for: .normal)
-            backgroundColor = normalColor
         }
     }
     
@@ -22,13 +21,13 @@ import UIKit
         didSet{
             let highlightedImage = createImageWithColor(self.frame, color: self.highlightedColor)
             setBackgroundImage(highlightedImage, for: .highlighted)
-            backgroundColor = highlightedColor
         }
     }
     
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {
             layer.cornerRadius = cornerRadius
+            layer.masksToBounds = true
         }
     }
     
