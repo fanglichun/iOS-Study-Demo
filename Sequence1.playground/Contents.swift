@@ -18,17 +18,53 @@ if let i = numbers.index(of: 40) {
 }
 
 
-
-func myForEach( clsure:(_ value: Int) ->Void) {
-    
-}
 numbers.forEach { (value) in
     if value & 1 == 0 {
         print("偶数")
+        
     } else {
         print("奇数")
     }
 }
+
+
+struct Countdown: Sequence, IteratorProtocol {
+    var count: Int
+    mutating func next() -> Int? {
+        if count == 0 {
+            return nil
+        } else {
+            defer {
+                count -= 1
+            }
+            return count
+            
+        }
+    }
+}
+
+var count = Countdown(count: 4)
+print(count.next())
+
+let url = URL(string: "https://www.baidu.com")
+do {
+    let data = try Data(contentsOf: url!)
+    print(data)
+    
+} catch {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

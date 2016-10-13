@@ -13,6 +13,7 @@
 		9F3773301D97949300253F7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F37732F1D97949300253F7C /* Assets.xcassets */; };
 		9F3773331D97949300253F7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F3773311D97949300253F7C /* LaunchScreen.storyboard */; };
 		9F37733B1D9795DC00253F7C /* DestinatinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F37733A1D9795DC00253F7C /* DestinatinViewController.swift */; };
+		D938E7421DAC971E0040E038 /* RootTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D938E7411DAC971E0040E038 /* RootTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9F3773321D97949300253F7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F3773341D97949300253F7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F37733A1D9795DC00253F7C /* DestinatinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinatinViewController.swift; sourceTree = "<group>"; };
+		D938E7411DAC971E0040E038 /* RootTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				9F3773281D97949300253F7C /* AppDelegate.swift */,
 				9F37732A1D97949300253F7C /* ViewController.swift */,
+				D938E7411DAC971E0040E038 /* RootTableViewController.swift */,
 				9F37733A1D9795DC00253F7C /* DestinatinViewController.swift */,
 				9F37732C1D97949300253F7C /* Main.storyboard */,
 				9F37732F1D97949300253F7C /* Assets.xcassets */,
@@ -142,6 +145,7 @@
 				9F37732B1D97949300253F7C /* ViewController.swift in Sources */,
 				9F3773291D97949300253F7C /* AppDelegate.swift in Sources */,
 				9F37733B1D9795DC00253F7C /* DestinatinViewController.swift in Sources */,
+				D938E7421DAC971E0040E038 /* RootTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +309,7 @@
 				9F3773391D97949300253F7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
