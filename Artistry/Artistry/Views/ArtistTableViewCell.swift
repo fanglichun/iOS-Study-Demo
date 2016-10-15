@@ -26,7 +26,6 @@ class ArtistTableViewCell: UITableViewCell {
             nameLabel.textAlignment = .center
             nameLabel.font = UIFont.preferredFont(forTextStyle: .headline)
             bioLabel.font = UIFont.preferredFont(forTextStyle: .body)
-            
         }
     }
     
