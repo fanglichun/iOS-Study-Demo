@@ -12,6 +12,10 @@
 		9F1893E81DB217EA00F718BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F1893E61DB217EA00F718BF /* Main.storyboard */; };
 		9F1893F81DB21CC900F718BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F1893F51DB21CC900F718BF /* Assets.xcassets */; };
 		9F1893F91DB21CC900F718BF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F1893F71DB21CC900F718BF /* Info.plist */; };
+		9F1893FB1DB21F8400F718BF /* ArtistryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1893FA1DB21F8400F718BF /* ArtistryViewController.swift */; };
+		9F1893FD1DB21F9100F718BF /* ArtistryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1893FC1DB21F9100F718BF /* ArtistryDetailViewController.swift */; };
+		9F1893FF1DB21FB400F718BF /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1893FE1DB21FB400F718BF /* Artist.swift */; };
+		9F1894011DB21FD600F718BF /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1894001DB21FD600F718BF /* Work.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,10 @@
 		9F1893E61DB217EA00F718BF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9F1893F51DB21CC900F718BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F1893F71DB21CC900F718BF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F1893FA1DB21F8400F718BF /* ArtistryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistryViewController.swift; sourceTree = "<group>"; };
+		9F1893FC1DB21F9100F718BF /* ArtistryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistryDetailViewController.swift; sourceTree = "<group>"; };
+		9F1893FE1DB21FB400F718BF /* Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		9F1894001DB21FD600F718BF /* Work.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,8 @@
 		9F1893DE1DB2178800F718BF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9F1893FA1DB21F8400F718BF /* ArtistryViewController.swift */,
+				9F1893FC1DB21F9100F718BF /* ArtistryDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -91,6 +101,8 @@
 		9F1893E01DB2178800F718BF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9F1893FE1DB21FB400F718BF /* Artist.swift */,
+				9F1894001DB21FD600F718BF /* Work.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,6 +204,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F1893FD1DB21F9100F718BF /* ArtistryDetailViewController.swift in Sources */,
+				9F1893FB1DB21F8400F718BF /* ArtistryViewController.swift in Sources */,
+				9F1894011DB21FD600F718BF /* Work.swift in Sources */,
+				9F1893FF1DB21FB400F718BF /* Artist.swift in Sources */,
 				9F1893E31DB2178800F718BF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
