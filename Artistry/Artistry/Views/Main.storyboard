@@ -10,10 +10,14 @@
         <scene sceneID="M4m-rA-00R">
             <objects>
                 <navigationController id="uOa-vu-VZi" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9xL-b2-rCf">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="9xL-b2-rCf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.41176470590000003" green="0.62352941179999999" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="22"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="qeU-Rb-1Sw" kind="relationship" relationship="rootViewController" id="KqC-LA-egt"/>
@@ -26,30 +30,34 @@
         <!--Artistry-->
         <scene sceneID="NdX-cE-iUO">
             <objects>
-                <viewController id="qeU-Rb-1Sw" userLabel="Artistry" sceneMemberID="viewController">
+                <viewController id="qeU-Rb-1Sw" userLabel="Artistry" customClass="ArtistListViewController" customModule="Artistry" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WIh-Hf-Uxr"/>
                         <viewControllerLayoutGuide type="bottom" id="num-gL-7Df"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Dm0-e4-QCx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6yV-cD-bK4">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="xiD-wD-Wyl">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="xiD-wD-Wyl">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xiD-wD-Wyl" id="vfD-vR-keB">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="ssG-DM-mkD" kind="show" identifier="Artist Detail" action="showDetailViewController:sender:" id="CnV-4H-9dj"/>
+                                            <segue destination="ssG-DM-mkD" kind="show" id="UoD-2h-WeK"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="qeU-Rb-1Sw" id="eFh-ch-eSf"/>
+                                    <outlet property="delegate" destination="qeU-Rb-1Sw" id="g0M-sv-OBN"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -60,7 +68,12 @@
                             <constraint firstAttribute="trailing" secondItem="6yV-cD-bK4" secondAttribute="trailing" id="xOx-sc-Mz0"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Artistry" id="asV-Ye-cw5"/>
+                    <navigationItem key="navigationItem" title="Artistry" id="asV-Ye-cw5">
+                        <barButtonItem key="backBarButtonItem" title="return" id="Cpn-Q6-czY"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="6yV-cD-bK4" id="6sX-Np-AIe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Ia-hQ-zQw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -69,27 +82,31 @@
         <!--Artist Detail-->
         <scene sceneID="D8m-iy-WGg">
             <objects>
-                <viewController id="ssG-DM-mkD" userLabel="Artist Detail" sceneMemberID="viewController">
+                <viewController id="ssG-DM-mkD" userLabel="Artist Detail" customClass="ArtistDetailViewController" customModule="Artistry" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1DI-77-5UL"/>
                         <viewControllerLayoutGuide type="bottom" id="F4B-j6-Vp7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gf3-da-OEz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="izh-ur-EpH">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="JXF-Km-W21">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="JXF-Km-W21">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JXF-Km-W21" id="Jfp-Gx-8WF">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ssG-DM-mkD" id="8Pg-AD-wwH"/>
+                                    <outlet property="delegate" destination="ssG-DM-mkD" id="k0L-py-5DA"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -100,10 +117,13 @@
                             <constraint firstAttribute="trailing" secondItem="izh-ur-EpH" secondAttribute="trailing" id="yNn-iR-Vh1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="izh-ur-EpH" id="erN-P5-lsf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AjF-C5-12X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-638" y="304"/>
+            <point key="canvasLocation" x="-482" y="319"/>
         </scene>
     </scenes>
 </document>
