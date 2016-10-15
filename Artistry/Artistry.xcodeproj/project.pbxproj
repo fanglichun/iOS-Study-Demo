@@ -11,7 +11,6 @@
 		9F1893E71DB217EA00F718BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F1893E51DB217EA00F718BF /* LaunchScreen.storyboard */; };
 		9F1893E81DB217EA00F718BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F1893E61DB217EA00F718BF /* Main.storyboard */; };
 		9F1893F81DB21CC900F718BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F1893F51DB21CC900F718BF /* Assets.xcassets */; };
-		9F1893F91DB21CC900F718BF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F1893F71DB21CC900F718BF /* Info.plist */; };
 		9F1893FB1DB21F8400F718BF /* ArtistryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1893FA1DB21F8400F718BF /* ArtistryViewController.swift */; };
 		9F1893FD1DB21F9100F718BF /* ArtistryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1893FC1DB21F9100F718BF /* ArtistryDetailViewController.swift */; };
 		9F1893FF1DB21FB400F718BF /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1893FE1DB21FB400F718BF /* Artist.swift */; };
@@ -19,6 +18,7 @@
 		9F1894031DB2222A00F718BF /* artists.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F1894021DB2222A00F718BF /* artists.json */; };
 		9F18940A1DB225F500F718BF /* ArtistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1894081DB225F500F718BF /* ArtistTableViewCell.swift */; };
 		9F18940B1DB225F500F718BF /* WorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1894091DB225F500F718BF /* WorkTableViewCell.swift */; };
+		9F384C2F1DB2607B008D71DA /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F384C2E1DB2607B008D71DA /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +35,7 @@
 		9F1894021DB2222A00F718BF /* artists.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = artists.json; sourceTree = "<group>"; };
 		9F1894081DB225F500F718BF /* ArtistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistTableViewCell.swift; sourceTree = "<group>"; };
 		9F1894091DB225F500F718BF /* WorkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkTableViewCell.swift; sourceTree = "<group>"; };
+		9F384C2E1DB2607B008D71DA /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +101,7 @@
 		9F1893DF1DB2178800F718BF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9F384C2E1DB2607B008D71DA /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -202,7 +204,6 @@
 				9F1893E81DB217EA00F718BF /* Main.storyboard in Resources */,
 				9F1893E71DB217EA00F718BF /* LaunchScreen.storyboard in Resources */,
 				9F1893F81DB21CC900F718BF /* Assets.xcassets in Resources */,
-				9F1893F91DB21CC900F718BF /* Info.plist in Resources */,
 				9F1894031DB2222A00F718BF /* artists.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +222,7 @@
 				9F1893FF1DB21FB400F718BF /* Artist.swift in Sources */,
 				9F18940A1DB225F500F718BF /* ArtistTableViewCell.swift in Sources */,
 				9F1893E31DB2178800F718BF /* AppDelegate.swift in Sources */,
+				9F384C2F1DB2607B008D71DA /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,12 +7,12 @@
 //
 
 import UIKit
+let moreInfoText = "Select For More Info >"
 
 class ArtistDetailViewController: UIViewController {
     
     var selectedArtist: Artist!
     
-    let moreInfoText = "Select For More Info >"
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -21,6 +21,15 @@ class ArtistDetailViewController: UIViewController {
         title = selectedArtist.name
         //modify return button color
         navigationController?.navigationBar.tintColor = UIColor.white
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 300
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        NotificationCenter.default.addObserver(forName: .UIContentSizeCategoryDidChange, object: .none, queue: OperationQueue.main) { [weak self] _ in
+            self?.tableView.reloadData()
+        }
     }
 }
 
@@ -30,11 +39,9 @@ extension ArtistDetailViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.selectionStyle = .none
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! WorkTableViewCell
         let work = selectedArtist.works[indexPath.row]
-        cell.textLabel?.text = work.info
-        
+        cell.work = work
         return cell
     }
 }
