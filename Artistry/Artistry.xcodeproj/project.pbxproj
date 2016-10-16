@@ -19,6 +19,7 @@
 		9F18940A1DB225F500F718BF /* ArtistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1894081DB225F500F718BF /* ArtistTableViewCell.swift */; };
 		9F18940B1DB225F500F718BF /* WorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1894091DB225F500F718BF /* WorkTableViewCell.swift */; };
 		9F384C2F1DB2607B008D71DA /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F384C2E1DB2607B008D71DA /* UIColor+Extension.swift */; };
+		9F384C311DB2874A008D71DA /* Launch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9F384C301DB2874A008D71DA /* Launch.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		9F1894081DB225F500F718BF /* ArtistTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistTableViewCell.swift; sourceTree = "<group>"; };
 		9F1894091DB225F500F718BF /* WorkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkTableViewCell.swift; sourceTree = "<group>"; };
 		9F384C2E1DB2607B008D71DA /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		9F384C301DB2874A008D71DA /* Launch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Launch.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		9F1893E11DB2178800F718BF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9F384C301DB2874A008D71DA /* Launch.jpg */,
 				9F1894021DB2222A00F718BF /* artists.json */,
 			);
 			path = Resources;
@@ -205,6 +208,7 @@
 				9F1893E71DB217EA00F718BF /* LaunchScreen.storyboard in Resources */,
 				9F1893F81DB21CC900F718BF /* Assets.xcassets in Resources */,
 				9F1894031DB2222A00F718BF /* artists.json in Resources */,
+				9F384C311DB2874A008D71DA /* Launch.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

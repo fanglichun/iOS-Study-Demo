@@ -65,6 +65,7 @@ extension ArtistDetailViewController: UITableViewDelegate {
         // 4
         tableView.beginUpdates()
         tableView.endUpdates()
+//        tableView.reloadRows(at: [indexPath], with: .automatic)
         
         // 5
         tableView.scrollToRow(at: indexPath, at: .top, animated: true)
