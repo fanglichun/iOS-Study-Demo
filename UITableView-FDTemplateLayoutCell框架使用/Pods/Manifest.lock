@@ -1,0 +1,12 @@
+PODS:
+  - DGTemplateLayoutCell (1.1.1)
+
+DEPENDENCIES:
+  - DGTemplateLayoutCell
+
+SPEC CHECKSUMS:
+  DGTemplateLayoutCell: 560f19f606caadd1469d17035cc510e2c83b5bdc
+
+PODFILE CHECKSUM: 7625d01ee80115ce08fbfc403ee674f6a32531be
+
+COCOAPODS: 1.0.1
