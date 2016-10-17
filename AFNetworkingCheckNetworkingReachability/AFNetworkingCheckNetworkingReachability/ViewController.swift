@@ -19,7 +19,9 @@ class ViewController: UIViewController {
         print(REXServiceManager.shared.manager.reachabilityManager.networkReachabilityStatus)
 
         print(AFNetworkReachabilityManager.shared())
-        
+        REXServiceManager.shared.getWithURLString("", Parameter: ["name": 1 as AnyObject]) { (json) in
+            
+        }
         
     }
 

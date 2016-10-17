@@ -35,6 +35,8 @@ class REXServiceManager: NSObject {
         return $0
     }(REXServiceManager())
     
-    func getWithURLString(_ URLString: String, Parameter para: nd )
+    func getWithURLString(_ URLString: String, Parameter para: [String: AnyObject], Success successBlock: @escaping (AnyObject) ->Void ) {
+        
+    }
     
 }
