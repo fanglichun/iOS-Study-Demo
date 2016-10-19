@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4878C70B21CA37D7CB8A476BF986741B"
-               BuildableName = "AFNetworking.framework"
-               BlueprintName = "AFNetworking"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "D955319C1DB616AD00DB5574"
+               BuildableName = "Notification.app"
+               BlueprintName = "Notification"
+               ReferencedContainer = "container:Notification.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,6 +29,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D955319C1DB616AD00DB5574"
+            BuildableName = "Notification.app"
+            BlueprintName = "Notification"
+            ReferencedContainer = "container:Notification.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -42,15 +51,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4878C70B21CA37D7CB8A476BF986741B"
-            BuildableName = "AFNetworking.framework"
-            BlueprintName = "AFNetworking"
-            ReferencedContainer = "container:Pods.xcodeproj">
+            BlueprintIdentifier = "D955319C1DB616AD00DB5574"
+            BuildableName = "Notification.app"
+            BlueprintName = "Notification"
+            ReferencedContainer = "container:Notification.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -60,6 +70,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D955319C1DB616AD00DB5574"
+            BuildableName = "Notification.app"
+            BlueprintName = "Notification"
+            ReferencedContainer = "container:Notification.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

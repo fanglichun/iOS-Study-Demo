@@ -10,6 +10,8 @@ import UIKit
 import AFNetworking
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var textField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,12 +19,17 @@ class ViewController: UIViewController {
         REXServiceManager.shared.manager.reachabilityManager.startMonitoring()
         print(REXServiceManager.shared.manager.reachabilityManager.isReachable)
         print(REXServiceManager.shared.manager.reachabilityManager.networkReachabilityStatus)
+        
 
         print(AFNetworkReachabilityManager.shared())
-        REXServiceManager.shared.getWithURLString("", Parameter: ["name": 1 as AnyObject]) { (json) in
-            
+        
+        REXServiceManager.shared.get("http://www.baidu.com", Parameter: nil, HttpType: "get") { (response, isSuccess, responseCode) in
+            print(response)
         }
         
+        ServiceManager.shared.get("", parameters: nil, success: { (<#URLSessionDataTask#>, <#Any#>) in
+            <#code#>
+            }, failure: <#T##((URLSessionDataTask?, Error) -> Void)?##((URLSessionDataTask?, Error) -> Void)?##(URLSessionDataTask?, Error) -> Void#>)
     }
 
     override func didReceiveMemoryWarning() {

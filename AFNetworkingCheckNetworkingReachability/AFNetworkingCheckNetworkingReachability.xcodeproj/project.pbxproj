@@ -15,6 +15,7 @@
 		D94EC81F1DB4B10D00942DFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94EC81D1DB4B10D00942DFF /* LaunchScreen.storyboard */; };
 		D98FC2AA1DB4C98B002762A4 /* REXServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98FC2A91DB4C98B002762A4 /* REXServiceManager.swift */; };
 		D99AED1A1DB4D646006BEFEA /* REXServiceManager+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99AED191DB4D646006BEFEA /* REXServiceManager+Image.swift */; };
+		D9CECC1E1DB7443D00F27124 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CECC1D1DB7443D00F27124 /* ServiceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D94EC8201DB4B10D00942DFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D98FC2A91DB4C98B002762A4 /* REXServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REXServiceManager.swift; sourceTree = "<group>"; };
 		D99AED191DB4D646006BEFEA /* REXServiceManager+Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "REXServiceManager+Image.swift"; sourceTree = "<group>"; };
+		D9CECC1D1DB7443D00F27124 /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		E3EAAA66C64014226B929D8C /* Pods_AFNetworkingCheckNetworkingReachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AFNetworkingCheckNetworkingReachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA54450F85044F01F88CB482 /* Pods-AFNetworkingCheckNetworkingReachability.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFNetworkingCheckNetworkingReachability.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AFNetworkingCheckNetworkingReachability/Pods-AFNetworkingCheckNetworkingReachability.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +87,7 @@
 				D94EC8141DB4B10D00942DFF /* AppDelegate.swift */,
 				D94EC8161DB4B10D00942DFF /* ViewController.swift */,
 				D98FC2A91DB4C98B002762A4 /* REXServiceManager.swift */,
+				D9CECC1D1DB7443D00F27124 /* ServiceManager.swift */,
 				D99AED191DB4D646006BEFEA /* REXServiceManager+Image.swift */,
 				D94EC8181DB4B10D00942DFF /* Main.storyboard */,
 				D94EC81B1DB4B10D00942DFF /* Assets.xcassets */,
@@ -222,6 +225,7 @@
 				D99AED1A1DB4D646006BEFEA /* REXServiceManager+Image.swift in Sources */,
 				D94EC8151DB4B10D00942DFF /* AppDelegate.swift in Sources */,
 				D98FC2AA1DB4C98B002762A4 /* REXServiceManager.swift in Sources */,
+				D9CECC1E1DB7443D00F27124 /* ServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +269,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -315,6 +320,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
