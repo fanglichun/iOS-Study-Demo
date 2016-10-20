@@ -1,0 +1,14 @@
+一、MVVM特征简单介绍
+1.MVVM模式是MVC模式的变种，使用MVVM是为了降低ViewController的压力,因为当UI展示较复杂的时候,控制器的逻辑会非常多，这时候使用MVVM模式就会降低控制器的压力，让控制器代码更轻便些，其实它是一个 MVC 的增强版，并将表示逻辑从 Controller 移出放到一个新的对象里，即 View Model.
+2。Models不会和任何对象直接交流，MVC模式也是如此;
+3.ViewModels只主动和Models交流;
+4、ViewControllers不和Models直接交流，只和ViewModels和Views直接交流；
+5、Views只和ViewControllers直接交流，这和MVC模式一致。
+二、MVVM的特殊之处
+1、多了一个View Model类；
+2、View Controller不和Model直接交互;
+3、View Model处理所有展示数据的逻辑,如： Model中有有一个日期Date对象,DateFormater会在View Model中处理日期的展示格式等;
+4、
+
+
+

@@ -27,9 +27,7 @@ class ViewController: UIViewController {
             print(response)
         }
         
-        ServiceManager.shared.get("", parameters: nil, success: { (<#URLSessionDataTask#>, <#Any#>) in
-            <#code#>
-            }, failure: <#T##((URLSessionDataTask?, Error) -> Void)?##((URLSessionDataTask?, Error) -> Void)?##(URLSessionDataTask?, Error) -> Void#>)
+       
     }
 
     override func didReceiveMemoryWarning() {
