@@ -9,6 +9,8 @@
 import UIKit
 import AFNetworking
 
+let baseURL = URL(string: "http://wwww.baidu.com")!
+
 class ServiceManager: AFHTTPSessionManager {
     
     static var shared: ServiceManager = {

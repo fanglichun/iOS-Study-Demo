@@ -25,7 +25,6 @@ class ViewController: UIViewController {
         REXServiceManager.shared.get("http://www.baidu.com", Parameter: nil, HttpType: "get") { (response, isSuccess, responseCode) in
             print(response)
         }
-        
     }
 
     override func didReceiveMemoryWarning() {
