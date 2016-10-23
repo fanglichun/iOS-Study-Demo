@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Notification.xcscheme</key>
+		<key>DelegateChangeDifferentViewControllers.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>D955319C1DB616AD00DB5574</key>
+		<key>D99FEF291DB9D69300D33E4E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

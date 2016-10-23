@@ -19,7 +19,6 @@ class ViewController: UIViewController {
         REXServiceManager.shared.manager.reachabilityManager.startMonitoring()
         print(REXServiceManager.shared.manager.reachabilityManager.isReachable)
         print(REXServiceManager.shared.manager.reachabilityManager.networkReachabilityStatus)
-        
 
         print(AFNetworkReachabilityManager.shared())
         
@@ -27,9 +26,6 @@ class ViewController: UIViewController {
             print(response)
         }
         
-        ServiceManager.shared.get("", parameters: nil, success: { (<#URLSessionDataTask#>, <#Any#>) in
-            <#code#>
-            }, failure: <#T##((URLSessionDataTask?, Error) -> Void)?##((URLSessionDataTask?, Error) -> Void)?##(URLSessionDataTask?, Error) -> Void#>)
     }
 
     override func didReceiveMemoryWarning() {

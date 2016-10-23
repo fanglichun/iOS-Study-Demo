@@ -11,6 +11,9 @@ import UIKit
 class TimeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    
+    weak var delegate: SwitchTypeDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,19 +22,37 @@ class TimeViewController: UIViewController {
        
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    dynamic fileprivate func  typeChanged(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            delegate?.switchToTimeViewController?()
+        } else {
+            delegate?.switchToExpenseViewController?()
+        }
+        tableView.reloadData()
     }
 }
 
 fileprivate extension TimeViewController {
     
     func configTableView() {
-        let nib = UINib(nibName: "TimeTableViewCell", bundle: nil)
+        var nib = UINib(nibName: "TimeTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "TimeTableViewCell")
+        nib = UINib(nibName: "SegmentControlTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "SegmentControlTableViewCell")
         tableView.estimatedRowHeight = 44
     }
+    
+    
     
 }
 
@@ -42,13 +63,21 @@ extension TimeViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let  cell = tableView.dequeueReusableCell(withIdentifier: "TimeTableViewCell", for: indexPath)
-        cell.selectionStyle = .none
-        return cell
+        switch indexPath.row {
+        case 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SegmentControlTableViewCell") as! SegmentControlTableViewCell
+            cell.segmentControl.addTarget(self, action: #selector(typeChanged(_:)), for: .valueChanged)
+            return cell
+        default:
+            let  cell = tableView.dequeueReusableCell(withIdentifier: "TimeTableViewCell", for: indexPath) as! TimeTableViewCell
+            cell.backgroundColor = UIColor.orange
+            return cell
+        }
+        
     }
 }
 

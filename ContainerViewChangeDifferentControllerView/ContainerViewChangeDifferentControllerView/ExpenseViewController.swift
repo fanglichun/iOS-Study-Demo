@@ -11,6 +11,9 @@ import UIKit
 class ExpenseViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    
+    weak var delegate: SwitchTypeDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,20 +21,37 @@ class ExpenseViewController: UIViewController {
         configTableView()
         
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    dynamic fileprivate func  typeChanged(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            delegate?.switchToTimeViewController?()
+        } else {
+            delegate?.switchToExpenseViewController?()
+        }
+        tableView.reloadData()
+    }
+    
 
 }
 
 fileprivate extension ExpenseViewController {
     
     func configTableView() {
-        let nib = UINib(nibName: "ExpenseTableViewCell", bundle: nil)
+        var nib = UINib(nibName: "ExpenseTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "ExpenseTableViewCell")
+        nib = UINib(nibName: "SegmentControlTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "SegmentControlTableViewCell")
         tableView.estimatedRowHeight = 44
+
     }
 }
 
@@ -42,14 +62,23 @@ extension ExpenseViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let  cell = tableView.dequeueReusableCell(withIdentifier: "ExpenseTableViewCell", for: indexPath)
-        cell.selectionStyle = .none
-        return cell
+        switch indexPath.row {
+        case 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SegmentControlTableViewCell") as! SegmentControlTableViewCell
+            cell.segmentControl.addTarget(self, action: #selector(typeChanged(_:)), for: .valueChanged)
+            return cell
+        default:
+            let  cell = tableView.dequeueReusableCell(withIdentifier: "ExpenseTableViewCell", for: indexPath) as! ExpenseTableViewCell
+            cell.backgroundColor = UIColor.brown
+            return cell
+        }
     }
+    
+    
 }
 
 extension ExpenseViewController: UITableViewDelegate {

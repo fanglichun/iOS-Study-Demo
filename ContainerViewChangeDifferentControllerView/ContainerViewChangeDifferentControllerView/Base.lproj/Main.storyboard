@@ -20,12 +20,12 @@
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lHC-lM-dYd" userLabel="TimeContainerView">
                                 <connections>
-                                    <segue destination="ZTd-UL-Str" kind="embed" id="PlF-CB-lnD"/>
+                                    <segue destination="ZTd-UL-Str" kind="embed" identifier="Time" id="PlF-CB-lnD"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hM3-a9-8s1" userLabel="ExpenseContainerView">
                                 <connections>
-                                    <segue destination="RIo-8t-hYT" kind="embed" id="6DL-UW-KEN"/>
+                                    <segue destination="RIo-8t-hYT" kind="embed" identifier="Expense" id="6DL-UW-KEN"/>
                                 </connections>
                             </containerView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6jq-kH-bI9">
@@ -34,9 +34,6 @@
                                     <segment title="Expense"/>
                                 </segments>
                                 <color key="tintColor" red="0.98823529409999999" green="0.34901960780000002" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="switchTimeExpenseState:" destination="BYZ-38-t0r" eventType="valueChanged" id="EIY-Tn-zBN"/>
-                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -54,6 +51,7 @@
                             <constraint firstItem="6jq-kH-bI9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="kaV-0X-ATI"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Kpo-9p-tuz"/>
                     <connections>
                         <outlet property="expenseContainerView" destination="hM3-a9-8s1" id="J0X-Y3-q13"/>
                         <outlet property="timeContainerView" destination="lHC-lM-dYd" id="0gF-0s-zgY"/>
@@ -61,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-14" y="19"/>
+            <point key="canvasLocation" x="1222" y="-4"/>
         </scene>
         <!--TimeViewController-->
         <scene sceneID="X1a-uC-BNQ">
@@ -97,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X5i-kB-fdm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="783" y="-625"/>
+            <point key="canvasLocation" x="2447" y="-626"/>
         </scene>
         <!--ExpenseViewController-->
         <scene sceneID="b9H-on-mz9">
@@ -133,7 +131,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gnt-NL-sOp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="783" y="402"/>
+            <point key="canvasLocation" x="2660" y="401.19940029985008"/>
         </scene>
     </scenes>
 </document>
