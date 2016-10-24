@@ -7,21 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A0327641CAB7E8D00E9EAEC /* ThreeRingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0327631CAB7E8D00E9EAEC /* ThreeRingTest.swift */; };
 		1AFC805C1C68343C00BD26FA /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFC80521C68343C00BD26FA /* ActionViewController.swift */; };
-		1AFC805D1C68343C00BD26FA /* CircularGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFC80531C68343C00BD26FA /* CircularGradient.swift */; };
-		1AFC805E1C68343C00BD26FA /* coin07.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1AFC80541C68343C00BD26FA /* coin07.mp3 */; };
-		1AFC805F1C68343C00BD26FA /* Fanfare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFC80551C68343C00BD26FA /* Fanfare.swift */; };
-		1AFC80601C68343C00BD26FA /* RingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFC80561C68343C00BD26FA /* RingLayer.swift */; };
-		1AFC80611C68343C00BD26FA /* RingTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFC80571C68343C00BD26FA /* RingTip.swift */; };
-		1AFC80621C68343C00BD26FA /* ThreeRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFC80581C68343C00BD26FA /* ThreeRingView.swift */; };
-		1AFC80631C68343C00BD26FA /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFC80591C68343C00BD26FA /* Utilities.swift */; };
-		1AFC80651C68343C00BD26FA /* winning.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1AFC805B1C68343C00BD26FA /* winning.mp3 */; };
 		4C8F765B1C681D8F000A64EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8F765A1C681D8F000A64EB /* AppDelegate.swift */; };
 		4C8F76601C681D8F000A64EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8F765E1C681D8F000A64EB /* Main.storyboard */; };
 		4C8F76621C681D8F000A64EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8F76611C681D8F000A64EB /* Assets.xcassets */; };
 		4C8F76651C681D8F000A64EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8F76631C681D8F000A64EB /* LaunchScreen.storyboard */; };
 		4C8F76701C681D8F000A64EB /* PhonerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8F766F1C681D8F000A64EB /* PhonerciseTests.swift */; };
+		D97079761DBDF0BE00B961EE /* ThreeRingControlKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97079731DBDF09A00B961EE /* ThreeRingControlKit.framework */; };
+		D97079771DBDF0BE00B961EE /* ThreeRingControlKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D97079731DBDF09A00B961EE /* ThreeRingControlKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,19 +25,45 @@
 			remoteGlobalIDString = 4C8F76561C681D8F000A64EB;
 			remoteInfo = Phonercise;
 		};
+		D97079721DBDF09A00B961EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D970796D1DBDF09A00B961EE /* ThreeRingControlKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D97079391DBDF02E00B961EE;
+			remoteInfo = ThreeRingControlKit;
+		};
+		D97079741DBDF09A00B961EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D970796D1DBDF09A00B961EE /* ThreeRingControlKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D97079421DBDF02E00B961EE;
+			remoteInfo = ThreeRingControlKitTests;
+		};
+		D97079781DBDF0BE00B961EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D970796D1DBDF09A00B961EE /* ThreeRingControlKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D97079381DBDF02E00B961EE;
+			remoteInfo = ThreeRingControlKit;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D957BE111DBDEAD30078C05B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D97079771DBDF0BE00B961EE /* ThreeRingControlKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		1A0327631CAB7E8D00E9EAEC /* ThreeRingTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeRingTest.swift; sourceTree = "<group>"; };
 		1AFC80521C68343C00BD26FA /* ActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
-		1AFC80531C68343C00BD26FA /* CircularGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularGradient.swift; sourceTree = "<group>"; };
-		1AFC80541C68343C00BD26FA /* coin07.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coin07.mp3; sourceTree = "<group>"; };
-		1AFC80551C68343C00BD26FA /* Fanfare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fanfare.swift; sourceTree = "<group>"; };
-		1AFC80561C68343C00BD26FA /* RingLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingLayer.swift; sourceTree = "<group>"; };
-		1AFC80571C68343C00BD26FA /* RingTip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingTip.swift; sourceTree = "<group>"; };
-		1AFC80581C68343C00BD26FA /* ThreeRingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeRingView.swift; sourceTree = "<group>"; };
-		1AFC80591C68343C00BD26FA /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		1AFC805B1C68343C00BD26FA /* winning.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = winning.mp3; sourceTree = "<group>"; };
 		4C8F76571C681D8F000A64EB /* Phonercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phonercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8F765A1C681D8F000A64EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C8F765F1C681D8F000A64EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +73,7 @@
 		4C8F766B1C681D8F000A64EB /* PhonerciseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhonerciseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8F766F1C681D8F000A64EB /* PhonerciseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonerciseTests.swift; sourceTree = "<group>"; };
 		4C8F76711C681D8F000A64EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D970796D1DBDF09A00B961EE /* ThreeRingControlKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ThreeRingControlKit.xcodeproj; path = ThreeRingControlKit/ThreeRingControlKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D97079761DBDF0BE00B961EE /* ThreeRingControlKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,8 +98,6 @@
 		1AFC80661C68347E00BD26FA /* Helper Files */ = {
 			isa = PBXGroup;
 			children = (
-				1AFC80541C68343C00BD26FA /* coin07.mp3 */,
-				1AFC805B1C68343C00BD26FA /* winning.mp3 */,
 				4C8F76611C681D8F000A64EB /* Assets.xcassets */,
 				4C8F76631C681D8F000A64EB /* LaunchScreen.storyboard */,
 				4C8F76661C681D8F000A64EB /* Info.plist */,
@@ -89,12 +108,6 @@
 		1AFC80671C6834A100BD26FA /* Three Ring View */ = {
 			isa = PBXGroup;
 			children = (
-				1AFC80531C68343C00BD26FA /* CircularGradient.swift */,
-				1AFC80561C68343C00BD26FA /* RingLayer.swift */,
-				1AFC80571C68343C00BD26FA /* RingTip.swift */,
-				1AFC80581C68343C00BD26FA /* ThreeRingView.swift */,
-				1AFC80591C68343C00BD26FA /* Utilities.swift */,
-				1AFC80551C68343C00BD26FA /* Fanfare.swift */,
 			);
 			name = "Three Ring View";
 			sourceTree = "<group>";
@@ -102,6 +115,7 @@
 		4C8F764E1C681D8F000A64EB = {
 			isa = PBXGroup;
 			children = (
+				D970796D1DBDF09A00B961EE /* ThreeRingControlKit.xcodeproj */,
 				4C8F76591C681D8F000A64EB /* Phonercise */,
 				4C8F766E1C681D8F000A64EB /* PhonerciseTests */,
 				4C8F76581C681D8F000A64EB /* Products */,
@@ -133,10 +147,18 @@
 			isa = PBXGroup;
 			children = (
 				4C8F766F1C681D8F000A64EB /* PhonerciseTests.swift */,
-				1A0327631CAB7E8D00E9EAEC /* ThreeRingTest.swift */,
 				4C8F76711C681D8F000A64EB /* Info.plist */,
 			);
 			path = PhonerciseTests;
+			sourceTree = "<group>";
+		};
+		D970796E1DBDF09A00B961EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D97079731DBDF09A00B961EE /* ThreeRingControlKit.framework */,
+				D97079751DBDF09A00B961EE /* ThreeRingControlKitTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,10 +171,12 @@
 				4C8F76531C681D8F000A64EB /* Sources */,
 				4C8F76541C681D8F000A64EB /* Frameworks */,
 				4C8F76551C681D8F000A64EB /* Resources */,
+				D957BE111DBDEAD30078C05B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D97079791DBDF0BE00B961EE /* PBXTargetDependency */,
 			);
 			name = Phonercise;
 			productName = Phonercise;
@@ -189,7 +213,9 @@
 				TargetAttributes = {
 					4C8F76561C681D8F000A64EB = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = UY8B3ZYFM4;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 					4C8F766A1C681D8F000A64EB = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -209,6 +235,12 @@
 			mainGroup = 4C8F764E1C681D8F000A64EB;
 			productRefGroup = 4C8F76581C681D8F000A64EB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D970796E1DBDF09A00B961EE /* Products */;
+					ProjectRef = D970796D1DBDF09A00B961EE /* ThreeRingControlKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4C8F76561C681D8F000A64EB /* Phonercise */,
@@ -217,16 +249,31 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		D97079731DBDF09A00B961EE /* ThreeRingControlKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ThreeRingControlKit.framework;
+			remoteRef = D97079721DBDF09A00B961EE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D97079751DBDF09A00B961EE /* ThreeRingControlKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ThreeRingControlKitTests.xctest;
+			remoteRef = D97079741DBDF09A00B961EE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		4C8F76551C681D8F000A64EB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AFC805E1C68343C00BD26FA /* coin07.mp3 in Resources */,
 				4C8F76651C681D8F000A64EB /* LaunchScreen.storyboard in Resources */,
 				4C8F76621C681D8F000A64EB /* Assets.xcassets in Resources */,
 				4C8F76601C681D8F000A64EB /* Main.storyboard in Resources */,
-				1AFC80651C68343C00BD26FA /* winning.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,12 +291,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AFC805D1C68343C00BD26FA /* CircularGradient.swift in Sources */,
-				1AFC80621C68343C00BD26FA /* ThreeRingView.swift in Sources */,
-				1AFC80611C68343C00BD26FA /* RingTip.swift in Sources */,
-				1AFC80601C68343C00BD26FA /* RingLayer.swift in Sources */,
-				1AFC805F1C68343C00BD26FA /* Fanfare.swift in Sources */,
-				1AFC80631C68343C00BD26FA /* Utilities.swift in Sources */,
 				4C8F765B1C681D8F000A64EB /* AppDelegate.swift in Sources */,
 				1AFC805C1C68343C00BD26FA /* ActionViewController.swift in Sources */,
 			);
@@ -259,7 +300,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A0327641CAB7E8D00E9EAEC /* ThreeRingTest.swift in Sources */,
 				4C8F76701C681D8F000A64EB /* PhonerciseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +311,11 @@
 			isa = PBXTargetDependency;
 			target = 4C8F76561C681D8F000A64EB /* Phonercise */;
 			targetProxy = 4C8F766C1C681D8F000A64EB /* PBXContainerItemProxy */;
+		};
+		D97079791DBDF0BE00B961EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ThreeRingControlKit;
+			targetProxy = D97079781DBDF0BE00B961EE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -385,10 +430,13 @@
 		4C8F76751C681D8F000A64EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = UY8B3ZYFM4;
 				INFOPLIST_FILE = Phonercise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.Phonercise;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pwc.Rex.Phonercise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -397,10 +445,13 @@
 		4C8F76761C681D8F000A64EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = UY8B3ZYFM4;
 				INFOPLIST_FILE = Phonercise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.raywenderlich.Phonercise;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pwc.Rex.Phonercise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

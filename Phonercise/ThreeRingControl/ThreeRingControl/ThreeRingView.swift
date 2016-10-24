@@ -29,26 +29,26 @@ enum RingIndex : Int {
   case outer  = 2
 }
 
-let RingCompletedNotification = "RingCompletedNotification"
-let AllRingsCompletedNotification = "AllRingsCompletedNotification"
+public let RingCompletedNotification = "RingCompletedNotification"
+public let AllRingsCompletedNotification = "AllRingsCompletedNotification"
 
 @IBDesignable
-class ThreeRingView : UIView {
+public class ThreeRingView : UIView {
   
   fileprivate let rings : [RingIndex : RingLayer] = [.inner : RingLayer(), .middle : RingLayer(), .outer : RingLayer()]
   fileprivate let ringColors = [UIColor.hrPinkColor, UIColor.hrGreenColor, UIColor.hrBlueColor]
   
-  override init(frame: CGRect) {
+  public override init(frame: CGRect) {
     super.init(frame: frame)
     sharedInitialization()
   }
   
-  required init?(coder aDecoder: NSCoder) {
+  public required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
     sharedInitialization()
   }
   
-  override func layoutSubviews() {
+  public override func layoutSubviews() {
     super.layoutSubviews()
     drawLayers()
   }
@@ -112,7 +112,7 @@ class ThreeRingView : UIView {
 //: Values
 extension ThreeRingView {
   @IBInspectable
-  var innerRingValue : CGFloat {
+  public var innerRingValue : CGFloat {
     get {
       return rings[.inner]?.value ?? 0
     }
@@ -122,7 +122,7 @@ extension ThreeRingView {
     }
   }
   @IBInspectable
-  var middleRingValue : CGFloat {
+  public var middleRingValue : CGFloat {
     get {
       return rings[.middle]?.value ?? 0
     }
@@ -132,7 +132,7 @@ extension ThreeRingView {
     }
   }
   @IBInspectable
-  var outerRingValue : CGFloat {
+  public var outerRingValue : CGFloat {
     get {
       return rings[.outer]?.value ?? 0
     }
@@ -178,7 +178,7 @@ extension ThreeRingView {
 //: Colors
 extension ThreeRingView {
   @IBInspectable
-  var innerRingColor : UIColor {
+  public var innerRingColor : UIColor {
     get {
       return colorForRing(.inner)
     }
@@ -187,7 +187,7 @@ extension ThreeRingView {
     }
   }
   @IBInspectable
-  var middleRingColor : UIColor {
+  public var middleRingColor : UIColor {
     get {
       return UIColor.clear
     }
@@ -196,7 +196,7 @@ extension ThreeRingView {
     }
   }
   @IBInspectable
-  var outerRingColor : UIColor {
+  public var outerRingColor : UIColor {
     get {
       return UIColor.clear
     }

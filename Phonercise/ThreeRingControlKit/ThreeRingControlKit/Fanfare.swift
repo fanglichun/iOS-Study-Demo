@@ -20,30 +20,39 @@
 * THE SOFTWARE.
 */
 
-import XCTest
-@testable import Phonercise
 
-class ThreeRingTest: XCTestCase {
+import Foundation
+import AVFoundation
 
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
+public class Fanfare {
+  public var ringSound = "coin07"
+  public var allRingSound = "winning"
 
-    func testThreeRingView() {
-        let threeRings = ThreeRingView()
-        DispatchQueue.main.async {
-            threeRings.innerRingValue = 1.0
-            threeRings.middleRingValue = 1.0
-            threeRings.outerRingValue = 1.0
-        }
-        let _ = expectation(forNotification: RingCompletedNotification, object: nil, handler: nil)
-        let _ = expectation(forNotification: AllRingsCompletedNotification, object: nil, handler: nil)
-        waitForExpectations(timeout: 0.1, handler: nil)
+  public static let sharedInstance = Fanfare()
+
+  fileprivate var player: AVAudioPlayer?
+
+  public func playSoundsWhenReady() {
+    NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: RingCompletedNotification), object: nil, queue: OperationQueue.main) { _ in
+      self.playSound(self.ringSound)
     }
+    NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: AllRingsCompletedNotification), object: nil, queue: OperationQueue.main) { _ in
+      self.playSound(self.allRingSound)
+    }
+  }
+
+  fileprivate func playSound(_ sound: String) {
+    if let url = Bundle(for: type(of: self)).url(forResource: sound, withExtension: "mp3") {
+      player = try? AVAudioPlayer(contentsOf: url)
+      if player != nil {
+        player!.numberOfLoops = 0
+        player!.prepareToPlay()
+        player!.play()
+      }
+    }
+  }
+
+  deinit {
+    NotificationCenter.default.removeObserver(self)
+  }
 }

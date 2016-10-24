@@ -20,36 +20,31 @@
 * THE SOFTWARE.
 */
 
-
 import XCTest
-@testable import Phonercise
 import ThreeRingControlKit
 
-class PhonerciseTests: XCTestCase {
+
+class ThreeRingTest: XCTestCase {
 
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
-
+    
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
 
-    func testShake() {
-        let controller = ActionViewController()
-        let ringControl = ThreeRingView()
-        controller.ringControl = ringControl
-        controller.shake(15)
-        XCTAssertEqual(controller.ringControl.exercise, 0.5)
-
+    func testThreeRingView() {
+        let threeRings = ThreeRingView()
+        DispatchQueue.main.async {
+            threeRings.innerRingValue = 1.0
+            threeRings.middleRingValue = 1.0
+            threeRings.outerRingValue = 1.0
+        }
         let _ = expectation(forNotification: RingCompletedNotification, object: nil, handler: nil)
-
-        controller.shake(15)
-        XCTAssertEqual(controller.ringControl.exercise, 1)
+        let _ = expectation(forNotification: AllRingsCompletedNotification, object: nil, handler: nil)
         waitForExpectations(timeout: 0.1, handler: nil)
     }
-    
-    
 }
