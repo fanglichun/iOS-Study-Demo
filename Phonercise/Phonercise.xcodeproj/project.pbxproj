@@ -13,8 +13,6 @@
 		4C8F76621C681D8F000A64EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8F76611C681D8F000A64EB /* Assets.xcassets */; };
 		4C8F76651C681D8F000A64EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8F76631C681D8F000A64EB /* LaunchScreen.storyboard */; };
 		4C8F76701C681D8F000A64EB /* PhonerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8F766F1C681D8F000A64EB /* PhonerciseTests.swift */; };
-		D97079761DBDF0BE00B961EE /* ThreeRingControlKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D97079731DBDF09A00B961EE /* ThreeRingControlKit.framework */; };
-		D97079771DBDF0BE00B961EE /* ThreeRingControlKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D97079731DBDF09A00B961EE /* ThreeRingControlKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,27 +23,6 @@
 			remoteGlobalIDString = 4C8F76561C681D8F000A64EB;
 			remoteInfo = Phonercise;
 		};
-		D97079721DBDF09A00B961EE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D970796D1DBDF09A00B961EE /* ThreeRingControlKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D97079391DBDF02E00B961EE;
-			remoteInfo = ThreeRingControlKit;
-		};
-		D97079741DBDF09A00B961EE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D970796D1DBDF09A00B961EE /* ThreeRingControlKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D97079421DBDF02E00B961EE;
-			remoteInfo = ThreeRingControlKitTests;
-		};
-		D97079781DBDF0BE00B961EE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D970796D1DBDF09A00B961EE /* ThreeRingControlKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D97079381DBDF02E00B961EE;
-			remoteInfo = ThreeRingControlKit;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,7 +32,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D97079771DBDF0BE00B961EE /* ThreeRingControlKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,7 +49,6 @@
 		4C8F766B1C681D8F000A64EB /* PhonerciseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhonerciseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8F766F1C681D8F000A64EB /* PhonerciseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonerciseTests.swift; sourceTree = "<group>"; };
 		4C8F76711C681D8F000A64EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D970796D1DBDF09A00B961EE /* ThreeRingControlKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ThreeRingControlKit.xcodeproj; path = ThreeRingControlKit/ThreeRingControlKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +56,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D97079761DBDF0BE00B961EE /* ThreeRingControlKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +89,6 @@
 		4C8F764E1C681D8F000A64EB = {
 			isa = PBXGroup;
 			children = (
-				D970796D1DBDF09A00B961EE /* ThreeRingControlKit.xcodeproj */,
 				4C8F76591C681D8F000A64EB /* Phonercise */,
 				4C8F766E1C681D8F000A64EB /* PhonerciseTests */,
 				4C8F76581C681D8F000A64EB /* Products */,
@@ -152,15 +125,6 @@
 			path = PhonerciseTests;
 			sourceTree = "<group>";
 		};
-		D970796E1DBDF09A00B961EE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D97079731DBDF09A00B961EE /* ThreeRingControlKit.framework */,
-				D97079751DBDF09A00B961EE /* ThreeRingControlKitTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,7 +140,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				D97079791DBDF0BE00B961EE /* PBXTargetDependency */,
 			);
 			name = Phonercise;
 			productName = Phonercise;
@@ -235,12 +198,6 @@
 			mainGroup = 4C8F764E1C681D8F000A64EB;
 			productRefGroup = 4C8F76581C681D8F000A64EB /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = D970796E1DBDF09A00B961EE /* Products */;
-					ProjectRef = D970796D1DBDF09A00B961EE /* ThreeRingControlKit.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				4C8F76561C681D8F000A64EB /* Phonercise */,
@@ -248,23 +205,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		D97079731DBDF09A00B961EE /* ThreeRingControlKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ThreeRingControlKit.framework;
-			remoteRef = D97079721DBDF09A00B961EE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D97079751DBDF09A00B961EE /* ThreeRingControlKitTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ThreeRingControlKitTests.xctest;
-			remoteRef = D97079741DBDF09A00B961EE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4C8F76551C681D8F000A64EB /* Resources */ = {
@@ -311,11 +251,6 @@
 			isa = PBXTargetDependency;
 			target = 4C8F76561C681D8F000A64EB /* Phonercise */;
 			targetProxy = 4C8F766C1C681D8F000A64EB /* PBXContainerItemProxy */;
-		};
-		D97079791DBDF0BE00B961EE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ThreeRingControlKit;
-			targetProxy = D97079781DBDF0BE00B961EE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
