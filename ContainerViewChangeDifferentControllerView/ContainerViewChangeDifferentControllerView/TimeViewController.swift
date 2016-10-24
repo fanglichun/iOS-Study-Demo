@@ -67,17 +67,11 @@ extension TimeViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        switch indexPath.row {
-        case 0:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "SegmentControlTableViewCell") as! SegmentControlTableViewCell
-            cell.segmentControl.addTarget(self, action: #selector(typeChanged(_:)), for: .valueChanged)
-            return cell
-        default:
-            let  cell = tableView.dequeueReusableCell(withIdentifier: "TimeTableViewCell", for: indexPath) as! TimeTableViewCell
-            cell.backgroundColor = UIColor.orange
-            return cell
-        }
         
+        let  cell = tableView.dequeueReusableCell(withIdentifier: "TimeTableViewCell", for: indexPath) as! TimeTableViewCell
+        cell.selectionStyle = .none
+        cell.backgroundColor = UIColor.orange
+        return cell
     }
 }
 

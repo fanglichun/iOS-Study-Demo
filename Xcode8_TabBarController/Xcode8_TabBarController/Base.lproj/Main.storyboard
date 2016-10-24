@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ep0-bM-07D">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Preference-->
+        <scene sceneID="rmf-A7-rAS">
+            <objects>
+                <viewController id="Rjd-AU-obD" userLabel="Preference" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XcE-wZ-OyL"/>
+                        <viewControllerLayoutGuide type="bottom" id="Chj-gB-eaB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lf7-Zh-d2z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.58039215690000001" green="0.54117647059999996" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Preference" selectedImage="tabbar_message_center_highlighted" id="yJs-SL-Vud"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A6I-UP-SWv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-101" y="37"/>
+        </scene>
+        <!--Role Readiness-->
+        <scene sceneID="26M-0U-OkB">
+            <objects>
+                <viewController id="F7H-Z2-FZe" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mrm-pg-E2d"/>
+                        <viewControllerLayoutGuide type="bottom" id="upP-me-fg9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hxi-Jq-6b6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.98823529409999999" green="0.34901960780000002" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Role Readiness" selectedImage="tabbar_discover_highlighted" id="fE0-4I-xHO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ztV-UH-CkE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-470" y="588"/>
+        </scene>
+        <!--Resume-->
+        <scene sceneID="C5z-Nh-FzB">
+            <objects>
+                <viewController id="6rl-RW-WXM" userLabel="Resume" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gy4-d0-Z1N"/>
+                        <viewControllerLayoutGuide type="bottom" id="iLB-ri-buS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JwO-Wq-3QY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Resume" selectedImage="tabbar_profile_highlighted" id="cGB-Xz-sz9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nDK-P9-la0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-101" y="-619"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="2Hs-pK-006">
+            <objects>
+                <tabBarController id="ep0-bM-07D" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" backgroundImage="tabbar_background" id="sre-kr-LpO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="6rl-RW-WXM" kind="relationship" relationship="viewControllers" id="9ed-SJ-Pzs"/>
+                        <segue destination="Rjd-AU-obD" kind="relationship" relationship="viewControllers" id="33h-Hg-ci2"/>
+                        <segue destination="F7H-Z2-FZe" kind="relationship" relationship="viewControllers" id="jZv-I8-5fL"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9vi-zV-tlC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1053" y="-291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tabbar_background" width="1" height="44"/>
+        <image name="tabbar_discover_highlighted" width="30" height="30"/>
+        <image name="tabbar_message_center_highlighted" width="30" height="30"/>
+        <image name="tabbar_profile_highlighted" width="30" height="30"/>
+    </resources>
+</document>

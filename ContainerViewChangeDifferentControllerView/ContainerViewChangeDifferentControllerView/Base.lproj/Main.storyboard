@@ -34,6 +34,9 @@
                                     <segment title="Expense"/>
                                 </segments>
                                 <color key="tintColor" red="0.98823529409999999" green="0.34901960780000002" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="switchTimeExpenseState:" destination="BYZ-38-t0r" eventType="valueChanged" id="5QM-Q6-fCh"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -41,12 +44,12 @@
                             <constraint firstAttribute="trailing" secondItem="lHC-lM-dYd" secondAttribute="trailing" id="3yF-Cc-chG"/>
                             <constraint firstItem="6jq-kH-bI9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GXL-6l-K7m"/>
                             <constraint firstItem="6jq-kH-bI9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="100" id="HB5-wE-2Rp"/>
-                            <constraint firstItem="lHC-lM-dYd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="49" id="I30-8R-c0U"/>
+                            <constraint firstItem="lHC-lM-dYd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="59" id="I30-8R-c0U"/>
                             <constraint firstAttribute="trailing" secondItem="hM3-a9-8s1" secondAttribute="trailing" id="MK7-bT-6Os"/>
                             <constraint firstItem="lHC-lM-dYd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Nxb-Ze-7Iw"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hM3-a9-8s1" secondAttribute="bottom" id="PbN-x5-5Xh"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lHC-lM-dYd" secondAttribute="bottom" id="PwS-yO-7vc"/>
-                            <constraint firstItem="hM3-a9-8s1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="49" id="YJQ-7M-eSl"/>
+                            <constraint firstItem="hM3-a9-8s1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="59" id="YJQ-7M-eSl"/>
                             <constraint firstItem="hM3-a9-8s1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jE6-VA-AFd"/>
                             <constraint firstItem="6jq-kH-bI9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="kaV-0X-ATI"/>
                         </constraints>
@@ -70,7 +73,7 @@
                         <viewControllerLayoutGuide type="bottom" id="cWd-jL-WV9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LOs-Wi-jos">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="608"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Of-qN-bIr">
@@ -106,7 +109,7 @@
                         <viewControllerLayoutGuide type="bottom" id="FKO-QZ-Ulb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uud-Bz-BF4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="608"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DMo-ey-5z6">

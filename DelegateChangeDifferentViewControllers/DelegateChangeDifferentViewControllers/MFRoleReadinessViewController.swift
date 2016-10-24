@@ -19,6 +19,20 @@ class MFRoleReadinessViewController: UIViewController {
         // Do any additional setup after loading the view.
         let nib = UINib(nibName: "MFSwitchProfileTypeTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "MFSwitchProfileTypeTableViewCell")
+        let headerView = UIView()
+        headerView.backgroundColor = UIColor.red
+        tableView.tableHeaderView = headerView
+        navigationController?.navigationBar.isTranslucent = false
+
+    }
+    
+    deinit {
+        print("denit")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("call viewWillAppear")
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,7 +41,7 @@ class MFRoleReadinessViewController: UIViewController {
     }
 
     dynamic fileprivate func switchProfileType(_ sender: UISegmentedControl) {
-//        delegate?.switchProfileType(.roleReadiness)
+        print(sender.selectedSegmentIndex)
 
         switch sender.selectedSegmentIndex {
         case 0:
@@ -37,10 +51,9 @@ class MFRoleReadinessViewController: UIViewController {
             delegate?.switchProfileType(.preference)
 //            sender.selectedSegmentIndex = 1
         default:
-            delegate?.switchProfileType(.roleReadiness)
-//            sender.selectedSegmentIndex = 2
+            break
         }
-//        sender.selectedSegmentIndex = 2
+        sender.selectedSegmentIndex = 2
     }
     
 }

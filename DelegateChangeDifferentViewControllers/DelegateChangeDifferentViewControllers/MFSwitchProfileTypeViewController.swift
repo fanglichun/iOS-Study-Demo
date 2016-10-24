@@ -44,21 +44,25 @@ class MFSwitchProfileTypeViewController: UIViewController, MFSwitchProfileTypeVi
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        addChildViewController(resumeViewController)
+        addChildViewController(preferenceViewController)
+        addChildViewController(roleReadinessViewController)
+        
+        
         self.view.addSubview(resumeViewController.view)
         self.view.addSubview(preferenceViewController.view)
         self.view.addSubview(roleReadinessViewController.view)
+ 
         resumeViewController.view.isHidden = false
         preferenceViewController.view.isHidden = true
         roleReadinessViewController.view.isHidden = true
-
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-//        if currentProfileType == .resume {
-//            NotificationCenter.default.removeObserver(preferenceViewController)
-//            NotificationCenter.default.removeObserver(roleReadinessViewController)
-//        }
+        if currentProfileType == .resume {
+            NotificationCenter.default.removeObserver(resumeViewController)
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -86,7 +90,6 @@ class MFSwitchProfileTypeViewController: UIViewController, MFSwitchProfileTypeVi
             preferenceViewController.view.isHidden = true
             roleReadinessViewController.view.isHidden = false
             roleReadinessViewController.tableView.reloadData()
-
         }
     }
     

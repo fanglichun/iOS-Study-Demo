@@ -20,6 +20,14 @@ class MFResumeViewController: UIViewController {
         // Do any additional setup after loading the view.
         let nib = UINib(nibName: "MFSwitchProfileTypeTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "MFSwitchProfileTypeTableViewCell")
+        let headerView = UIView()
+        headerView.backgroundColor = UIColor.blue
+        tableView.tableHeaderView = headerView
+        navigationController?.navigationBar.isTranslucent = false
+    }
+    
+    deinit {
+        print("denit")
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,12 +35,17 @@ class MFResumeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("call viewWillAppear")
+    }
+    
     dynamic fileprivate func switchProfileType(_ sender: UISegmentedControl) {
+        print(sender.selectedSegmentIndex)
         
         switch sender.selectedSegmentIndex {
         case 0:
-            delegate?.switchProfileType(.resume)
-//            sender.selectedSegmentIndex = 0
+            break
         case 1:
             delegate?.switchProfileType(.preference)
 //            sender.selectedSegmentIndex = 1
@@ -40,7 +53,7 @@ class MFResumeViewController: UIViewController {
             delegate?.switchProfileType(.roleReadiness)
 //            sender.selectedSegmentIndex = 2
         }
-//        sender.selectedSegmentIndex = 0
+        sender.selectedSegmentIndex = 0
     }
 }
 

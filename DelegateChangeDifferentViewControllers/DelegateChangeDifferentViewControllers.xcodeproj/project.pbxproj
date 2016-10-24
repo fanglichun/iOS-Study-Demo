@@ -17,6 +17,8 @@
 		D912F4721DB9D96600835D79 /* MFRoleReadinessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D912F4701DB9D96600835D79 /* MFRoleReadinessViewController.xib */; };
 		D912F4771DB9DC8E00835D79 /* MFSwitchProfileTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D912F4751DB9DC8E00835D79 /* MFSwitchProfileTypeTableViewCell.swift */; };
 		D912F4781DB9DC8E00835D79 /* MFSwitchProfileTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D912F4761DB9DC8E00835D79 /* MFSwitchProfileTypeTableViewCell.xib */; };
+		D9151ABB1DBCD45B0018C910 /* MFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9151ABA1DBCD45B0018C910 /* MFViewController.swift */; };
+		D99C86D71DBCD69D00A339ED /* MFSwitchProfileTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D99C86D51DBCD69D00A339ED /* MFSwitchProfileTypeViewController.xib */; };
 		D99FEF2E1DB9D69300D33E4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99FEF2D1DB9D69300D33E4E /* AppDelegate.swift */; };
 		D99FEF331DB9D69300D33E4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99FEF311DB9D69300D33E4E /* Main.storyboard */; };
 		D99FEF351DB9D69300D33E4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99FEF341DB9D69300D33E4E /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 		D912F4701DB9D96600835D79 /* MFRoleReadinessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFRoleReadinessViewController.xib; sourceTree = "<group>"; };
 		D912F4751DB9DC8E00835D79 /* MFSwitchProfileTypeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFSwitchProfileTypeTableViewCell.swift; sourceTree = "<group>"; };
 		D912F4761DB9DC8E00835D79 /* MFSwitchProfileTypeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFSwitchProfileTypeTableViewCell.xib; sourceTree = "<group>"; };
+		D9151ABA1DBCD45B0018C910 /* MFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFViewController.swift; sourceTree = "<group>"; };
+		D99C86D51DBCD69D00A339ED /* MFSwitchProfileTypeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFSwitchProfileTypeViewController.xib; sourceTree = "<group>"; };
 		D99FEF2A1DB9D69300D33E4E /* DelegateChangeDifferentViewControllers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelegateChangeDifferentViewControllers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99FEF2D1DB9D69300D33E4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D99FEF321DB9D69300D33E4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,7 +78,9 @@
 			children = (
 				D99FEF2D1DB9D69300D33E4E /* AppDelegate.swift */,
 				D912F4611DB9D8ED00835D79 /* MFProfileType.swift */,
+				D9151ABA1DBCD45B0018C910 /* MFViewController.swift */,
 				D912F4631DB9D93700835D79 /* MFSwitchProfileTypeViewController.swift */,
+				D99C86D51DBCD69D00A339ED /* MFSwitchProfileTypeViewController.xib */,
 				D912F4671DB9D94600835D79 /* MFResumeViewController.swift */,
 				D912F4681DB9D94600835D79 /* MFResumeViewController.xib */,
 				D912F46B1DB9D95600835D79 /* MFPreferenceViewController.swift */,
@@ -159,6 +165,7 @@
 				D912F4721DB9D96600835D79 /* MFRoleReadinessViewController.xib in Resources */,
 				D912F46A1DB9D94600835D79 /* MFResumeViewController.xib in Resources */,
 				D99FEF331DB9D69300D33E4E /* Main.storyboard in Resources */,
+				D99C86D71DBCD69D00A339ED /* MFSwitchProfileTypeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +179,7 @@
 				D912F46D1DB9D95600835D79 /* MFPreferenceViewController.swift in Sources */,
 				D912F4621DB9D8ED00835D79 /* MFProfileType.swift in Sources */,
 				D912F4711DB9D96600835D79 /* MFRoleReadinessViewController.swift in Sources */,
+				D9151ABB1DBCD45B0018C910 /* MFViewController.swift in Sources */,
 				D912F4651DB9D93700835D79 /* MFSwitchProfileTypeViewController.swift in Sources */,
 				D912F4771DB9DC8E00835D79 /* MFSwitchProfileTypeTableViewCell.swift in Sources */,
 				D912F4691DB9D94600835D79 /* MFResumeViewController.swift in Sources */,

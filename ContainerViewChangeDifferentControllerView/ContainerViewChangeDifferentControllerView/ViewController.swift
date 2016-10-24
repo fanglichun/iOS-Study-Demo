@@ -13,10 +13,10 @@ protocol SwitchTypeDelegate: class {
     var switchToExpenseViewController: (() -> ())? {get set}
 }
 
-class ViewController: UIViewController, SwitchTypeDelegate {
+class ViewController: UIViewController {
     
-    internal var switchToExpenseViewController: (() -> ())?
-    internal var switchToTimeViewController: (() -> ())?
+//    internal var switchToExpenseViewController: (() -> ())?
+//    internal var switchToTimeViewController: (() -> ())?
 
     @IBOutlet weak var timeContainerView: UIView!
     
@@ -29,14 +29,14 @@ class ViewController: UIViewController, SwitchTypeDelegate {
 
         expenseContainerView.isHidden = true
         
-        switchToTimeViewController = { [weak self] in
-            self?.timeContainerView.isHidden = false
-            self?.expenseContainerView.isHidden = true
-        }
-        switchToExpenseViewController = { [weak self] in
-            self?.timeContainerView.isHidden = true
-            self?.expenseContainerView.isHidden = false
-        }
+//        switchToTimeViewController = { [weak self] in
+//            self?.timeContainerView.isHidden = false
+//            self?.expenseContainerView.isHidden = true
+//        }
+//        switchToExpenseViewController = { [weak self] in
+//            self?.timeContainerView.isHidden = true
+//            self?.expenseContainerView.isHidden = false
+//        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,25 +44,14 @@ class ViewController: UIViewController, SwitchTypeDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-//    @IBAction func switchTimeExpenseState(_ sender: UISegmentedControl) {
-//        switch sender.selectedSegmentIndex {
-//        case 0:
-//            timeContainerView.isHidden = false
-//            expenseContainerView.isHidden = true
-//        default:
-//            timeContainerView.isHidden = true
-//            expenseContainerView.isHidden = false
-//        }
-//    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "Time" {
-            let timeVC = segue.destination as! TimeViewController
-            timeVC.delegate = self
-
-        } else {
-            let expenseVC = segue.destination as!  ExpenseViewController
-            expenseVC.delegate = self
+    @IBAction func switchTimeExpenseState(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 0:
+            timeContainerView.isHidden = false
+            expenseContainerView.isHidden = true
+        default:
+            timeContainerView.isHidden = true
+            expenseContainerView.isHidden = false
         }
     }
 }

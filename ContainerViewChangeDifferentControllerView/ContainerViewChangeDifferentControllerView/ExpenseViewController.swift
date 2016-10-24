@@ -12,7 +12,7 @@ class ExpenseViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    weak var delegate: SwitchTypeDelegate?
+//    weak var delegate: SwitchTypeDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,16 +30,6 @@ class ExpenseViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    dynamic fileprivate func  typeChanged(_ sender: UISegmentedControl) {
-        if sender.selectedSegmentIndex == 0 {
-            delegate?.switchToTimeViewController?()
-        } else {
-            delegate?.switchToExpenseViewController?()
-        }
-        tableView.reloadData()
-    }
-    
 
 }
 
@@ -66,19 +56,12 @@ extension ExpenseViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        switch indexPath.row {
-        case 0:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "SegmentControlTableViewCell") as! SegmentControlTableViewCell
-            cell.segmentControl.addTarget(self, action: #selector(typeChanged(_:)), for: .valueChanged)
-            return cell
-        default:
-            let  cell = tableView.dequeueReusableCell(withIdentifier: "ExpenseTableViewCell", for: indexPath) as! ExpenseTableViewCell
-            cell.backgroundColor = UIColor.brown
-            return cell
-        }
+        
+        let  cell = tableView.dequeueReusableCell(withIdentifier: "ExpenseTableViewCell", for: indexPath) as! ExpenseTableViewCell
+        cell.selectionStyle = .none
+        cell.backgroundColor = UIColor.brown
+        return cell
     }
-    
-    
 }
 
 extension ExpenseViewController: UITableViewDelegate {
