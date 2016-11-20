@@ -1,0 +1,42 @@
+ [
+  {
+    "title": "iOS 101",
+    "day": "1"
+  },
+  {
+    "title": "Intents and You",
+    "day": "3"
+  },
+  {
+    "title": "Custom Shaders",
+    "day": "5"
+  },
+  {
+    "title": "Advanced NSDate",
+    "day": "2"
+  },
+  {
+    "title": "Error Handling",
+    "day": "4"
+  },
+  {
+    "title": "Side Scrolling Fun",
+    "day": "1"
+  },
+  {
+    "title": "Custom View Controller Transitions",
+    "day": "3"
+  },
+  {
+    "title": "Property Observers",
+    "day": "nil"
+  },
+  {
+    "title": "Using Table Views",
+    "day": "nil"
+  },
+  {
+    "title": "Pattern Matching",
+    "day": "nil"
+  }
+]

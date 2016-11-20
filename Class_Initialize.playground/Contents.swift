@@ -56,6 +56,7 @@ class Tank: RocketComponent {
     init(model: String, serialNumber: String, reusable: Bool, encasingMaterial: String) {
         self.encasingMaterial = encasingMaterial
         super.init(model: model, serialNumber: serialNumber, reusable: reusable)
+
     }
     
     // Init #2b - Designated
