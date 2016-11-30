@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		D9D155E01DEE8B0B007B2334 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D155DF1DEE8B0B007B2334 /* AppDelegate.swift */; };
-		D9D155E21DEE8B0B007B2334 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D155E11DEE8B0B007B2334 /* ViewController.swift */; };
 		D9D155E51DEE8B0B007B2334 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9D155E31DEE8B0B007B2334 /* Main.storyboard */; };
 		D9D155E71DEE8B0B007B2334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D155E61DEE8B0B007B2334 /* Assets.xcassets */; };
 		D9D155EA1DEE8B0B007B2334 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9D155E81DEE8B0B007B2334 /* LaunchScreen.storyboard */; };
 		D9D155F51DEE8B0B007B2334 /* TableViewController__iPad______Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D155F41DEE8B0B007B2334 /* TableViewController__iPad______Tests.swift */; };
+		D9D156001DEE9C4F007B2334 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D155FF1DEE9C4F007B2334 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +28,6 @@
 /* Begin PBXFileReference section */
 		D9D155DC1DEE8B0A007B2334 /* TableViewController实现iPad横竖屏幕切换.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TableViewController实现iPad横竖屏幕切换.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D155DF1DEE8B0B007B2334 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D9D155E11DEE8B0B007B2334 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D9D155E41DEE8B0B007B2334 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D9D155E61DEE8B0B007B2334 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9D155E91DEE8B0B007B2334 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +35,7 @@
 		D9D155F01DEE8B0B007B2334 /* TableViewController实现iPad横竖屏幕切换Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TableViewController实现iPad横竖屏幕切换Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D155F41DEE8B0B007B2334 /* TableViewController__iPad______Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewController__iPad______Tests.swift"; sourceTree = "<group>"; };
 		D9D155F61DEE8B0B007B2334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9D155FF1DEE9C4F007B2334 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				D9D155DF1DEE8B0B007B2334 /* AppDelegate.swift */,
-				D9D155E11DEE8B0B007B2334 /* ViewController.swift */,
+				D9D155FF1DEE9C4F007B2334 /* TableViewController.swift */,
 				D9D155E31DEE8B0B007B2334 /* Main.storyboard */,
 				D9D155E61DEE8B0B007B2334 /* Assets.xcassets */,
 				D9D155E81DEE8B0B007B2334 /* LaunchScreen.storyboard */,
@@ -199,8 +199,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9D155E21DEE8B0B007B2334 /* ViewController.swift in Sources */,
 				D9D155E01DEE8B0B007B2334 /* AppDelegate.swift in Sources */,
+				D9D156001DEE9C4F007B2334 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
