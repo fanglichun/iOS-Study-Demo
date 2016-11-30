@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ynC-dN-Q6H">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="TBt-N0-v7a">
+            <objects>
+                <viewController id="ynC-dN-Q6H" customClass="ViewController" customModule="数字格式化Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l48-QG-GRt"/>
+                        <viewControllerLayoutGuide type="bottom" id="gwl-eW-z3v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NIx-kj-LZ9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cZ9-4w-nRr" userLabel="TextField">
+                                <rect key="frame" x="150.5" y="285" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="KLK-QX-BTX"/>
+                                    <constraint firstAttribute="width" constant="300" id="aNM-dQ-dbe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="KLK-QX-BTX"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="ynC-dN-Q6H" id="cJ1-MV-bu7"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cZ9-4w-nRr" firstAttribute="centerY" secondItem="NIx-kj-LZ9" secondAttribute="centerY" id="Opu-4f-5v8"/>
+                            <constraint firstItem="cZ9-4w-nRr" firstAttribute="centerX" secondItem="NIx-kj-LZ9" secondAttribute="centerX" id="p1j-HR-U6b"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="cZ9-4w-nRr" id="LxF-Xf-PPT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gol-m1-Qau" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1539" y="-322"/>
+        </scene>
+    </scenes>
+</document>

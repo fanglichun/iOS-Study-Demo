@@ -117,6 +117,7 @@ let tel = numberArray.reduce("") {
 }
 print(tel)
 
+
 //3)ruduce 还可以实现 map 和 filter 并且时间复杂度变为O(n) 原来 map 和 filter 的时间复杂度是O(n*n)
 extension Array {
     func mMap (transform: Element -> Element) -> [Element] {
@@ -127,14 +128,19 @@ extension Array {
     }
 }
 
-let testmMap = numberArray.mMap {
-    $0
-}
-print(testmMap)
-
 let testmFilter = numberArray.mFilter {
     $0 > 1
 }
 print(testmFilter)
+
+let testmMap = numberArray.mMap {
+    $0
+}
+
+print(testmMap)
+
+
+
+
 
 
