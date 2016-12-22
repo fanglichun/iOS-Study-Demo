@@ -1,6 +1,0 @@
-framework module Pods_AFNetworkingCheckNetworkingReachability {
-  umbrella header "Pods-AFNetworkingCheckNetworkingReachability-umbrella.h"
-
-  export *
-  module * { export * }
-}

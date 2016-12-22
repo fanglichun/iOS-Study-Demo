@@ -1,8 +1,0 @@
-//
-// Prefix header for all source files of the 'LazyTableImages' target in the 'LazyTableImages' project
-//
-
-#ifdef __OBJC__
-    @import Foundation;
-    @import UIKit;
-#endif

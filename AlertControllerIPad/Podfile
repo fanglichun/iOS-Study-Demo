@@ -1,6 +1,0 @@
-platform :ios, '8.0'
-pod 'Kamagari'
-
-platform :ios, ‘7.0’
-pod 'DOAlertController'
-use_frameworks! 

@@ -1,6 +1,0 @@
-framework module DGTemplateLayoutCell {
-  umbrella header "DGTemplateLayoutCell-umbrella.h"
-
-  export *
-  module * { export * }
-}

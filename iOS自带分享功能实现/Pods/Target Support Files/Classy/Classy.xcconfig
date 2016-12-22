@@ -1,5 +1,0 @@
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/Classy" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Classy" "${PODS_ROOT}/Headers/Public/ClassyLiveLayout" "${PODS_ROOT}/Headers/Public/Masonry"
-OTHER_LDFLAGS = -framework "Foundation" -framework "QuartzCore" -framework "UIKit"
-PODS_ROOT = ${SRCROOT}
-SKIP_INSTALL = YES
