@@ -256,13 +256,13 @@ class SomeClass {
 //completionHandlers.first?()
 //print(instance.x)
 
-var customersInLine = ["Chris", "Alex", "Ewa", "Barry", "Daniella"]
-print(customersInLine.count)
-// Prints "5"
-
-let customerProvider = { customersInLine.remove(at: 0) }
-print(customerProvider())
-print(customersInLine.count)
+//var customersInLine = ["Chris", "Alex", "Ewa", "Barry", "Daniella"]
+//print(customersInLine.count)
+//// Prints "5"
+//
+//let customerProvider = { customersInLine.remove(at: 0) }
+//print(customerProvider())
+//print(customersInLine.count)
 
 //func serve(customer customerProvider: () -> String) {
 //    print("Now serving \(customerProvider())!")
@@ -277,19 +277,126 @@ print(customersInLine.count)
 //
 
 
-var customerProviders: [() -> String] = []
-func collectCustomerProviders(_ customerProvider: @autoclosure @escaping () -> String) {
-    customerProviders.append(customerProvider)
-}
-collectCustomerProviders(customersInLine.remove(at: 0))
-collectCustomerProviders(customersInLine.remove(at: 0))
+//var customerProviders: [() -> String] = []
+//func collectCustomerProviders(_ customerProvider: @autoclosure @escaping () -> String) {
+//    customerProviders.append(customerProvider)
+//}
+//collectCustomerProviders(customersInLine.remove(at: 0))
+//collectCustomerProviders(customersInLine.remove(at: 0))
+//
+//print("Collected \(customerProviders.count) closures.")
+//// Prints "Collected 2 closures."
+//for customerProvider in customerProviders {
+//    print("Now serving \(customerProvider())!")
+//}
 
-print("Collected \(customerProviders.count) closures.")
-// Prints "Collected 2 closures."
-for customerProvider in customerProviders {
-    print("Now serving \(customerProvider())!")
+
+
+
+
+
+//enum Trade {
+//    
+//    case Buy(stock: String, amount: Int)
+//    case Sell(stock: String, amount: Int)
+//}
+
+//func trade(type: Trade) {}
+//
+//
+//let trade = Trade.Buy(stock: "App", amount: 10)
+//
+//
+//if case let Trade.Buy(stock, amount) = trade {
+//    print("buy \(amount) of \(stock)")
+//}
+
+
+
+//Passing 2 arguments to a callee as a single tuple value has been removed in Swift 3
+
+//enum Trade1 {
+//    case Buy(String, Int)
+//    case Sell(String, Int)
+//}
+//let tp = (stock: "TSLA", amount: 100)
+//let trade1 = Trade.Sell(tp)
+
+//typealias Config = (RAM: Int, CPU: String, GPU: String)
+//
+//func selectRAM(_ config: Config) -> Config {
+//    return (RAM: 32, CPU: config.CPU, GPU: config.GPU)
+//}
+//
+//func selectCPU(_ config: Config) -> Config {
+//    return (RAM: config.RAM, CPU: "3.2GHZ", GPU: config.GPU)
+//}
+//
+//func selectGPU(_ config: Config) -> Config {
+//    return (RAM: config.RAM, CPU: "3.2GHZ", GPU: "NVidia")
+//}
+//
+//enum Desktop {
+//    case cube(Config)
+//    case Tower(Config)
+//    case Rack(Config)
+//}
+//
+//let aTower = Desktop.Tower(selectGPU(selectCPU(selectRAM((0, "", "") as Config))))
+
+
+//infix operator <^> { associativity left }
+//
+//func <^>(a: Config, f: (Config) -> Config) -> Config {
+//    return f(a)
+//}
+
+
+//indirect enum ArithmeticExpression {
+//    case number(Int)
+//    case addition(ArithmeticExpression, ArithmeticExpression)
+//    case multiplication(ArithmeticExpression, ArithmeticExpression)
+//}
+//
+//let five = ArithmeticExpression.number(5)
+//let four = ArithmeticExpression.number(4)
+//let sum = ArithmeticExpression.addition(five, four)
+//let product = ArithmeticExpression.multiplication(sum, ArithmeticExpression.number(2))
+//
+//func evaluate(_ expression: ArithmeticExpression) ->Int {
+//    switch expression {
+//    case let .number(value):
+//        return value
+//    case let .addition(left, right):
+//        return evaluate(left) + evaluate(right)
+//    case let .multiplication(left, right):
+//        return evaluate(left) * evaluate(right)
+//    }
+//}
+
+//struct FixedLengthRange {
+//    var firstValue: Int
+//    let length: Int
+//}
+//
+//let fixed = FixedLengthRange(firstValue: 0, length: 0)
+//
+//print(fixed.length)
+//
+//
+
+
+class DataImporter {
+    
+    var filename = "data.txt"
+    
 }
 
+class DataManager {
+    
+  lazy var impo
+    
+}
 
 
 
