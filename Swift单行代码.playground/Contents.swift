@@ -139,6 +139,16 @@ swap(&s1, b: &s2)
 print(s1)
 print(s2)
 
+infix operator |> { associativity left precedence 80}
+func |> <T, U>(value: T, function: (T -> U)) -> U {
+    return function(value)
+}
+
+
+infix operator >> { associativity left }
+func >> <T1, T2, T3> (left: (T1)->T2, right: (T2)->T3) -> (T1)->T3 {
+    return { (t1: T1) -> T3 in return right(left(t1)) }
+}
 
 
 
