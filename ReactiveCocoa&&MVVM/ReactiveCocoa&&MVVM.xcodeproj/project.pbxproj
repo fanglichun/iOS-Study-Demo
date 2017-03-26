@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		96457BA57E29F37E0DDE37B2 /* libPods-ReactiveCocoa&&MVVMTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9106A553779045F70748172 /* libPods-ReactiveCocoa&&MVVMTests.a */; };
 		A6EB3F146A99915492EB8F68 /* libPods-ReactiveCocoa&&MVVM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 758656BD28AB05BA8386B5CC /* libPods-ReactiveCocoa&&MVVM.a */; };
+		D9604BBD1E86A527004CDD0F /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D9604BBC1E86A527004CDD0F /* ViewModel.m */; };
+		D9604BC11E86BEBC004CDD0F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9604BBF1E86BEBC004CDD0F /* LoginViewController.m */; };
+		D9604BC61E86BF76004CDD0F /* 001.png in Resources */ = {isa = PBXBuildFile; fileRef = D9604BC41E86BF76004CDD0F /* 001.png */; };
+		D9604BC71E86BF76004CDD0F /* 003.png in Resources */ = {isa = PBXBuildFile; fileRef = D9604BC51E86BF76004CDD0F /* 003.png */; };
+		D9604BCB1E8769FF004CDD0F /* ReactiveCocoaClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D9604BCA1E8769FF004CDD0F /* ReactiveCocoaClass.m */; };
 		D9AF6A241E86706C00D86B62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AF6A231E86706C00D86B62 /* main.m */; };
 		D9AF6A271E86706C00D86B62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AF6A261E86706C00D86B62 /* AppDelegate.m */; };
 		D9AF6A2A1E86706C00D86B62 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9AF6A291E86706C00D86B62 /* ViewController.m */; };
@@ -35,6 +40,14 @@
 		A9106A553779045F70748172 /* libPods-ReactiveCocoa&&MVVMTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactiveCocoa&&MVVMTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8CBB49923B19CE0E30BA630 /* Pods-ReactiveCocoa&&MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveCocoa&&MVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveCocoa&&MVVM/Pods-ReactiveCocoa&&MVVM.release.xcconfig"; sourceTree = "<group>"; };
 		D94A24FD1E86903100783FDF /* ReactiveCocoa&&MVVM.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactiveCocoa&&MVVM.pch"; sourceTree = "<group>"; };
+		D9604BBB1E86A527004CDD0F /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
+		D9604BBC1E86A527004CDD0F /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
+		D9604BBE1E86BEBC004CDD0F /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		D9604BBF1E86BEBC004CDD0F /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		D9604BC41E86BF76004CDD0F /* 001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 001.png; sourceTree = "<group>"; };
+		D9604BC51E86BF76004CDD0F /* 003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 003.png; sourceTree = "<group>"; };
+		D9604BC91E8769FF004CDD0F /* ReactiveCocoaClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactiveCocoaClass.h; sourceTree = "<group>"; };
+		D9604BCA1E8769FF004CDD0F /* ReactiveCocoaClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactiveCocoaClass.m; sourceTree = "<group>"; };
 		D9AF6A1F1E86706C00D86B62 /* ReactiveCocoa&&MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReactiveCocoa&&MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9AF6A231E86706C00D86B62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D9AF6A251E86706C00D86B62 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -93,6 +106,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D9604BBA1E86A518004CDD0F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D9604BBB1E86A527004CDD0F /* ViewModel.h */,
+				D9604BBC1E86A527004CDD0F /* ViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		D9604BC31E86BF5D004CDD0F /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				D9604BC41E86BF76004CDD0F /* 001.png */,
+				D9604BC51E86BF76004CDD0F /* 003.png */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		D9604BC81E8769D2004CDD0F /* ReactiveBasicOperation */ = {
+			isa = PBXGroup;
+			children = (
+				D9604BC91E8769FF004CDD0F /* ReactiveCocoaClass.h */,
+				D9604BCA1E8769FF004CDD0F /* ReactiveCocoaClass.m */,
+			);
+			name = ReactiveBasicOperation;
+			sourceTree = "<group>";
+		};
 		D9AF6A161E86706C00D86B62 = {
 			isa = PBXGroup;
 			children = (
@@ -116,10 +156,14 @@
 		D9AF6A211E86706C00D86B62 /* ReactiveCocoa&&MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				D9604BC81E8769D2004CDD0F /* ReactiveBasicOperation */,
+				D9604BBA1E86A518004CDD0F /* ViewModel */,
 				D9AF6A251E86706C00D86B62 /* AppDelegate.h */,
 				D9AF6A261E86706C00D86B62 /* AppDelegate.m */,
 				D9AF6A281E86706C00D86B62 /* ViewController.h */,
 				D9AF6A291E86706C00D86B62 /* ViewController.m */,
+				D9604BBE1E86BEBC004CDD0F /* LoginViewController.h */,
+				D9604BBF1E86BEBC004CDD0F /* LoginViewController.m */,
 				D9AF6A2B1E86706C00D86B62 /* Main.storyboard */,
 				D9AF6A311E86706C00D86B62 /* Assets.xcassets */,
 				D9AF6A331E86706C00D86B62 /* LaunchScreen.storyboard */,
@@ -133,6 +177,7 @@
 		D9AF6A221E86706C00D86B62 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D9604BC31E86BF5D004CDD0F /* Image */,
 				D9AF6A231E86706C00D86B62 /* main.m */,
 				D94A24FD1E86903100783FDF /* ReactiveCocoa&&MVVM.pch */,
 			);
@@ -240,7 +285,9 @@
 			files = (
 				D9AF6A351E86706C00D86B62 /* LaunchScreen.storyboard in Resources */,
 				D9AF6A321E86706C00D86B62 /* Assets.xcassets in Resources */,
+				D9604BC71E86BF76004CDD0F /* 003.png in Resources */,
 				D9AF6A2D1E86706C00D86B62 /* Main.storyboard in Resources */,
+				D9604BC61E86BF76004CDD0F /* 001.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,8 +400,11 @@
 			files = (
 				D9AF6A301E86706C00D86B62 /* ReactiveCocoa__MVVM.xcdatamodeld in Sources */,
 				D9AF6A2A1E86706C00D86B62 /* ViewController.m in Sources */,
+				D9604BC11E86BEBC004CDD0F /* LoginViewController.m in Sources */,
+				D9604BBD1E86A527004CDD0F /* ViewModel.m in Sources */,
 				D9AF6A271E86706C00D86B62 /* AppDelegate.m in Sources */,
 				D9AF6A241E86706C00D86B62 /* main.m in Sources */,
+				D9604BCB1E8769FF004CDD0F /* ReactiveCocoaClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,8 +7,18 @@
 //
 
 #import "ViewController.h"
+#import "ViewModel.h"
+#import "LoginViewController.h"
+#import "ReactiveCocoaClass.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
+
+@property (strong, nonatomic) ViewModel *viewModel;
+
 
 @end
 
@@ -16,20 +26,118 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    //[self uppercaseString];
-    //[self uppercaseString1];
-    //[self signalSwitch];
-    //[self combiningLatest];
-    //[self merge];
+    
+    [self bindModel];
+    
+    [self onClick];
+    
+    ReactiveCocoaClass *object = [[ReactiveCocoaClass alloc]init];
+    [object sequence];
+    
+    
+    
+    
+}
+
+- (void)bindModel {
+    
+    self.viewModel = [[ViewModel alloc]init];
+    
+    RAC(self.viewModel, userName) = self.userNameTextField.rac_textSignal;
+    RAC(self.viewModel, password) = self.passwordTextField.rac_textSignal;
+    RAC(self.loginButton, enabled) = [self.viewModel buttonIsValid];
+    
+    @weakify(self);
+    
+    //成功登录
+    [self.viewModel.successObject subscribeNext:^(NSArray *x) {
+        @strongify(self);
+        LoginViewController *loginVC = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"LoginSuccessViewController"];
+        loginVC.userName = x[0];
+        loginVC.password = x[1];
+        [self presentViewController:loginVC animated:true completion:^{
+        }];
+    }];
+    
+    //登录失败
+    [self.viewModel.failureObject subscribeNext:^(id x) {
+        
+    }];
+    
+    //error
+    [self.viewModel.errorObject subscribeNext:^(id x) {
+        
+    }];
+}
+
+- (void)onClick {
+    [[self.loginButton rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+        [_viewModel login];
+    }];
+    
+}
+
+- (void)inputTextFilter {
+    [self.userNameTextField.rac_textSignal filter:^BOOL(NSString *value) {
+        return  value.length > 5;
+    }];
+    
+    [[self.passwordTextField.rac_textSignal filter:^BOOL(id value) {
+        NSString *text = value;
+        return  text.length > 5;
+    }] subscribeNext:^(id x) {
+        NSLog(@">=%@", x);
+    }];
+}
+
+-(void)inputTextViewObserv {
+    [_userNameTextField.rac_textSignal subscribeNext:^(id x) {
+        NSLog(@"first---%@", x);
+    }];
+}
+
+//映射和过滤
+- (void)mapAndFilter {
+    //映射
+    [[[_userNameTextField.rac_textSignal
+       map:^id(NSString * value) {
+           return @(value.length);
+       }]
+      filter:^BOOL(NSNumber * value) {
+          return [value integerValue] > 5;
+      }]
+     subscribeNext:^(id x) {
+         NSLog(@"%@", x);
+     }];
+}
+
+//RAC的使用
+- (void)userRACSetValue {
+    //当输入长度超过5时，使用RAC()使背景颜色变化
+    RAC(self.view, backgroundColor) = [_userNameTextField.rac_textSignal map:^id(NSString * value) {
+        return value.length > 5 ? [UIColor yellowColor] : [UIColor greenColor];
+    }];
+}
+
+- (void)combineLatestTextField {
+    __weak ViewController *copy_self = self;
+    //把两个输入框的信号合并成一个信号量，并把其用来改变button的可用性
+    RAC(self.loginButton, enabled) = [RACSignal
+                                      combineLatest:@[copy_self.userNameTextField.rac_textSignal,
+                                                      copy_self.passwordTextField.rac_textSignal]
+                                      reduce:^(NSString *userName, NSString *password) {
+                                          return @(userName.length > 0 && password.length > 0);
+                                      }];
+    
+}
+
+- (IBAction)tapGestureRecognizer:(id)sender {
+    
+    [self.view endEditing:true];
     
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 - (void)signalSwitch {
     

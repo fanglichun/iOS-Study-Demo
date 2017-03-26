@@ -1,0 +1,36 @@
+//
+//  ReactiveCocoaClass.h
+//  ReactiveCocoa&&MVVM
+//
+//  Created by mfang032 on 26/03/2017.
+//  Copyright © 2017 mfang032. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface ReactiveCocoaClass : NSObject
+
+- (void)uppercaseString;
+
+- (void)signalSwitch;
+
+- (void)combiningLatest;
+
+- (void)sequence;
+
+- (void)subscribeNext;
+
+- (void)doNextThen;
+
+
+- (void) flatten;
+
+- (void)flattenMap;
+
+
+
+
+
+
+
+@end
