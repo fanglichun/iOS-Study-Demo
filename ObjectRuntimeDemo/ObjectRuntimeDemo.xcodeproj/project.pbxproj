@@ -14,6 +14,9 @@
 		D9604BE51E876DAC004CDD0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9604BE41E876DAC004CDD0F /* Assets.xcassets */; };
 		D9604BE81E876DAC004CDD0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9604BE61E876DAC004CDD0F /* LaunchScreen.storyboard */; };
 		D9604BF31E876DAC004CDD0F /* ObjectRuntimeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9604BF21E876DAC004CDD0F /* ObjectRuntimeDemoTests.m */; };
+		D9604C001E877054004CDD0F /* RuntimeKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D9604BFF1E877054004CDD0F /* RuntimeKit.m */; };
+		D9604C041E87706F004CDD0F /* TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D9604C031E87706F004CDD0F /* TestClass.m */; };
+		D9604C0D1E877178004CDD0F /* NSObject+TestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D9604C0C1E877178004CDD0F /* NSObject+TestClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		D9604BEE1E876DAC004CDD0F /* ObjectRuntimeDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectRuntimeDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9604BF21E876DAC004CDD0F /* ObjectRuntimeDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectRuntimeDemoTests.m; sourceTree = "<group>"; };
 		D9604BF41E876DAC004CDD0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9604BFE1E877054004CDD0F /* RuntimeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimeKit.h; sourceTree = "<group>"; };
+		D9604BFF1E877054004CDD0F /* RuntimeKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimeKit.m; sourceTree = "<group>"; };
+		D9604C021E87706F004CDD0F /* TestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestClass.h; sourceTree = "<group>"; };
+		D9604C031E87706F004CDD0F /* TestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestClass.m; sourceTree = "<group>"; };
+		D9604C0B1E877178004CDD0F /* NSObject+TestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+TestClass.h"; sourceTree = "<group>"; };
+		D9604C0C1E877178004CDD0F /* NSObject+TestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TestClass.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,8 @@
 		D9604BD71E876DAC004CDD0F /* ObjectRuntimeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D9604C011E87705E004CDD0F /* TestClass */,
+				D9604BFD1E877043004CDD0F /* Runtime */,
 				D9604BDB1E876DAC004CDD0F /* AppDelegate.h */,
 				D9604BDC1E876DAC004CDD0F /* AppDelegate.m */,
 				D9604BDE1E876DAC004CDD0F /* ViewController.h */,
@@ -109,6 +120,26 @@
 				D9604BF41E876DAC004CDD0F /* Info.plist */,
 			);
 			path = ObjectRuntimeDemoTests;
+			sourceTree = "<group>";
+		};
+		D9604BFD1E877043004CDD0F /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				D9604BFE1E877054004CDD0F /* RuntimeKit.h */,
+				D9604BFF1E877054004CDD0F /* RuntimeKit.m */,
+			);
+			name = Runtime;
+			sourceTree = "<group>";
+		};
+		D9604C011E87705E004CDD0F /* TestClass */ = {
+			isa = PBXGroup;
+			children = (
+				D9604C021E87706F004CDD0F /* TestClass.h */,
+				D9604C031E87706F004CDD0F /* TestClass.m */,
+				D9604C0B1E877178004CDD0F /* NSObject+TestClass.h */,
+				D9604C0C1E877178004CDD0F /* NSObject+TestClass.m */,
+			);
+			name = TestClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,9 +246,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9604C0D1E877178004CDD0F /* NSObject+TestClass.m in Sources */,
+				D9604C041E87706F004CDD0F /* TestClass.m in Sources */,
 				D9604BE01E876DAC004CDD0F /* ViewController.m in Sources */,
 				D9604BDD1E876DAC004CDD0F /* AppDelegate.m in Sources */,
 				D9604BDA1E876DAC004CDD0F /* main.m in Sources */,
+				D9604C001E877054004CDD0F /* RuntimeKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
