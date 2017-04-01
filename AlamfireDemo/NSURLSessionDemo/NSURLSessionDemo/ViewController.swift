@@ -14,7 +14,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let session: URLSession = URLSession.shared
+        
+//        let defaultSessionConfiguration = URLSessionConfiguration.default
+//        let ephemeralSesssionConfiguration  = URLSessionConfiguration.ephemeral
+//        let backgroundSessionConfiguration = URLSessionConfiguration.background(withIdentifier: "test")
         
         
         
@@ -28,3 +31,35 @@ class ViewController: UIViewController {
 
 }
 
+
+extension ViewController {
+    
+    func query(_ parameters: [String: AnyObject]) -> String {
+        
+        var components: [(String, AnyObject)] = []
+        for key in parameters.keys.sorted(by: <) {
+            let value = parameters[key]
+        }
+        return ""
+    }
+    
+    func  queryComponents(key: String, _ value: AnyObject) -> [(String, String)] {
+        var components: [(String, String)] = []
+        if let dictionary = value as? [String: AnyObject] {
+            
+        } else if let array = value as? [AnyObject] {
+            
+            
+        } else {
+            //components.append(<#T##newElement: (String, String)##(String, String)#>)
+        }
+        return components
+    }
+    
+    func escape(string: String) -> String {
+        let generalDelimitersToEncode = ":#[]@"
+        let subDelimitersToEncode = "!$&'()*+,;="
+        
+        return ""
+    }
+}
