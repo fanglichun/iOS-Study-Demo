@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Mapkit&#x4f7f;&#x7528;/ViewController.swift"
+            timestampString = "513527281.91084"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
+            landmarkName = "ViewController"
+            landmarkType = "4">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mapkit&#x4f7f;&#x7528;.ViewController.locationManager (__ObjC.CLLocationManager, didUpdateLocations : Swift.Array&lt;__ObjC.CLLocation&gt;) -&gt; ()"
+                  moduleName = "Mapkit&#x4f7f;&#x7528;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mfang032/iOS-Study-Demo/MapDemo/Mapkit%E4%BD%BF%E7%94%A8/Mapkit%E4%BD%BF%E7%94%A8/ViewController.swift"
+                  timestampString = "513527335.906405"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "175"
+                  endingLineNumber = "175"
+                  offsetFromSymbolStart = "89">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Mapkit&#x4f7f;&#x7528;.ViewController.locationManager (__ObjC.CLLocationManager, didUpdateLocations : Swift.Array&lt;__ObjC.CLLocation&gt;) -&gt; ()"
+                  moduleName = "Mapkit&#x4f7f;&#x7528;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mfang032/iOS-Study-Demo/MapDemo/Mapkit%E4%BD%BF%E7%94%A8/Mapkit%E4%BD%BF%E7%94%A8/ViewController.swift"
+                  timestampString = "513527335.908561"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "175"
+                  endingLineNumber = "175"
+                  offsetFromSymbolStart = "249">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

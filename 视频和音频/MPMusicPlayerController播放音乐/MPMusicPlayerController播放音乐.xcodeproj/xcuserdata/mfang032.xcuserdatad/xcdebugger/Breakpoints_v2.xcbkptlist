@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MPMusicPlayerController&#x64ad;&#x653e;&#x97f3;&#x4e50;/ViewController.swift"
+            timestampString = "514262798.279618"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "mediaPicker(_:didPickMediaItems:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MPMusicPlayerController&#x64ad;&#x653e;&#x97f3;&#x4e50;.ViewController.mediaPicker (__ObjC.MPMediaPickerController, didPickMediaItems : __ObjC.MPMediaItemCollection) -&gt; ()"
+                  moduleName = "MPMusicPlayerController&#x64ad;&#x653e;&#x97f3;&#x4e50;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mfang032/iOS-Study-Demo/%E8%A7%86%E9%A2%91%E5%92%8C%E9%9F%B3%E9%A2%91/MPMusicPlayerController%E6%92%AD%E6%94%BE%E9%9F%B3%E4%B9%90/MPMusicPlayerController%E6%92%AD%E6%94%BE%E9%9F%B3%E4%B9%90/ViewController.swift"
+                  timestampString = "514262880.937511"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MPMusicPlayerController&#x64ad;&#x653e;&#x97f3;&#x4e50;.ViewController.mediaPicker (__ObjC.MPMediaPickerController, didPickMediaItems : __ObjC.MPMediaItemCollection) -&gt; ()"
+                  moduleName = "MPMusicPlayerController&#x64ad;&#x653e;&#x97f3;&#x4e50;"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mfang032/iOS-Study-Demo/%E8%A7%86%E9%A2%91%E5%92%8C%E9%9F%B3%E9%A2%91/MPMusicPlayerController%E6%92%AD%E6%94%BE%E9%9F%B3%E4%B9%90/MPMusicPlayerController%E6%92%AD%E6%94%BE%E9%9F%B3%E4%B9%90/ViewController.swift"
+                  timestampString = "514262880.940048"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "396">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent
+                     consoleCommand = "">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

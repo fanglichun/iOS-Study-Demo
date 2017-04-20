@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04a-4t-6AD">
+                                <rect key="frame" x="87" y="318" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.34901960780000002" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2N0-1H-Xaj"/>
+                                    <constraint firstAttribute="width" constant="200" id="jVK-uW-SwQ"/>
+                                </constraints>
+                                <state key="normal" title="添加source事件">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showSource:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wvx-4U-aoh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ust-nc-EVz">
+                                <rect key="frame" x="87.5" y="378" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.34901960780000002" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="vW6-T2-puC"/>
+                                    <constraint firstAttribute="height" constant="30" id="zOd-VX-kAR"/>
+                                </constraints>
+                                <state key="normal" title="添加Time">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addTime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wBO-Fo-Jxw"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bXA-61-Cc6" userLabel="descTextView">
+                                <rect key="frame" x="16" y="50" width="343" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ust-nc-EVz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="01W-ni-oFQ"/>
+                            <constraint firstAttribute="trailing" secondItem="bXA-61-Cc6" secondAttribute="trailing" constant="16" id="BBB-8X-lNb"/>
+                            <constraint firstItem="bXA-61-Cc6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GVs-9q-5dZ"/>
+                            <constraint firstItem="bXA-61-Cc6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="KgR-is-3vo"/>
+                            <constraint firstItem="04a-4t-6AD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VTe-5g-hal"/>
+                            <constraint firstItem="bXA-61-Cc6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="om6-vn-OdY"/>
+                            <constraint firstItem="Ust-nc-EVz" firstAttribute="top" secondItem="04a-4t-6AD" secondAttribute="bottom" constant="30" id="tqx-a3-RjP"/>
+                            <constraint firstItem="04a-4t-6AD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vME-4g-kQW"/>
+                            <constraint firstItem="04a-4t-6AD" firstAttribute="top" secondItem="bXA-61-Cc6" secondAttribute="bottom" constant="140" id="ym8-vb-7YB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="bXA-61-Cc6" id="KEc-j2-mW3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="102.99850074962519"/>
+        </scene>
+    </scenes>
+</document>

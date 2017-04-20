@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3hT-QE-9iW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AVAudioPlayer_音乐播放" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="Te3-Pw-swh">
+                                <rect key="frame" x="0.0" y="64" width="375" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="WeV-Un-0K6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="歌手名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6r-Tg-alJ" userLabel="singerName">
+                                <rect key="frame" x="16" y="384" width="70" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="C2y-Ij-8l7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2M-Hk-F3q" userLabel="download">
+                                <rect key="frame" x="277" y="383" width="16" height="22"/>
+                                <state key="normal" image="bookmark_outline"/>
+                                <connections>
+                                    <action selector="download:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9fG-Rw-XFV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVD-ZQ-WZd" userLabel="favoriate">
+                                <rect key="frame" x="343" y="378" width="16" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="EmM-BC-hlR"/>
+                                </constraints>
+                                <state key="normal" image="bookmark_outline"/>
+                                <connections>
+                                    <action selector="favoriate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ekh-6j-L8a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MF1-CO-MIq" userLabel="play">
+                                <rect key="frame" x="155" y="447" width="64" height="64"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.34901960780000002" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="aBB-U3-e9G"/>
+                                    <constraint firstAttribute="height" constant="64" id="jkb-eb-Lgv"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="play-button"/>
+                                <connections>
+                                    <action selector="playClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="naQ-sA-SQe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7E4-Ph-RhJ" userLabel="back">
+                                <rect key="frame" x="83" y="463" width="32" height="32"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.34901960780000002" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="previous"/>
+                                <connections>
+                                    <action selector="back:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ijO-kw-df2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IaY-wA-ouR" userLabel="forward">
+                                <rect key="frame" x="259" y="463" width="32" height="32"/>
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.34901960780000002" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="fast-forward"/>
+                                <connections>
+                                    <action selector="forward:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YLV-MH-tg7"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1w5-2m-yWT">
+                                <rect key="frame" x="0.0" y="425" width="375" height="2"/>
+                                <color key="progressTintColor" red="0.98823529409999999" green="0.34901960780000002" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="trackTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7E4-Ph-RhJ" firstAttribute="width" secondItem="MF1-CO-MIq" secondAttribute="width" multiplier="1:2" id="0oV-Es-iKL"/>
+                            <constraint firstItem="TVD-ZQ-WZd" firstAttribute="centerY" secondItem="e6r-Tg-alJ" secondAttribute="centerY" id="6uC-Eh-3II"/>
+                            <constraint firstItem="MF1-CO-MIq" firstAttribute="top" secondItem="1w5-2m-yWT" secondAttribute="bottom" constant="20" id="8AP-UN-THp"/>
+                            <constraint firstItem="IaY-wA-ouR" firstAttribute="height" secondItem="7E4-Ph-RhJ" secondAttribute="height" id="B5I-87-aFm"/>
+                            <constraint firstItem="IaY-wA-ouR" firstAttribute="centerY" secondItem="MF1-CO-MIq" secondAttribute="centerY" id="DFc-Ec-Mwh"/>
+                            <constraint firstAttribute="trailing" secondItem="TVD-ZQ-WZd" secondAttribute="trailing" constant="16" id="G1U-pT-qDE"/>
+                            <constraint firstItem="1w5-2m-yWT" firstAttribute="top" secondItem="e6r-Tg-alJ" secondAttribute="bottom" constant="20" id="RvV-zu-4i5"/>
+                            <constraint firstItem="7E4-Ph-RhJ" firstAttribute="centerY" secondItem="MF1-CO-MIq" secondAttribute="centerY" id="SR7-Xt-EEQ"/>
+                            <constraint firstItem="7E4-Ph-RhJ" firstAttribute="height" secondItem="MF1-CO-MIq" secondAttribute="height" multiplier="1:2" id="TQD-CD-pSm"/>
+                            <constraint firstItem="TVD-ZQ-WZd" firstAttribute="centerY" secondItem="p2M-Hk-F3q" secondAttribute="centerY" id="Umb-27-yVC"/>
+                            <constraint firstItem="IaY-wA-ouR" firstAttribute="leading" secondItem="MF1-CO-MIq" secondAttribute="trailing" constant="40" id="YUd-je-t5y"/>
+                            <constraint firstItem="Te3-Pw-swh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="a37-CE-niu"/>
+                            <constraint firstItem="MF1-CO-MIq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aAD-iq-IL4"/>
+                            <constraint firstItem="p2M-Hk-F3q" firstAttribute="centerY" secondItem="e6r-Tg-alJ" secondAttribute="centerY" id="aN3-zu-r34"/>
+                            <constraint firstItem="e6r-Tg-alJ" firstAttribute="top" secondItem="Te3-Pw-swh" secondAttribute="bottom" constant="20" id="aav-wI-p6F"/>
+                            <constraint firstItem="MF1-CO-MIq" firstAttribute="leading" secondItem="7E4-Ph-RhJ" secondAttribute="trailing" constant="40" id="e15-pS-5ke"/>
+                            <constraint firstItem="Te3-Pw-swh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fbb-LU-2to"/>
+                            <constraint firstItem="1w5-2m-yWT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gaw-BY-E8f"/>
+                            <constraint firstItem="e6r-Tg-alJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="isZ-4J-Gue"/>
+                            <constraint firstItem="1w5-2m-yWT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jpG-ve-eFN"/>
+                            <constraint firstItem="TVD-ZQ-WZd" firstAttribute="leading" secondItem="p2M-Hk-F3q" secondAttribute="trailing" constant="50" id="nDC-2h-7p0"/>
+                            <constraint firstAttribute="trailing" secondItem="Te3-Pw-swh" secondAttribute="trailing" id="pvh-b8-cQk"/>
+                            <constraint firstItem="Te3-Pw-swh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="smI-rm-GgC"/>
+                            <constraint firstItem="IaY-wA-ouR" firstAttribute="width" secondItem="7E4-Ph-RhJ" secondAttribute="width" id="xcW-Zx-ki0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SZZ-Cb-JTY"/>
+                    <connections>
+                        <outlet property="playPauseButton" destination="MF1-CO-MIq" id="APc-d9-gVb"/>
+                        <outlet property="playerProgress" destination="1w5-2m-yWT" id="zrT-2Q-Jrd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852" y="-153.37331334332833"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dLV-M1-5D5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3hT-QE-9iW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="atF-G7-ayL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Lw9-KD-aQK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="efI-Qs-V1l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25" y="-153"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="1366" height="768"/>
+        <image name="bookmark_outline" width="16" height="16"/>
+        <image name="fast-forward" width="32" height="32"/>
+        <image name="play-button" width="64" height="64"/>
+        <image name="previous" width="32" height="32"/>
+    </resources>
+</document>

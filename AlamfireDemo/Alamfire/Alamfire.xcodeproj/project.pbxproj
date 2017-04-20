@@ -15,6 +15,7 @@
 		D97B88C31E8E2B7900A49C7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D97B88C21E8E2B7900A49C7B /* Assets.xcassets */; };
 		D97B88C61E8E2B7900A49C7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D97B88C41E8E2B7900A49C7B /* LaunchScreen.storyboard */; };
 		D97B88D11E8E2B7A00A49C7B /* AlamfireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97B88D01E8E2B7A00A49C7B /* AlamfireTests.swift */; };
+		D9EBFD241E9CA6DF00EA90D7 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EBFD231E9CA6DF00EA90D7 /* ServiceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		D97B88CC1E8E2B7A00A49C7B /* AlamfireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlamfireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D97B88D01E8E2B7A00A49C7B /* AlamfireTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamfireTests.swift; sourceTree = "<group>"; };
 		D97B88D21E8E2B7A00A49C7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9EBFD231E9CA6DF00EA90D7 /* ServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		E8825CB419492AA392F55C09 /* Pods-Alamfire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alamfire.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alamfire/Pods-Alamfire.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +113,7 @@
 			children = (
 				D97B88BB1E8E2B7900A49C7B /* AppDelegate.swift */,
 				D97B88BD1E8E2B7900A49C7B /* ViewController.swift */,
+				D9EBFD231E9CA6DF00EA90D7 /* ServiceManager.swift */,
 				D97B88BF1E8E2B7900A49C7B /* Main.storyboard */,
 				D97B88C21E8E2B7900A49C7B /* Assets.xcassets */,
 				D97B88C41E8E2B7900A49C7B /* LaunchScreen.storyboard */,
@@ -334,6 +337,7 @@
 			files = (
 				D97B88BE1E8E2B7900A49C7B /* ViewController.swift in Sources */,
 				D97B88BC1E8E2B7900A49C7B /* AppDelegate.swift in Sources */,
+				D9EBFD241E9CA6DF00EA90D7 /* ServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +478,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A5FBBC443F3DDBF2A60689C2 /* Pods-Alamfire.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SQ372R9AF7;
 				INFOPLIST_FILE = Alamfire/Info.plist;
@@ -488,6 +493,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E8825CB419492AA392F55C09 /* Pods-Alamfire.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SQ372R9AF7;
 				INFOPLIST_FILE = Alamfire/Info.plist;
@@ -549,6 +555,7 @@
 				D97B88D71E8E2B7A00A49C7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D97B88D81E8E2B7A00A49C7B /* Build configuration list for PBXNativeTarget "AlamfireTests" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +564,7 @@
 				D97B88DA1E8E2B7A00A49C7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2ps-px-WHe">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MPMusicPlayerController播放音乐" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twk-OL-T8Y">
+                                <rect key="frame" x="50" y="84" width="42" height="30"/>
+                                <state key="normal" title="select"/>
+                                <connections>
+                                    <action selector="selectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oKO-3K-oEW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LId-jp-PXk">
+                                <rect key="frame" x="50" y="156" width="42" height="30"/>
+                                <state key="normal" title="pause"/>
+                                <connections>
+                                    <action selector="pause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hqc-70-Plr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucb-TC-GYX">
+                                <rect key="frame" x="295" y="84" width="30" height="30"/>
+                                <state key="normal" title="play"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vgJ-NI-mRD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGQ-Ci-a1t">
+                                <rect key="frame" x="294" y="156" width="31" height="30"/>
+                                <state key="normal" title="stop"/>
+                                <connections>
+                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vZy-c1-XDA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fr5-NV-ygc">
+                                <rect key="frame" x="50" y="230" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xkm-i7-8V3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evw-bE-Iei">
+                                <rect key="frame" x="280" y="230" width="59" height="30"/>
+                                <state key="normal" title="previous"/>
+                                <connections>
+                                    <action selector="previous:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wKu-sK-McJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="evw-bE-Iei" firstAttribute="top" secondItem="HGQ-Ci-a1t" secondAttribute="bottom" constant="44" id="6wt-Sz-DNj"/>
+                            <constraint firstItem="HGQ-Ci-a1t" firstAttribute="centerY" secondItem="LId-jp-PXk" secondAttribute="centerY" id="8xx-31-Ch0"/>
+                            <constraint firstItem="LId-jp-PXk" firstAttribute="top" secondItem="twk-OL-T8Y" secondAttribute="bottom" constant="42" id="9R1-vS-QuN"/>
+                            <constraint firstItem="twk-OL-T8Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="AqV-ed-Xjc"/>
+                            <constraint firstItem="evw-bE-Iei" firstAttribute="centerX" secondItem="HGQ-Ci-a1t" secondAttribute="centerX" id="DgD-DC-Srf"/>
+                            <constraint firstItem="fr5-NV-ygc" firstAttribute="leading" secondItem="LId-jp-PXk" secondAttribute="leading" id="LRh-WB-MvA"/>
+                            <constraint firstItem="twk-OL-T8Y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="VB1-mu-Heb"/>
+                            <constraint firstItem="LId-jp-PXk" firstAttribute="leading" secondItem="twk-OL-T8Y" secondAttribute="leading" id="kqU-9J-GkP"/>
+                            <constraint firstItem="ucb-TC-GYX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="ncO-PP-MWc"/>
+                            <constraint firstItem="evw-bE-Iei" firstAttribute="top" secondItem="HGQ-Ci-a1t" secondAttribute="bottom" constant="44" id="qr9-Y5-1Zc"/>
+                            <constraint firstAttribute="trailing" secondItem="HGQ-Ci-a1t" secondAttribute="trailing" constant="50" id="u5Y-SS-ane"/>
+                            <constraint firstAttribute="trailing" secondItem="ucb-TC-GYX" secondAttribute="trailing" constant="50" id="udS-e2-Wph"/>
+                            <constraint firstItem="fr5-NV-ygc" firstAttribute="top" secondItem="LId-jp-PXk" secondAttribute="bottom" constant="44" id="yNw-jd-LDM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Ax-aG-CTI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="968.79999999999995" y="56.221889055472268"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UGa-Pu-Ce9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2ps-px-WHe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="chS-YC-foD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="EhM-gi-b3I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XNI-yp-gvc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.600000000000001" y="710.19490254872574"/>
+        </scene>
+    </scenes>
+</document>
