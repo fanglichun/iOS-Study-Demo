@@ -41,7 +41,6 @@ class ViewController: UIViewController {
         
 //        authorizate()
         
-        URLRequest
     
     }
     
@@ -55,7 +54,7 @@ class ViewController: UIViewController {
 extension ViewController {
     
     
-    func ncodingParameters() {
+    func encodingParameters() {
         let url = URL(string: "https://httpbin.org/get")
         let urlRequest = URLRequest(url: url!)
         let parameter: Parameters = ["name": ""]
