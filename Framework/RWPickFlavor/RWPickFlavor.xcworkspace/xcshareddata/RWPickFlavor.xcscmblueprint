@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5CC5EB26090AB4E723AC1C228A37F0CACBD47B3A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5CC5EB26090AB4E723AC1C228A37F0CACBD47B3A" : 9223372036854775807,
+    "AE397EE5B49A7248C8A9E3765C445BC2C61FD6D6" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7E24EC6A-7EC9-4042-B99D-C5C2F16BF3B3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5CC5EB26090AB4E723AC1C228A37F0CACBD47B3A" : "RWPickFlavor\/",
+    "AE397EE5B49A7248C8A9E3765C445BC2C61FD6D6" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RWPickFlavor",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RWPickFlavor.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/fanglichun\/RWPodSpecs.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5CC5EB26090AB4E723AC1C228A37F0CACBD47B3A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/fanglichun\/iOS-Study-Demo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AE397EE5B49A7248C8A9E3765C445BC2C61FD6D6"
+    }
+  ]
+}

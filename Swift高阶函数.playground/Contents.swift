@@ -3,7 +3,7 @@
 import UIKit
 import Foundation
 
-func averageOfFunction(a: Double, b: Double, f: (Double -> Double)) ->Double {
+func averageOfFunction(a: Double, b: Double, f: ((Double) -> Double)) ->Double {
     
     return (f(a) + f(b)) / 2
 }
@@ -17,19 +17,20 @@ func cubic(b: Double) -> Double {
 }
 
 
-averageOfFunction(3, b: 4, f: square)
+averageOfFunction(a: 3, b: 4, f: square)
 
-print(averageOfFunction(3, b: 4, f: cubic))
+print(averageOfFunction(a: 3, b: 4, f: cubic))
 
-print(averageOfFunction(3, b: 4, f: { (x) -> Double in
+print(averageOfFunction(a: 3, b: 4, f: { (x) -> Double in
     return x * x
 }))
 
-print(averageOfFunction(3, b: 4, f: { (x) -> Double in
+print(averageOfFunction(a: 3, b: 4, f: { (x) -> Double in
     return x * x * x
 }))
 
-print(averageOfFunction(3, b: 4, f: {x in return x * x}))
+print(averageOfFunction(a: 3, b: 4, f: {x in return x * x}))
+
 
 
 
