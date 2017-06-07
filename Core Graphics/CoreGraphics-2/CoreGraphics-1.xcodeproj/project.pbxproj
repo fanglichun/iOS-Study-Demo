@@ -16,6 +16,7 @@
 		D9F6FD811ED086720072DFD3 /* PushButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F6FD801ED086720072DFD3 /* PushButtonView.swift */; };
 		D9F6FD831ED096EF0072DFD3 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F6FD821ED096EF0072DFD3 /* CounterView.swift */; };
 		D9F6FD851ED13A530072DFD3 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F6FD841ED13A530072DFD3 /* GraphView.swift */; };
+		D9F6FD871ED143AC0072DFD3 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F6FD861ED143AC0072DFD3 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		D9F6FD801ED086720072DFD3 /* PushButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushButtonView.swift; sourceTree = "<group>"; };
 		D9F6FD821ED096EF0072DFD3 /* CounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		D9F6FD841ED13A530072DFD3 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		D9F6FD861ED143AC0072DFD3 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				D9F6FD801ED086720072DFD3 /* PushButtonView.swift */,
 				D9F6FD821ED096EF0072DFD3 /* CounterView.swift */,
 				D9F6FD841ED13A530072DFD3 /* GraphView.swift */,
+				D9F6FD861ED143AC0072DFD3 /* GradientView.swift */,
 				D9F6FD641ED086570072DFD3 /* Main.storyboard */,
 				D9F6FD671ED086570072DFD3 /* Assets.xcassets */,
 				D9F6FD691ED086570072DFD3 /* LaunchScreen.storyboard */,
@@ -149,6 +152,7 @@
 		D9F6FD551ED086570072DFD3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MF;
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = mfang032;
@@ -212,6 +216,7 @@
 			files = (
 				D9F6FD851ED13A530072DFD3 /* GraphView.swift in Sources */,
 				D9F6FD631ED086570072DFD3 /* ViewController.swift in Sources */,
+				D9F6FD871ED143AC0072DFD3 /* GradientView.swift in Sources */,
 				D9F6FD811ED086720072DFD3 /* PushButtonView.swift in Sources */,
 				D9F6FD611ED086570072DFD3 /* AppDelegate.swift in Sources */,
 				D9F6FD831ED096EF0072DFD3 /* CounterView.swift in Sources */,
@@ -357,6 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SQ372R9AF7;
 				INFOPLIST_FILE = "CoreGraphics-1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pwc.RWPickFlavor.CoreGraphics-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -370,6 +376,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SQ372R9AF7;
 				INFOPLIST_FILE = "CoreGraphics-1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pwc.RWPickFlavor.CoreGraphics-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
