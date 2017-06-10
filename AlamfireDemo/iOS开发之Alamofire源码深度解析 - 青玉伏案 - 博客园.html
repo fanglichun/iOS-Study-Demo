@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>iOS开发之Alamofire源码深度解析 - 青玉伏案 - 博客园</title>
+<link type="text/css" rel="stylesheet" href="/bundles/blog-common.css?v=m_FXmwz3wxZoecUwNEK23PAzc-j9vbX_C6MblJ5ouMc1"/>
+<link id="MainCss" type="text/css" rel="stylesheet" href="/skins/CodingLife/bundle-CodingLife.css?v=s0uk-4nDGKcoZzCtu5RG1QHcsOLuk4tFWHoK2TgaeRE1"/>
+<link id="mobile-style" media="only screen and (max-width: 768px)" type="text/css" rel="stylesheet" href="/skins/CodingLife/bundle-CodingLife-mobile.css?v=svj45cmFr8dtGVB0Cq4o-6MjM6Bz3Y76mAYaZnSJon01"/>
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/ludashi/rss"/>
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/ludashi/rsd.xml"/>
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/ludashi/wlwmanifest.xml"/>
+<script src="//common.cnblogs.com/script/jquery.js" type="text/javascript"></script>  
+<script type="text/javascript">var currentBlogApp = 'ludashi', cb_enable_mathjax=true;var isLogined=false;</script>
+<script src="/bundles/blog-common.js?v=CPv0EEqm9L2aCgolHxaZfVYM6J-Sn5az_FJXbjzgr-o1" type="text/javascript"></script>
+</head>
+<body>
+<a name="top"></a>
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a id="lnkBlogLogo" href="http://www.cnblogs.com/ludashi/"><img id="blogLogo" src="/Skins/custom/images/logo.gif" alt="返回主页" /></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/ludashi/">青玉伏案的博客</a></h1>
+<h2>QQ群:310800319<br>
+https://github.com/lizelu</h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="http://www.cnblogs.com/">博客园</a></li>
+<li><a id="blog_nav_myhome" class="menu" href="http://www.cnblogs.com/ludashi/">首页</a></li>
+<li></li>
+<li><a id="blog_nav_contact" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/%E9%9D%92%E7%8E%89%E4%BC%8F%E6%A1%88">联系</a></li>
+<li><a id="blog_nav_rss" class="menu" href="http://www.cnblogs.com/ludashi/rss">订阅</a>
+<!--<a id="blog_nav_rss_image" class="aHeaderXML" href="http://www.cnblogs.com/ludashi/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a>--></li>
+<li><a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a></li>
+</ul>
+		<div class="blogStats">
+			
+			<div id="blog_stats">
+<span id="stats_post_count">随笔 - 212&nbsp; </span>
+<span id="stats_article_count">文章 - 0&nbsp; </span>
+<span id="stats-comment_count">评论 - 1053</span>
+</div>
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+<div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class = "post">
+		<h1 class = "postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/ludashi/p/5588044.html">iOS开发之Alamofire源码深度解析</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body"><p>今天博客中的Alamofire源码的版本是以<span class="pl-s"><span style="font-family: 'Microsoft YaHei'; font-size: 14pt; color: #ff6600;"><strong>3.4</strong></span>版本为例。</span>上篇博客系统的对<span style="color: #ff6600;">NSURLSession</span>相关的东西进行了详细的解析，详情请看《<span style="color: #ff6600;"><a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/ludashi/p/5556088.html"><span style="color: #ff6600;">详解NSURLSession</span></a></span>》，为了就是给本篇博客打下基础。因为<span style="color: #ff6600;">AlamoFire</span>就是对<span style="color: #ff6600;">NSURLSession</span>及其相关的东西进行了进一步的封装，让网络请求使用起来更为简单。本篇博客就详细的来窥探一下<span style="color: #ff6600;">AlamoFire</span>源码，主要来看一下AlamoFire是如何对<span style="color: #ff6600;">NSURLSession</span>进行封装的，并且来看一下在封装时使用了哪些Swift语言中的高级用法，也就是看一下Swift语言进一步的使用方法。</p>
+<p>当然<span style="color: #ff6600;">AlamoFire</span>是AF的Swift版本了，其中虽然是使用Swift语言实现的，但是实现思路与<span style="color: #ff6600;">AFNetWorking</span>大同小异。如果你之前阅读过<span style="color: #ff6600;">AFNetWorking</span>的源码，那么你对Alamofire的源码应该并不陌生，好多地方的实现思路是一致的。今天博客中不是教你如何去使用AlamoFire，而是告诉你Alamofire是如何实现的。本篇博客中的干货还是比较足的，关于<span style="color: #ff6600;">AlamoFire</span>的官方文档请移步<span style="color: #ff6600;"><a href="https://github.com/Alamofire/Alamofire" target="_blank"><span style="color: #ff6600;">Alamofire -- github链接</span></a></span>。</p>
+<p>下方第一部分的类图是在阅读AlamoFire源码时为了梳理每个结构间的关系画的一个简单的类图，下方的类图没有涵盖AlamoFire中所有的类，而是给出了核心部分的模块以及各个模块间的关系。接下来我们将对下方的模块进行拆分，然后各个击破。本篇博客的主题思路是先整体的看一下AlamoFire的组织架构，并解析每部分的关系。然后对每个模块进行详细的解析，在解析时我们会对一些Swift语言的知识点进行提取，然后将其进行剖析。</p>
+<p>&nbsp;</p>
+<h3><span style="color: #008080;">一.Alamofire核心模块概述</span></h3>
+<p>我们先整体上来看一下<span style="color: #ff6600;">AlamoFire</span>这个框架关系，概述一些核心模块。该部分我们先来看一下AlamoFire的文件组织结构，然后在给出这些文件组织结构中类的关系。所以在本部分类图是少不了的。废话少说，进入该部分的主题。</p>
+<h4><span style="color: #008080;">1.Alamofire的目录结构解析</span></h4>
+<p>首先我们来看一下AlamoFire的目录结构，从整体上来把控一下AlamoFire。下方截图是AlamoFire框架的所有文件，文件不算多，Alamofire框架的源代码并不算多，所有理清Alamofire的框架结构还是不难的。下方截图中是AlamoFire中的所有文件，Core文件夹下是Alamofire的核心文件，Features主要是对核心文件的扩展。今天我们就以核心文件为主，Feature文件为辅来窥探一下AlamoFire框架的源码。</p>
+<p>下方是对<span style="color: #ff6600;">Core</span>文件夹下的各个文件的功能简述：</p>
+<ul>
+<li>
+<blockquote><span style="color: #ff6600;">Alamofire.swift</span> ---- 该文件中主要是给用户提供一些便利的调用方法，用户可以直接调用该文件中的便利方法来使用Alamofire相关功能。</blockquote>
+</li>
+<li>
+<blockquote><span style="color: #ff6600;">Manager.swift</span> ---- Manager中定义了Session对象，Session相关的Delegate，以及Delegate执行的队列等相关信息，在Manager中创建Request对象发起请求。Manager管理的就是各种请求，Manager对象是以单例的形式对外开放的。</blockquote>
+</li>
+<li>
+<blockquote><span style="color: #ff6600;">Request.swift</span> ---- 该文件如其名，就是负责创建Session的各种task的，并执行相关的SessionTask，并调用相关书籍解析的功能模块对数据进行解析并通过回调返回给用户。</blockquote>
+</li>
+<li>
+<blockquote><span style="color: #ff6600;">ParameterEncoding.swift</span> ---- 负责请求参数的各种编码（<span style="color: #008080;">URL、URLEncodedInURL、JSON、PropertyList</span>等编码），并将编码后的数据与URLRequest结合后的结果进行返回。</blockquote>
+</li>
+<li>
+<blockquote><span style="color: #ff6600;">Result.swift</span> ---- 对解析后的数据封装成Result对象。</blockquote>
+</li>
+<li>
+<blockquote><span style="color: #ff6600;">Response.swift</span> ----<span style="color: #ff0000;"> 负责将服务器相应的数据进行封装生成Response对象，该对象中就包括上述的Result对象，用户最终会通过闭包回调的形式获取到该Response的对象。</span></blockquote>
+</li>
+<li>
+<blockquote><span class="s1"><span style="color: #ff6600;">Notifications.swift</span> ---- 其中是一个Notification结构体，该结构体中定义了一些字符串，这些字符串就是所需通知的Key，当网络请求<span style="color: #ff6600;">DidResume、DidSuspend、DidCancel、DidComplete</span>都会发出通知。</span></blockquote>
+</li>
+<li>
+<blockquote><span class="s1"><span style="color: #ff6600;">Error.swift</span> ---- 其中是一个Error的结构体，其中封装的是各种错误状态。</span></blockquote>
+</li>
+</ul>
+<p><span class="s1"><span style="color: #ff6600;">Features</span>文件夹下各个文件的功能简述：</span></p>
+<ul>
+<li>
+<blockquote><span class="s1"><span class="s1"><span style="color: #ff6600;">Download.swift</span> ----- 对Manager和Request类进行扩展，使其支持Down Task，其中封装了</span></span><span class="s1"><span style="color: #ff6600;">NSURLSessionDownloadDelegate</span>相关代理方法。</span></blockquote>
+</li>
+<li>
+<blockquote><span class="s1"><span class="s1"><span class="s1"><span style="color: #ff6600;">Upload.swift</span> ---- 在该文件中也是对Manager和Request类进行的扩展，使其支持Upload Task，其中封装了</span></span></span><span class="s1"><span class="s1">NSURLSessionDataDelegate中获取上传数据进度的代理方法，也就是</span></span><span class="s1"><span style="color: #ff6600;">taskDidSendBodyData</span>代理方法。</span></blockquote>
+</li>
+<li>
+<blockquote><span style="color: #ff6600;">MultipartFormData.swift</span> ---- 该文件从名字就可以看出是为了组织多表单数据上传的数据的，在Upload Task中就使用到了<span style="color: #ff6600;">MultipartFormData</span>。</blockquote>
+</li>
+<li>
+<blockquote><span class="s1"><span class="s1"><span style="color: #ff6600;">Stream.swift</span> ---- 和Download和Upload文件相似，该文件中也是对<span style="color: #ff6600;">Manager</span>和<span style="color: #ff6600;">Rquest</span>做延展，主要使其支持数据流的传输，其中主要封装和实现了</span></span><span class="s1"><span style="color: #ff6600;">NSURLSessionStreamDelegate</span>相关的代理方法。</span></blockquote>
+</li>
+<li>
+<blockquote><span class="s1"><span class="s1"><span style="color: #ff6600;">ResponseSerialization.swift</span> ---- 该文件中主要是对Request类进行数据解析的延展的。其中封装了各种对响应数据的解析方式，其中包括Data、String、JSON、<span class="s1">PropertyList</span></span></span><span class="s1">等解析方式。</span></blockquote>
+</li>
+<li>
+<blockquote><span class="s1"><span class="s1"><span style="color: #ff6600;">NetworkReachabilityManager.swift</span> ---- 该文件主要是对</span></span><span class="s1">SystemConfiguration</span><span class="s1"><span class="s1">.framework中的</span></span><span class="s1">SCNetworkReachability</span><span class="s1">相关的东西进行封装的，主要用来管理和监听网络状态的变化</span><span class="s1">。</span></blockquote>
+</li>
+<li>
+<blockquote><span class="s1"><span style="color: #ff6600;">ServerTrustPolicy.swift</span> ---- 这个文件主要是对NSURLSession做的延展，其中定义了各种网络请求的认证策略，主要证书认证相关东西。</span></blockquote>
+</li>
+<li>
+<blockquote><span class="s1"><span style="color: #ff6600;">Timeline.swift</span> ---- 该文件是为了方便调试而生的，其中记录了相关操作的时间点，并且对其进行记录，便于在Debug时使用到。</span></blockquote>
+</li>
+<li>
+<blockquote><span class="s1"><span style="color: #ff6600;">Validation.swift</span> ---- 主要是用来验证请求是否成功，如果出错了就做相应的处理。</span></blockquote>
+</li>
+</ul>
+<p><span class="s1">上面是AlamoFire中所有文件的概述，上面这些算是对AlamoFire框架有大概的了解吧。结合上方的概述，来研读AlamoFire源码还是比较清晰的。下方就是AlamoFire 3.4中相关文件的木头结构，如下所示：</span></p>
+<p>　　<img src="http://images2015.cnblogs.com/blog/545446/201606/545446-20160615162837370-931573636.png" alt="" width="269" height="479" /></p>
+<p>&nbsp;</p>
+<h4><span style="color: #008080;">2.核心类间的结构</span></h4>
+<p>上面简单的介绍了<span style="color: #ff6600;">Alamofire</span>框架的目录结构以及每个文件所负责的内容。接下来我们进入到各个文件的内部，来整体的看一下核心类之间的关系。下方是核心类的&ldquo;类图&rdquo;，当然下方只是核心类的。接下来来概述一下下方的类图，因为下图太大，在此看起来不太清楚，如果你感兴趣，你可以另存为，然后放大查看。</p>
+<ul>
+<li>
+<blockquote>下方黑框中的部分对应的就是Alamofire.swift中的内容。其中主要是一些URL转换字符串的延展以及<span style="color: #ff6600;">URLRequst</span>转换成<span style="color: #ff6600;">MutableURLRequest</span>的延展，还有一些用户使用的便利方法。</blockquote>
+</li>
+<li>
+<blockquote>黄框中就是我们<span style="color: #ff6600;">Manager.swift</span>中的内容了，<span style="color: #ff6600;">Manager</span>类的对象是以单例的形式对外展现的，上述黑框中的便利方法，主要是获取Manager类的单例，然后调用相应的方法。</blockquote>
+</li>
+<li>
+<blockquote>绿框中所对应的主要是<span style="color: #ff6600;">Request.Swift</span>和Features文件夹中的内容，主要是Request类及其延展，当然还有对<span style="color: #ff6600;">Manager</span>和<span style="color: #ff6600;">NSURLSession</span>的延展。</blockquote>
+</li>
+<li>
+<blockquote>红框中的就是网络请求会话的各种任务的回调方法的封装了，在这些回调方法中提供了默认实现，并对外留有回调块，以便让用户来自己实现这些回调方法。</blockquote>
+</li>
+</ul>
+<p>　　<img src="http://images2015.cnblogs.com/blog/545446/201606/545446-20160615155319026-200429460.png" alt="" width="941" height="581" /></p>
+<p>&nbsp;</p>
+<h3><span style="color: #008080;">二、Alamofire.swift源码解析</span></h3>
+<p>第一部分算是概览了一下Alamofire框架中的各个组成部分，接下来该进入到上述的各个模块中来进一步来窥探其实现和组织方式了。还是&ldquo;顺藤摸瓜&rdquo;，先从用户看的到的地方着手，然后层层深入，直到你看不见的地方。所以第二部分我们先来看一下<span style="color: #008080;"><strong>Alamofire.swift</strong></span>中的内容，因为该文件是Alamofire框架的入口。</p>
+<h4><span style="color: #008080;">1.Alamofire.swft中的类图结构</span></h4>
+<p>下方的类图就是第一部分类图中黑框的放大版，根据Alamofire.swift这个文件我们不难画出下方这个类图。有一点要说明的就是在类图中省略了一些遍历方法，只写了一些主要的，不过核心的功能还是有的。下方的<span class="s1"><span style="color: #ff6600;">URLStringConvertible</span>和</span><span class="s1"><span style="color: #ff6600;">URLRequestConvertible</span>是负责类型转换的接口，具体的请看下方的介绍。该文件中除了类型转换的方法外就是一些调用Manager的单例的便利方法了。</span></p>
+<p>　　<img src="http://images2015.cnblogs.com/blog/545446/201606/545446-20160616150136526-139203436.png" alt="" width="763" height="442" /></p>
+<h4><span style="color: #008080;">2.Alamofire.swift技术细节</span></h4>
+<p>下方就是<span class="s1"><span style="color: #ff6600;">URLStringConvertible</span>协议以及相关延展的具体实现，主要功能就是将<span style="color: #ff6600;">String、NSURL、NSURLComponents、NSURLRequest</span>中的URL转换成字符串类型。将要转换的类型要遵循</span><span class="s1"><span style="color: #ff6600;">URLStringConvertible</span>协议，并在计算变量URLString中返回转换后的字符串。具体做法如下所示，这中类型转换方式在开发中经常会使用到，下方会给出其他实例。</span><span class="s1">URLRequestConvertible协议的功能与URLStringConvertible大同小异，<span style="color: #ff6600;">URLRequestConvertible</span>协议的实现者负责将</span><span class="s1">NSURLRequest转换成</span><span class="s1"><span style="color: #ff6600;">NSMutableURLRequest</span>类型。在此就不做过多的赘述了。</span></p>
+<p>　　<img src="http://images2015.cnblogs.com/blog/545446/201606/545446-20160616150852495-513322786.png" alt="" width="397" height="383" /></p>
+<p>下方截图是Alamofire.swift中的一个便利方法，其他几个便利方法与此相似，都是调用Manager单例中相应的方法，<span style="color: #ff0000;">便利方法为了链式调用Request类中的相关方法，所以所有的便利方法都会返回当前Manager单例使用的Request对象</span>。具体如下所示：</p>
+<p>　　<img src="http://images2015.cnblogs.com/blog/545446/201606/545446-20160616151603432-618020096.png" alt="" width="421" height="263" /></p>
+<p>&nbsp;</p>
+<h4><span style="color: #008080;">3.扩展用例</span></h4>
+<p>学以致用，举一反三。上面那种&ldquo;面向协议&rdquo;开发的思想值得我们学习，之前在设计模式相关的系列博客中不止一次的提到过要&ldquo;面向接口编程&rdquo;，此处的协议就是接口。虽然上面只是使用协议来进行简单的类型转换，这种思想是非常值得我们学习的。通过上面类型转换的方式，我们可以写出下方代码。下方代码不是Alamofire框架中的代码，是我根据上述的类型转换的实例所实现的，下方定义了一个类型转换的协议，需要转换的类型要遵循这个协议，下方以String为例，具体做法如下所示。</p>
+<p>　　<img src="http://images2015.cnblogs.com/blog/545446/201606/545446-20160616152527526-1395571074.png" alt="" width="425" height="361" /></p>
+<p>&nbsp;</p>
+<h3><span style="color: #008080;">三、Manager.swift源码解析</span></h3>
+<p>因为便利方法主要是调用的Manager类的单例，所以接下来我们来看<span style="color: #ff6600;">Manager.swift</span>中的东西。Manager类中主要负责<span style="color: #ff6600;">Session</span>和<span style="color: #ff6600;">Request</span>的初始化，并且提供<span style="color: #ff6600;">SessionDelegate</span>代理方法的默认实现。在实现代理方法时留出了相应的闭包已提供给用户使用该闭包来回调相应的代理方法。在Manager中的<span class="s1"><span style="color: #ff6600;">SessionDelegate</span>类就是<span style="color: #ff6600;">NSURLSessionDelegate</span>以及相关子协议的代理类</span>&nbsp;，其中就给出了各个代理方法的默认实现，在实现时并定义了一系列的Closure回调变量，当这些闭包变量不为空时就会执行闭包块中的内容，而不会执行提供的默认实现。</p>
+<h4><span style="color: #008080;">1.Manager.swift相关类图</span></h4>
+<p>下方类图就是黄色部分的放大版，主要是Manager类与<span style="color: #ff6600;">SessionDelegate</span>的关系。从下方类图中不难看出，<span style="color: #ff6600;">SessionDelegate</span>类遵循了<span style="color: #ff6600;">NSURLSessionDelegate</span>协议以及子协议，并给出了代理相应的实现方法。下方的代码会给出代理的具体封装和实现方式。</p>
+<p>　　<img style="line-height: 1.5;" src="http://images2015.cnblogs.com/blog/545446/201606/545446-20160616171825042-971856481.png" alt="" width="783" height="580" /></p>
+<p>&nbsp;</p>
+<h3><span style="color: #008080;">2.Manager类的相关属性</span></h3>
+<p>开门见山，因为Manager类对外是以单例的形式对外使用的，所以我们先来看看Manager类的单例实现。下方截图中的<span style="color: #ff6600;">sharedInstance</span>计算属性就是Manager的单例，其中存储的就是一个Manager对象，在创建Manager对象时我们为Manager对象中存储的NSURLSession对象指定了一个<span class="s1"><span style="color: #ff6600;">defaultSessionConfiguration</span>和一个</span><span class="s1"><span style="color: #ff6600;">defaultHTTPHeaders。</span></span></p>
+<p>　　<img src="http://images2015.cnblogs.com/blog/545446/201606/545446-20160616174315151-1665599636.png" alt="" width="683" height="131" /></p>
+<p>上面是Manager类中单例的实现，接下来我们来解析类中核心的属性，下方是一些核心属性的解析：</p>
+<ul>
+<li>
+<blockquote><span style="color: #ff6600;">defaultHTTPHeaders属性</span> ：&nbsp;defaultHTTPHeaders是Manager类中的一个计算属性，负责组织默认的请求Header中的内容。</blockquote>
+</li>
+<li>
+<blockquote><span style="color: #ff6600;">session属性：</span> 该属性的类型是NSURLSession类型的，负责请求会话，并创建各种会话任务。</blockquote>
+</li>
+<li>
+<blockquote><span style="color: #ff6600;">queue属性：</span>该属性是一个串行队列，该队列负责执行session创建Session Task的任务。</blockquote>
+</li>
+<li>
+<blockquote><span style="color: #ff6600;">delegate属性：</span>该属性是SessionDelegate类型的，而SessionDelegate类遵循了NSURLSessionDelegate及其子协议，并给出了相应的实现，在下方会着重介绍SessionDelegate。而此处的delegate属性负责调用SessionDelegate类中相应的回调方法。</blockquote>
+</li>
+</ul>
+<p>&nbsp;</p>
+<h3><span style="color: #008080;">3.Manager类的request方法</span></h3>
+<p>在Manager.swift源文件中给出了request方法的实现，Manager类的单例所调用的upload、download等方法是在其他源文件中做的延展。那些延展中的方法稍后在聊，本部分中就先对request方法进行解析。下方的方法就是我们在便利方法中使用Manager类的单例所调用的方法。<span style="color: #ff6600;">method参数表示请求方式（GET, POST, PUT等），URLString参数是请求地址，parameter就是请求参数了。encoding参数就是请求参数的编码方式，此处默认是URL编码。headers字典参数就是请求头信息了，默认为nil</span>。下方代码主要是创建NSMutableURLRequest对象，然后将参数进行相应的编码后添加进<span style="color: #ff6600;">NSMutableURLRequest</span>对象中，然后调用request()方法发起请求。</p>
+<p>　　<img src="http://images2015.cnblogs.com/blog/545446/201606/545446-20160617100251823-1917606287.png" alt="" width="794" height="288" /></p>
+<p>下方代码段是上述函数中所调用的request()方法，下方的request()方法负责通过Session创建dataTask，也就是负责执行Data Task任务。然后在初始化Request类的对象时，将创建的Data Task对象传给Request对象。<span style="color: #ff6600;">然后将Request对象的 Task Delegate对象存入Manager类的delegate属性中</span>。因为在delegate属性中的代理方法是调用相应的<span style="color: #ff6600;">Task Delegate</span>的方法，所以在此有必要进行存储。然后调用Request对象的resume()方法发起数据的网络请求。为了链式调用Request对象的其他方法，所以将Request类的对象进行返回。代码如下所示：</p>
+<p>　　<img src="http://images2015.cnblogs.com/blog/545446/201606/545446-20160617101239104-772146672.png" alt="" width="713" height="367" /></p>
+<p>&nbsp;</p>
+<h4><span style="color: #008080;">4. Manager中SessionDelegate解析</span></h4>
+<p><span style="color: #ff6600;">SessionDelegate</span>可以说是代理的代理，因为在<span style="color: #ff6600;">SessionDelegate</span>中有一个<span class="s1">subdelegates字典属性，该属性负责存储Request对象中的各个Task Delegate。而SessionDelegate在相应的代理方法中会通过存储的Task Delegate来调用Task Delegate中的方法，所以<span style="color: #ff6600;">SessionDelegate</span>说是代理的代理。</span></p>
+<p><span class="s1">下方代码段是SessionDelegate类中部分代码的截图，其中的subdelegates字典属性中存储的就是Request中的TaskDelegate，subdelegateQueue是一个并行队列用来同步执行获取和设置字典中的Task Delegate对象。<span style="color: #ff6600;">然后就是为SessionDelegate类定义了一个下标，该下标的功能是以Session Task为下标的形式向subdelegates中添加和获取相应的Task Delegate</span>。该自定义下标就可以让类的对象使用下标的形式来设置和获取属性的值，稍后会给出扩展的Demo。</span></p>
+<p>　　<img src="http://images2015.cnblogs.com/blog/545446/201606/545446-20160617104514604-1938318373.png" alt="" width="757" height="513" /></p>
+<p>关于SessionDelegate中所实现的代理方法，在此我们就一执行Data Task请求的<span style="color: #ff6600;">didReceiveData</span>代理方法为例。下方截图就是<span style="color: #ff6600;">SessionDelegate</span>中的didReceiveData代理方法。代码比较简单，首先判断该代理方法对象的Closure回调变量是否有值，如果有就执行该闭包回调块，如果没有值就获取我们存储的Data Task Delegate, 然后去执行<span style="color: #ff6600;">Data Task Delegate</span>中的didReciveData方法。其他方法也于此类似，所以就以点代面，在此就不做过多的赘述了。</p>
+<p><img src="http://images2015.cnblogs.com/blog/545446/201606/545446-20160617105806307-1485174922.png" alt="" width="798" height="135" /></p>
+<p>&nbsp;</p>
+<h4><span style="color: #008080;">5.知识点扩展</span></h4>
+<p>接下来有到了举一反三，扩展知识点的时刻了。接下来我们单独来创建一个小实例来看一下Swift中自定义下标是怎么回事。大道至简，接下来我们将上述下标的使用进行简化，创建一个Demo, 然后通过这个Demo来介绍一下下标的使用。</p>
+<p>下方代码段就是我们创建的简化版的下标示例，在Swift的类中是支持自定义下标的，自定下标可以让你以下标的形式来访问和设置属性。下方就自定义了一个下标，在下标中设置和返回value属性的值。用法如下所示：</p>
+<p>　　<img src="http://images2015.cnblogs.com/blog/545446/201606/545446-20160617111447057-239073882.png" alt="" width="668" height="340" /></p>
+<p>&nbsp;</p>
+<h3><span style="color: #008080;">四、Request.swift源码解析</span></h3>
+<p>逐渐深入，我们现在来到了Request.swift这个类，因为上面的Manager中的请求最终走到了Request类的位置，所以接下来我们要分析的就是Request.swift源文件中的内容。Request.swift源文件中主要是执行的Data Task请求，并且实现了相应的Data Task Delegate中的方法。其他的任务例如Download Task， Upload Task，Stream Task等会在其他文件中对Request做延展时执行上述这些任务。我们在此就以Data Task为例。Request类中说白了就是负责通过会话创建相应的Task，并实现相应Task的代理方法。</p>
+<h4><span style="color: #008080;">1. Request相关类图</span></h4>
+<p>下方类图就是Request相关类图了，Request类及其延展中就是创建各种类型的Task，然后给出相应的Task Delegate。下方类图还给出个各种Task Delegate间的继承关系。Request相关源文件在给出TaskDelegate的代理方法的实现时，也封装了闭包状态下的回调方法。这中做法与SessionDelegate中做法一致。下方会给出具体的介绍。</p>
+<p>　　<img src="http://images2015.cnblogs.com/blog/545446/201606/545446-20160617135343088-1496555994.png" alt="" width="865" height="598" /></p>
+<p>&nbsp;</p>
+<h4><span style="color: #008080;">2.Request类的初始化方法</span></h4>
+<p>下方就是Request类的初始化方法，方法需要两个参数，第一个参数是NSURLSession的对象，该对象也就是Manager单例中创建的Session的对象。<span style="color: #ff6600;">而第二个参数虽然是Manager传过来的，但是初始化task的任务还得交给Request类来做，Manager来只不过是定义了一个NSURLSessionTask的类型传到了Request中</span>，例如在Manager的request()方法中task是NSURLSessionDataTask，Manager的upload()方法中的task是NSURLSessionUploadTask类型。</p>
+<p>在Request的初始化方法中根据Manager单例提供的task的类型来确定是创建DataTaskDelegate、UploadTaskDelegate等。在相应的Task Delegate中会创建相应的Task。我们还以上述的DataTask为例，如果你调用Manager单例中的request()方法就会执行下方的DataTaskDelegate()的初始化。如下所示：</p>
+<p>　　<img src="http://images2015.cnblogs.com/blog/545446/201606/545446-20160617135931323-1486841479.png" alt="" width="746" height="296" /></p>
+<p>上面的delegate是<span style="color: #ff6600;">TaskDelegate</span>类型的，因为UploadTaskDelegate、DownloadTaskDelegate以及DataTaskDelegate都是TaskDelegate的子类，所以此处用到了面向对象的&ldquo;<span style="color: #ff6600;">多态性</span>&rdquo;。下方两个属性就是Request类中的<span style="color: #ff6600;">delegate和task属性</span>，delegate的初始化在上述Requset的初始化方法中，而此处的task是一个存储属性，task的初始化是放在相应的TaskDelegate中的，在TaskDelegate中创建完task对象后再赋值给Request类中的task属性，如下所示：</p>
+<p>　　<img src="http://images2015.cnblogs.com/blog/545446/201606/545446-20160617141215370-282717548.png" alt="" width="625" height="109" /></p>
+<p>&nbsp;</p>
+<h4><span style="color: #008080;">3. Requset类中的Progress闭包</span></h4>
+<p>在使用<span style="color: #ff6600;">Request</span>类的对象时，我们可以链式的调用Request中的方法，最常用的就是获取相应任务执行的进度，也就是平时我使用的<span style="color: #ff6600;">progress()</span>方法。下方截图中的代码段就是<span style="color: #ff6600;">progress()</span>方法的实现。通过<span style="color: #ff6600;">Task Delegate</span>的类型来判断目前执行的哪种任务，然后将传过来的progress的闭包赋值给相应的<span style="color: #ff6600;">Task Delegate</span>，在这些Task的Delegate中会在相应的回调方法中获取任务执行进度，然后执行下方传入的<span style="color: #ff6600;">Closure</span>。</p>
+<p>　　<img src="http://images2015.cnblogs.com/blog/545446/201606/545446-20160619162619304-183142590.png" alt="" width="661" height="176" /></p>
+<p>&nbsp;</p>
+<h4><span style="color: #008080;">4.Request的resume()方法</span></h4>
+<p>下方就是Request类中的resume()方法，其中的代码比较简单。主要是用来记录startTime，然后调用task的resume方法开始执行任务。当然在开始执行任务后要发起相应的通知，此处发出的是DidResume通知。所有的通知类型都在<span style="color: #ff6600;">Notifications.swift</span>文件中的Notifications结构体中存储着。Request类中的其他方法，比如suspend()、cancel()方法的实现方式与resume()类似，并且都会发出相应的通知，在此就不做过多的赘述了。</p>
+<p>　　<img src="http://images2015.cnblogs.com/blog/545446/201606/545446-20160619163438773-1170776934.png" alt="" width="689" height="118" />&nbsp;</p>
+<p>&nbsp;</p>
+<h3><span style="color: #008080;">5.Request类中的相关代理类</span></h3>
+<p>从第一部分中的类图中我们能看出与<span style="color: #ff6600;">Request</span>类相关的代理类，TaskDelegate是所有代理类的基类。在该代理类中其实就是定义了一下必要的属性和<span style="color: #ff6600;">NSURLSessionTaskDelegate</span>中对应的回调方法，并且为这些回调方法提供相应的闭包回调的形式。此处就以TaskDelegate代理类为例。下方就是TaskDelegate代理类为<span style="color: #ff6600;">NSURLSessionTaskDelegate</span>中相应的代理方法提供的Closure方式。其他的代理类如DataTaskDelegate、<span style="color: #ff6600;">DownloadTaskDelegate</span>等与此类似。而相应的代理方法中就是对回调进行了处理，不过在处理之前会判断相应的Closure是否为nil, 如果不为nil的话就执行Closure闭包块中的内容。如果为nil，就执行提供的默认处理。</p>
+<p>　　<img src="http://images2015.cnblogs.com/blog/545446/201606/545446-20160619165014179-709691434.png" alt="" width="720" height="140" /></p>
+<p>&nbsp;</p>
+<p>事无巨细，至此Alamofire中的核心类就已经介绍完毕，因为篇幅有限，其他类在此就不做过多赘述了。其他类以及其他文件中的内容在第一部分中做了概述，其内部的实现细节就不做过多赘述了，在Github上分享的代码对这些类的关键技术细节给出了注释。</p>
+<p>在Alamofire框架中大量的使用了延展、闭包以及枚举关联值。特别是在解析网络请求的数据时，将闭包类型作为函数的参数，然后通过闭包变量来提供相应的解析方案，在此就不做过多的赘述了，其他技术细节<span style="color: #ff6600;">&ldquo;仁者见仁，智者见智</span>&rdquo;。听我说再多，看再多的技术博客如果不亲自的去了解一下，说再多也是没用的，实践出真知。关于Alamofire源码的其他内容在此就不做过多赘述了，如果感兴趣就亲自的去阅读吧，欢迎互相交流。今天博客就先到这儿。</p>
+<p>github分享链接：<a href="https://github.com/lizelu/iOS_NetWorkingAndAlamofire" target="_blank"><span style="color: #ff6600;">https://github.com/lizelu/iOS_NetWorkingAndAlamofire</span></a></p></div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory"></div>
+<div id="EntryTag"></div>
+<div id="blog_post_info">
+</div>
+<div class="clear"></div>
+<div id="post_next_prev"></div>
+</div>
+
+
+		</div>
+		<div class = "postDesc">posted @ <span id="post-date">2016-08-08 09:57</span> <a href='http://www.cnblogs.com/ludashi/'>青玉伏案</a> 阅读(<span id="post_view_count">...</span>) 评论(<span id="post_comment_count">...</span>)  <a href ="https://i.cnblogs.com/EditPosts.aspx?postid=5588044" rel="nofollow">编辑</a> <a href="#" onclick="AddToWz(5588044);return false;">收藏</a></div>
+	</div>
+	<script type="text/javascript">var allowComments=true,cb_blogId=156500,cb_entryId=5588044,cb_blogApp=currentBlogApp,cb_blogUserGuid='2e9c2635-d9e5-e211-8d02-90b11c0b17d6',cb_entryCreatedDate='2016/8/8 9:57:00';loadViewCount(cb_entryId);</script>
+	
+</div><!--end: topics 文章、评论容器-->
+</div><a name="!comments"></a><div id="blog-comments-placeholder"></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id='comment_form' class='commentform'>
+<a name='commentform'></a>
+<div id='divCommentShow'></div>
+<div id='comment_nav'><span id='span_refresh_tips'></span><a href='javascript:void(0);' onclick='return RefreshCommentList();' id='lnk_RefreshComments' runat='server' clientidmode='Static'>刷新评论</a><a href='#' onclick='return RefreshPage();'>刷新页面</a><a href='#top'>返回顶部</a></div>
+<div id='comment_form_container'></div>
+<div class='ad_text_commentbox' id='ad_text_under_commentbox'></div>
+<div id='ad_t2'></div>
+<div id='opt_under_post'></div>
+<div id='cnblogs_c1' class='c_ad_block'></div>
+<div id='under_post_news'></div>
+<div id='cnblogs_c2' class='c_ad_block'></div>
+<div id='under_post_kb'></div>
+<div id='HistoryToday' class='c_ad_block'></div>
+<script type='text/javascript'>
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverAdT2();
+    deliverAdC1();
+    deliverAdC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);   
+</script>
+</div>
+
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	<div id="blog-news"></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright &copy;2017 青玉伏案
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+</body>
+</html>
