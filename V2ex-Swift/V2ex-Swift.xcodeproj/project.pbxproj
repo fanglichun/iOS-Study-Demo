@@ -21,6 +21,8 @@
 		D9E809EC1EFE4EBD00FC0732 /* V2exNodeServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E809E81EFE4EBD00FC0732 /* V2exNodeServiceManager.swift */; };
 		D9E809ED1EFE4EBD00FC0732 /* V2exServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E809E91EFE4EBD00FC0732 /* V2exServiceManager.swift */; };
 		D9E809EE1EFE4EBD00FC0732 /* V2exNodeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E809EB1EFE4EBD00FC0732 /* V2exNodeRouter.swift */; };
+		D9E809F01EFE69FE00FC0732 /* V2exTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E809EF1EFE69FE00FC0732 /* V2exTopic.swift */; };
+		D9E809F21EFE6A0600FC0732 /* V2exMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E809F11EFE6A0600FC0732 /* V2exMember.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		D9E809E81EFE4EBD00FC0732 /* V2exNodeServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2exNodeServiceManager.swift; sourceTree = "<group>"; };
 		D9E809E91EFE4EBD00FC0732 /* V2exServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2exServiceManager.swift; sourceTree = "<group>"; };
 		D9E809EB1EFE4EBD00FC0732 /* V2exNodeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2exNodeRouter.swift; sourceTree = "<group>"; };
+		D9E809EF1EFE69FE00FC0732 /* V2exTopic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2exTopic.swift; sourceTree = "<group>"; };
+		D9E809F11EFE6A0600FC0732 /* V2exMember.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2exMember.swift; sourceTree = "<group>"; };
 		E75EACAFBB70D8C821FDA122 /* Pods-V2ex-SwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-V2ex-SwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-V2ex-SwiftTests/Pods-V2ex-SwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F940A1E768884317BBC642BE /* Pods_V2ex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_V2ex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -149,6 +153,8 @@
 		D95DAC981EFE30A5002B04F5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D9E809EF1EFE69FE00FC0732 /* V2exTopic.swift */,
+				D9E809F11EFE6A0600FC0732 /* V2exMember.swift */,
 				D95DAC9B1EFE30D6002B04F5 /* V2exNode.swift */,
 			);
 			path = Model;
@@ -411,8 +417,10 @@
 				D95DAC781EFE3062002B04F5 /* ViewController.swift in Sources */,
 				D95DAC9C1EFE30D6002B04F5 /* V2exNode.swift in Sources */,
 				D95DAC761EFE3062002B04F5 /* AppDelegate.swift in Sources */,
+				D9E809F01EFE69FE00FC0732 /* V2exTopic.swift in Sources */,
 				D9E809EE1EFE4EBD00FC0732 /* V2exNodeRouter.swift in Sources */,
 				D9E809ED1EFE4EBD00FC0732 /* V2exServiceManager.swift in Sources */,
+				D9E809F21EFE6A0600FC0732 /* V2exMember.swift in Sources */,
 				D9687E661EFE3DFE00B468A4 /* String+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

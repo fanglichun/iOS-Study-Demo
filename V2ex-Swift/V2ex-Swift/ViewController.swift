@@ -14,17 +14,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        V2exServiceManager.shared.getAllNodes(V2exNodeRouter.all) { (result) in
-        }
-        
-        V2exServiceManager.shared.getNode(V2exNodeRouter.one(name: "babel", id: "1")) { (result) in
-            
-        }
-        
-        V2exServiceManager.shared.favNodeWithName(V2exNodeRouter.favNode(name: "babel")) { (result) in
-            
-        }
-        
     }
 
     override func didReceiveMemoryWarning() {
