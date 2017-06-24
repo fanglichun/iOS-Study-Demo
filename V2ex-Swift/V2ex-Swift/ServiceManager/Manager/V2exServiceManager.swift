@@ -17,6 +17,4 @@ class V2exServiceManager: NSObject {
         let instance = V2exServiceManager()
         return instance
     }()
-    
-
 }

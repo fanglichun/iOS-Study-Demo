@@ -11,9 +11,6 @@ import Alamofire
 
 struct Router {
     static let baseUrlString = "https://www.v2ex.com"
-    //apiKey
-    //secretKey
-    
 }
 
 enum V2exNodeRouter: URLRequestConvertible {
