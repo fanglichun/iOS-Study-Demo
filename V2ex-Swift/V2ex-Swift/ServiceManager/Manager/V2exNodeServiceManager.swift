@@ -20,4 +20,19 @@ extension V2exServiceManager {
                 }
         }
     }
+    
+    func getNode(_ one: V2exNodeRouter, completionHander: @escaping (Result<[V2exNode]>) -> Void) {
+        Alamofire.request(one)
+        .responseString { (response) in
+            print(response)
+        }
+        
+    }
+    
+    func favNodeWithName(_ favNode: V2exNodeRouter, completionHander: @escaping (Result<[V2exNode]>) -> Void) {
+        Alamofire.request(favNode)
+        .responseString { (response) in
+            print(response)
+        }
+    }
 }

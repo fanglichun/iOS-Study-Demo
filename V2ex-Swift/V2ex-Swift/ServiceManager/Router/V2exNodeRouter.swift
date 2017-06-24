@@ -11,15 +11,16 @@ import Alamofire
 
 struct Router {
     static let baseUrlString = "https://www.v2ex.com"
+    //apiKey
+    //secretKey
+    
 }
-typealias CompletionCallbackBlcok = (_ response: Any?, _ error: Error?) ->Void
-
 
 enum V2exNodeRouter: URLRequestConvertible {
     
     case all
-    case one(String,String)
-    case favNode(String)
+    case one(name:String, id:String)
+    case favNode(name:String)
     
     func asURLRequest() throws -> URLRequest {
         
@@ -39,7 +40,6 @@ enum V2exNodeRouter: URLRequestConvertible {
             case .favNode(let nodeName):
                 relativePath =  "/go/\(nodeName)"
             }
-//            let escapedUrlString = (Router.baseUrlString + relativePath).addingPercentEncoding(withAllowedCharacters: CharacterSet.urlFragmentAllowed)
             var url = URL(string: Router.baseUrlString)!
             url.appendPathComponent(relativePath)
             return url
@@ -63,6 +63,7 @@ enum V2exNodeRouter: URLRequestConvertible {
                 return nil
             }
         }()
+        print(url)
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = method.rawValue
         let encoding = JSONEncoding.default

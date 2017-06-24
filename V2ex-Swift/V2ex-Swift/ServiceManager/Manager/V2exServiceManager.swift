@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Alamofire
+
+typealias CompletionCallbackBlcok = (_ response: Any?, _ error: Error?) ->Void
 
 class V2exServiceManager: NSObject {
     

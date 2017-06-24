@@ -179,8 +179,8 @@
 		D9E809E61EFE4EBD00FC0732 /* ServiceManager */ = {
 			isa = PBXGroup;
 			children = (
-				D9E809E71EFE4EBD00FC0732 /* Manager */,
 				D9E809EA1EFE4EBD00FC0732 /* Router */,
+				D9E809E71EFE4EBD00FC0732 /* Manager */,
 			);
 			path = ServiceManager;
 			sourceTree = "<group>";
@@ -188,8 +188,8 @@
 		D9E809E71EFE4EBD00FC0732 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				D9E809E81EFE4EBD00FC0732 /* V2exNodeServiceManager.swift */,
 				D9E809E91EFE4EBD00FC0732 /* V2exServiceManager.swift */,
+				D9E809E81EFE4EBD00FC0732 /* V2exNodeServiceManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
