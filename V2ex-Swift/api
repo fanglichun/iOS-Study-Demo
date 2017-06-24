@@ -1,0 +1,40 @@
+1、getAllNodes： /api/nodes/all.json
+2、getNodeWithId&Name: /api/nodes/show.json
+11、favNodeWithName： /go/'name'
+
+
+3、getTopicListWithNodeId&NodeName&UserName: /api/topics/show.json
+4、getTopicListLates：
+5、getTopicWithTopicId： /api/topics/show.json
+12、favTopicWithTopicId： /t/‘TopicId’
+13、topicFavWithTopicId&Taken: /favorite/topic/'TopicId'?t='token'
+14、topicFavCancelWithTopicId&Token: /unfavorite/topic/'TopicId'?t='Token'
+15、topicThankWithTopicId&Token: /thank/topic/%@?t=%@
+16、topicIgnoreWithTopicId： /t/‘TopicId’
+21、topicCreateWithNodeName&Title&Content: /new/'Name'
+
+
+6、getReplyListWithTopicId： /api/replies/show.json
+17、replyThankWithReplyId&Token: /thank/reply/'Id'?t='Token'
+20、replyCreateWithTopicId： /t/‘Id’
+25、getUserReplyWithUsername： /member/‘userName’/replies
+
+
+8、getMemberTopicListWithType： /my/nodes  my/following my/topics /my/nodes
+9、getMemberTopicListWithMemberName: member/'name'/topics
+10、getMemberNodeList： my/nodes
+7、getMemberProfileWithUserId&Username： /api/members/show.json
+18、memberFollowWithMemberName： /follow/‘Token’
+19、memberBlockWithMemberName： /block/‘Token’
+
+
+
+
+22、UserLogin： /signin
+24、getUserNotification： /notifications
+
+23、getFeed： /notifications
+
+26、getCheckInURL： /mission/daily
+27、checkInWithURL： url
+28、getCheckInCount： /mission/daily

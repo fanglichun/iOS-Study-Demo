@@ -12,8 +12,7 @@
  链接：https://www.nowcoder.com/questionTerminal/5f6d704427424a1cb30eeb56af5d5b1f?toCommentId=150578
  来源：牛客网
  
- 互斥锁(mutexlock
- )：
+ 互斥锁(mutexlock)：
  最常使用于线程同步的锁；标记用来保证在任一时刻，只能有一个线程访问该对象，同一线程多次加锁操作会造成死锁；临界区和互斥量都可用来实现此锁，通常情况下锁操作失败会将该线程睡眠等待锁释放时被唤醒
 
  自旋锁(spinlock)：

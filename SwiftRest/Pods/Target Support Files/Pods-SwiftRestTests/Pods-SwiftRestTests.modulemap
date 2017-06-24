@@ -1,0 +1,6 @@
+framework module Pods_SwiftRestTests {
+  umbrella header "Pods-SwiftRestTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

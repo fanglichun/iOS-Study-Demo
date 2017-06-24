@@ -13,11 +13,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let mainLoop = CFRunLoopGetMain()
-        let concurrentloop = CFRunLoopGetCurrent()
+        guard let mainLoop = CFRunLoopGetMain() else {
+            return
+        }
+        print("mainLoop:\(mainLoop)\n\n")
+
+        guard let concurrentloop = CFRunLoopGetCurrent() else {
+            return
+        }
         
-        print(mainLoop)
-//        print(concurrentloop)
+        print("concurrentloop:\(concurrentloop)")
         
     }
 
