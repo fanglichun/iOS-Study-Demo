@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D98682BB1EFFC9EC0042F166 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98682BA1EFFC9EC0042F166 /* AppDelegate.swift */; };
+		D98682BD1EFFC9EC0042F166 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98682BC1EFFC9EC0042F166 /* ViewController.swift */; };
+		D98682C01EFFC9EC0042F166 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98682BE1EFFC9EC0042F166 /* Main.storyboard */; };
+		D98682C21EFFC9EC0042F166 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D98682C11EFFC9EC0042F166 /* Assets.xcassets */; };
+		D98682C51EFFC9EC0042F166 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98682C31EFFC9EC0042F166 /* LaunchScreen.storyboard */; };
+		D98682D01EFFC9EC0042F166 /* LighterViewControllersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98682CF1EFFC9EC0042F166 /* LighterViewControllersTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D98682CC1EFFC9EC0042F166 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D98682AF1EFFC9EC0042F166 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D98682B61EFFC9EC0042F166;
+			remoteInfo = LighterViewControllers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D98682B71EFFC9EC0042F166 /* LighterViewControllers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LighterViewControllers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98682BA1EFFC9EC0042F166 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D98682BC1EFFC9EC0042F166 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D98682BF1EFFC9EC0042F166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D98682C11EFFC9EC0042F166 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D98682C41EFFC9EC0042F166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D98682C61EFFC9EC0042F166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D98682CB1EFFC9EC0042F166 /* LighterViewControllersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LighterViewControllersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98682CF1EFFC9EC0042F166 /* LighterViewControllersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LighterViewControllersTests.swift; sourceTree = "<group>"; };
+		D98682D11EFFC9EC0042F166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D98682B41EFFC9EC0042F166 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98682C81EFFC9EC0042F166 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D98682AE1EFFC9EC0042F166 = {
+			isa = PBXGroup;
+			children = (
+				D98682B91EFFC9EC0042F166 /* LighterViewControllers */,
+				D98682CE1EFFC9EC0042F166 /* LighterViewControllersTests */,
+				D98682B81EFFC9EC0042F166 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D98682B81EFFC9EC0042F166 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D98682B71EFFC9EC0042F166 /* LighterViewControllers.app */,
+				D98682CB1EFFC9EC0042F166 /* LighterViewControllersTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D98682B91EFFC9EC0042F166 /* LighterViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D98682BA1EFFC9EC0042F166 /* AppDelegate.swift */,
+				D98682BC1EFFC9EC0042F166 /* ViewController.swift */,
+				D98682BE1EFFC9EC0042F166 /* Main.storyboard */,
+				D98682C11EFFC9EC0042F166 /* Assets.xcassets */,
+				D98682C31EFFC9EC0042F166 /* LaunchScreen.storyboard */,
+				D98682C61EFFC9EC0042F166 /* Info.plist */,
+			);
+			path = LighterViewControllers;
+			sourceTree = "<group>";
+		};
+		D98682CE1EFFC9EC0042F166 /* LighterViewControllersTests */ = {
+			isa = PBXGroup;
+			children = (
+				D98682CF1EFFC9EC0042F166 /* LighterViewControllersTests.swift */,
+				D98682D11EFFC9EC0042F166 /* Info.plist */,
+			);
+			path = LighterViewControllersTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D98682B61EFFC9EC0042F166 /* LighterViewControllers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D98682D41EFFC9EC0042F166 /* Build configuration list for PBXNativeTarget "LighterViewControllers" */;
+			buildPhases = (
+				D98682B31EFFC9EC0042F166 /* Sources */,
+				D98682B41EFFC9EC0042F166 /* Frameworks */,
+				D98682B51EFFC9EC0042F166 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LighterViewControllers;
+			productName = LighterViewControllers;
+			productReference = D98682B71EFFC9EC0042F166 /* LighterViewControllers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D98682CA1EFFC9EC0042F166 /* LighterViewControllersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D98682D71EFFC9EC0042F166 /* Build configuration list for PBXNativeTarget "LighterViewControllersTests" */;
+			buildPhases = (
+				D98682C71EFFC9EC0042F166 /* Sources */,
+				D98682C81EFFC9EC0042F166 /* Frameworks */,
+				D98682C91EFFC9EC0042F166 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D98682CD1EFFC9EC0042F166 /* PBXTargetDependency */,
+			);
+			name = LighterViewControllersTests;
+			productName = LighterViewControllersTests;
+			productReference = D98682CB1EFFC9EC0042F166 /* LighterViewControllersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D98682AF1EFFC9EC0042F166 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = mfang032;
+				TargetAttributes = {
+					D98682B61EFFC9EC0042F166 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = SQ372R9AF7;
+						ProvisioningStyle = Automatic;
+					};
+					D98682CA1EFFC9EC0042F166 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = SQ372R9AF7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D98682B61EFFC9EC0042F166;
+					};
+				};
+			};
+			buildConfigurationList = D98682B21EFFC9EC0042F166 /* Build configuration list for PBXProject "LighterViewControllers" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D98682AE1EFFC9EC0042F166;
+			productRefGroup = D98682B81EFFC9EC0042F166 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D98682B61EFFC9EC0042F166 /* LighterViewControllers */,
+				D98682CA1EFFC9EC0042F166 /* LighterViewControllersTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D98682B51EFFC9EC0042F166 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98682C51EFFC9EC0042F166 /* LaunchScreen.storyboard in Resources */,
+				D98682C21EFFC9EC0042F166 /* Assets.xcassets in Resources */,
+				D98682C01EFFC9EC0042F166 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98682C91EFFC9EC0042F166 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D98682B31EFFC9EC0042F166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98682BD1EFFC9EC0042F166 /* ViewController.swift in Sources */,
+				D98682BB1EFFC9EC0042F166 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98682C71EFFC9EC0042F166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98682D01EFFC9EC0042F166 /* LighterViewControllersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D98682CD1EFFC9EC0042F166 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D98682B61EFFC9EC0042F166 /* LighterViewControllers */;
+			targetProxy = D98682CC1EFFC9EC0042F166 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D98682BE1EFFC9EC0042F166 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D98682BF1EFFC9EC0042F166 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D98682C31EFFC9EC0042F166 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D98682C41EFFC9EC0042F166 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D98682D21EFFC9EC0042F166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D98682D31EFFC9EC0042F166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D98682D51EFFC9EC0042F166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SQ372R9AF7;
+				INFOPLIST_FILE = LighterViewControllers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pwc.RWPickFlavor.LighterViewControllers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D98682D61EFFC9EC0042F166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SQ372R9AF7;
+				INFOPLIST_FILE = LighterViewControllers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pwc.RWPickFlavor.LighterViewControllers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D98682D81EFFC9EC0042F166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = SQ372R9AF7;
+				INFOPLIST_FILE = LighterViewControllersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pwc.RWPickFlavor.LighterViewControllersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LighterViewControllers.app/LighterViewControllers";
+			};
+			name = Debug;
+		};
+		D98682D91EFFC9EC0042F166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = SQ372R9AF7;
+				INFOPLIST_FILE = LighterViewControllersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pwc.RWPickFlavor.LighterViewControllersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LighterViewControllers.app/LighterViewControllers";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D98682B21EFFC9EC0042F166 /* Build configuration list for PBXProject "LighterViewControllers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98682D21EFFC9EC0042F166 /* Debug */,
+				D98682D31EFFC9EC0042F166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D98682D41EFFC9EC0042F166 /* Build configuration list for PBXNativeTarget "LighterViewControllers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98682D51EFFC9EC0042F166 /* Debug */,
+				D98682D61EFFC9EC0042F166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D98682D71EFFC9EC0042F166 /* Build configuration list for PBXNativeTarget "LighterViewControllersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98682D81EFFC9EC0042F166 /* Debug */,
+				D98682D91EFFC9EC0042F166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D98682AF1EFFC9EC0042F166 /* Project object */;
+}
