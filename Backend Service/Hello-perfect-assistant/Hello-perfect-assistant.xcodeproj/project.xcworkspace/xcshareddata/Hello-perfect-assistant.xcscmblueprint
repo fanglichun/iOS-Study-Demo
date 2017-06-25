@@ -1,0 +1,72 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "AE397EE5B49A7248C8A9E3765C445BC2C61FD6D6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DCD994A20FFF69E73D7DE28EB512BBF004934554" : 9223372036854775807,
+    "AE397EE5B49A7248C8A9E3765C445BC2C61FD6D6" : 9223372036854775807,
+    "9197B75B1BC29921D6E3B1CCDC2B258350009F3A" : 9223372036854775807,
+    "E2306DAE0C98D148736A05084B6FAB44F03B4909" : 9223372036854775807,
+    "E71C9F673135F52EEF9E6F1B8D0895D4850F2E7F" : 9223372036854775807,
+    "C4127C9B9C8FDF608B532AD72407863CE2797629" : 9223372036854775807,
+    "615FD99B652E80AC2E813EEEE7964BA10A9886D5" : 9223372036854775807,
+    "6F1260245BD69EFA9A05D126763C86280510C6E1" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "28F773C0-1685-465C-B27B-717926348883",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DCD994A20FFF69E73D7DE28EB512BBF004934554" : "iOS-Study-Demo\/Hello-perfect-assistant\/.build\/checkouts\/Perfect-COpenSSL.git--4744624199947727386\/",
+    "AE397EE5B49A7248C8A9E3765C445BC2C61FD6D6" : "iOS-Study-Demo\/",
+    "9197B75B1BC29921D6E3B1CCDC2B258350009F3A" : "iOS-Study-Demo\/Hello-perfect-assistant\/.build\/checkouts\/Perfect-HTTP.git--6392294032632002019\/",
+    "E2306DAE0C98D148736A05084B6FAB44F03B4909" : "iOS-Study-Demo\/Hello-perfect-assistant\/.build\/checkouts\/PerfectLib.git-3712999737848873669\/",
+    "E71C9F673135F52EEF9E6F1B8D0895D4850F2E7F" : "iOS-Study-Demo\/Hello-perfect-assistant\/.build\/checkouts\/Perfect-Crypto.git--5196635702121641122\/",
+    "C4127C9B9C8FDF608B532AD72407863CE2797629" : "iOS-Study-Demo\/Hello-perfect-assistant\/.build\/checkouts\/Perfect-HTTPServer.git--6671958091389663080\/",
+    "615FD99B652E80AC2E813EEEE7964BA10A9886D5" : "iOS-Study-Demo\/Hello-perfect-assistant\/.build\/checkouts\/Perfect-Thread.git-6541237758607105655\/",
+    "6F1260245BD69EFA9A05D126763C86280510C6E1" : "iOS-Study-Demo\/Hello-perfect-assistant\/.build\/checkouts\/Perfect-Net.git-3268755499654502659\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Hello-perfect-assistant",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Hello-perfect-assistant\/Hello-perfect-assistant.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/mfang032\/iOS-Study-Demo\/Hello-perfect-assistant\/.build\/repositories\/Perfect-Thread.git-6541237758607105655",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "615FD99B652E80AC2E813EEEE7964BA10A9886D5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/mfang032\/iOS-Study-Demo\/Hello-perfect-assistant\/.build\/repositories\/Perfect-Net.git-3268755499654502659",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6F1260245BD69EFA9A05D126763C86280510C6E1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/mfang032\/iOS-Study-Demo\/Hello-perfect-assistant\/.build\/repositories\/Perfect-HTTP.git--6392294032632002019",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9197B75B1BC29921D6E3B1CCDC2B258350009F3A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/fanglichun\/iOS-Study-Demo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AE397EE5B49A7248C8A9E3765C445BC2C61FD6D6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/mfang032\/iOS-Study-Demo\/Hello-perfect-assistant\/.build\/repositories\/Perfect-HTTPServer.git--6671958091389663080",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C4127C9B9C8FDF608B532AD72407863CE2797629"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/mfang032\/iOS-Study-Demo\/Hello-perfect-assistant\/.build\/repositories\/Perfect-COpenSSL.git--4744624199947727386",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DCD994A20FFF69E73D7DE28EB512BBF004934554"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/mfang032\/iOS-Study-Demo\/Hello-perfect-assistant\/.build\/repositories\/PerfectLib.git-3712999737848873669",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E2306DAE0C98D148736A05084B6FAB44F03B4909"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/mfang032\/iOS-Study-Demo\/Hello-perfect-assistant\/.build\/repositories\/Perfect-Crypto.git--5196635702121641122",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E71C9F673135F52EEF9E6F1B8D0895D4850F2E7F"
+    }
+  ]
+}
