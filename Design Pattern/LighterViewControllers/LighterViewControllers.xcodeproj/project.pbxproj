@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AEE605C9BDEF51C57163F1E0 /* Pods_LighterViewControllers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C4EA09FA5F3CD5BA6264B67 /* Pods_LighterViewControllers.framework */; };
 		D98682BB1EFFC9EC0042F166 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98682BA1EFFC9EC0042F166 /* AppDelegate.swift */; };
 		D98682BD1EFFC9EC0042F166 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98682BC1EFFC9EC0042F166 /* ViewController.swift */; };
 		D98682C01EFFC9EC0042F166 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98682BE1EFFC9EC0042F166 /* Main.storyboard */; };
 		D98682C21EFFC9EC0042F166 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D98682C11EFFC9EC0042F166 /* Assets.xcassets */; };
 		D98682C51EFFC9EC0042F166 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98682C31EFFC9EC0042F166 /* LaunchScreen.storyboard */; };
 		D98682D01EFFC9EC0042F166 /* LighterViewControllersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98682CF1EFFC9EC0042F166 /* LighterViewControllersTests.swift */; };
+		D98682DB1EFFD4B20042F166 /* ArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98682DA1EFFD4B20042F166 /* ArrayDataSource.swift */; };
+		D98682DF1EFFD8D70042F166 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98682DD1EFFD8D70042F166 /* PhotoCell.swift */; };
+		D98682E01EFFD8D70042F166 /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D98682DE1EFFD8D70042F166 /* PhotoCell.xib */; };
+		D98682E21EFFDB4F0042F166 /* PhotoCell+ConfigureForPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98682E11EFFDB4F0042F166 /* PhotoCell+ConfigureForPhoto.swift */; };
+		D98682E61EFFDD390042F166 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98682E51EFFDD390042F166 /* Photo.swift */; };
+		D98682E81EFFDD470042F166 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98682E71EFFDD470042F166 /* User.swift */; };
+		D98682EA1EFFF7700042F166 /* ArrayDataSourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98682E91EFFF7700042F166 /* ArrayDataSourceManager.swift */; };
+		D98682EC1EFFFDB40042F166 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98682EB1EFFFDB40042F166 /* CustomCell.swift */; };
+		F6026EE9BB7A9694F160B8CC /* Pods_LighterViewControllersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639AEFBB94A588D605678858 /* Pods_LighterViewControllersTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		133799CB1E3600BFBA8BFEBF /* Pods-LighterViewControllers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LighterViewControllers.release.xcconfig"; path = "Pods/Target Support Files/Pods-LighterViewControllers/Pods-LighterViewControllers.release.xcconfig"; sourceTree = "<group>"; };
+		1C4EA09FA5F3CD5BA6264B67 /* Pods_LighterViewControllers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LighterViewControllers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25EA7098F6B4AAA6A1A6AEFD /* Pods-LighterViewControllersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LighterViewControllersTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LighterViewControllersTests/Pods-LighterViewControllersTests.release.xcconfig"; sourceTree = "<group>"; };
+		5AD322FD9CD00561D4B208B5 /* Pods-LighterViewControllers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LighterViewControllers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LighterViewControllers/Pods-LighterViewControllers.debug.xcconfig"; sourceTree = "<group>"; };
+		639AEFBB94A588D605678858 /* Pods_LighterViewControllersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LighterViewControllersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AC3CC9978A373ED5AF67E71 /* Pods-LighterViewControllersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LighterViewControllersTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LighterViewControllersTests/Pods-LighterViewControllersTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D98682B71EFFC9EC0042F166 /* LighterViewControllers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LighterViewControllers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D98682BA1EFFC9EC0042F166 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D98682BC1EFFC9EC0042F166 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +52,14 @@
 		D98682CB1EFFC9EC0042F166 /* LighterViewControllersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LighterViewControllersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D98682CF1EFFC9EC0042F166 /* LighterViewControllersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LighterViewControllersTests.swift; sourceTree = "<group>"; };
 		D98682D11EFFC9EC0042F166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D98682DA1EFFD4B20042F166 /* ArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataSource.swift; sourceTree = "<group>"; };
+		D98682DD1EFFD8D70042F166 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		D98682DE1EFFD8D70042F166 /* PhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
+		D98682E11EFFDB4F0042F166 /* PhotoCell+ConfigureForPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhotoCell+ConfigureForPhoto.swift"; sourceTree = "<group>"; };
+		D98682E51EFFDD390042F166 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		D98682E71EFFDD470042F166 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D98682E91EFFF7700042F166 /* ArrayDataSourceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDataSourceManager.swift; sourceTree = "<group>"; };
+		D98682EB1EFFFDB40042F166 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEE605C9BDEF51C57163F1E0 /* Pods_LighterViewControllers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +75,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6026EE9BB7A9694F160B8CC /* Pods_LighterViewControllersTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8261C0F5E8CC8A64FB3A35DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5AD322FD9CD00561D4B208B5 /* Pods-LighterViewControllers.debug.xcconfig */,
+				133799CB1E3600BFBA8BFEBF /* Pods-LighterViewControllers.release.xcconfig */,
+				7AC3CC9978A373ED5AF67E71 /* Pods-LighterViewControllersTests.debug.xcconfig */,
+				25EA7098F6B4AAA6A1A6AEFD /* Pods-LighterViewControllersTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BAD4C30AF89EA2612718D95B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C4EA09FA5F3CD5BA6264B67 /* Pods_LighterViewControllers.framework */,
+				639AEFBB94A588D605678858 /* Pods_LighterViewControllersTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D98682AE1EFFC9EC0042F166 = {
 			isa = PBXGroup;
 			children = (
 				D98682B91EFFC9EC0042F166 /* LighterViewControllers */,
 				D98682CE1EFFC9EC0042F166 /* LighterViewControllersTests */,
 				D98682B81EFFC9EC0042F166 /* Products */,
+				8261C0F5E8CC8A64FB3A35DB /* Pods */,
+				BAD4C30AF89EA2612718D95B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +127,14 @@
 			children = (
 				D98682BA1EFFC9EC0042F166 /* AppDelegate.swift */,
 				D98682BC1EFFC9EC0042F166 /* ViewController.swift */,
+				D98682DA1EFFD4B20042F166 /* ArrayDataSource.swift */,
+				D98682E91EFFF7700042F166 /* ArrayDataSourceManager.swift */,
+				D98682DD1EFFD8D70042F166 /* PhotoCell.swift */,
+				D98682DE1EFFD8D70042F166 /* PhotoCell.xib */,
+				D98682EB1EFFFDB40042F166 /* CustomCell.swift */,
+				D98682E11EFFDB4F0042F166 /* PhotoCell+ConfigureForPhoto.swift */,
+				D98682E51EFFDD390042F166 /* Photo.swift */,
+				D98682E71EFFDD470042F166 /* User.swift */,
 				D98682BE1EFFC9EC0042F166 /* Main.storyboard */,
 				D98682C11EFFC9EC0042F166 /* Assets.xcassets */,
 				D98682C31EFFC9EC0042F166 /* LaunchScreen.storyboard */,
@@ -103,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D98682D41EFFC9EC0042F166 /* Build configuration list for PBXNativeTarget "LighterViewControllers" */;
 			buildPhases = (
+				672F54C12C3FE96724B961DE /* [CP] Check Pods Manifest.lock */,
 				D98682B31EFFC9EC0042F166 /* Sources */,
 				D98682B41EFFC9EC0042F166 /* Frameworks */,
 				D98682B51EFFC9EC0042F166 /* Resources */,
+				9FDCC46EA468402B4E123F1E /* [CP] Embed Pods Frameworks */,
+				3648E21AEF8D3D500A51C60C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D98682D71EFFC9EC0042F166 /* Build configuration list for PBXNativeTarget "LighterViewControllersTests" */;
 			buildPhases = (
+				CE1650EC8D0361C44AD46A91 /* [CP] Check Pods Manifest.lock */,
 				D98682C71EFFC9EC0042F166 /* Sources */,
 				D98682C81EFFC9EC0042F166 /* Frameworks */,
 				D98682C91EFFC9EC0042F166 /* Resources */,
+				44F4B5E941B5D1DC376060CA /* [CP] Embed Pods Frameworks */,
+				71F0D4E4D73D3344B9766E97 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D98682E01EFFD8D70042F166 /* PhotoCell.xib in Resources */,
 				D98682C51EFFC9EC0042F166 /* LaunchScreen.storyboard in Resources */,
 				D98682C21EFFC9EC0042F166 /* Assets.xcassets in Resources */,
 				D98682C01EFFC9EC0042F166 /* Main.storyboard in Resources */,
@@ -196,13 +259,113 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3648E21AEF8D3D500A51C60C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LighterViewControllers/Pods-LighterViewControllers-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44F4B5E941B5D1DC376060CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LighterViewControllersTests/Pods-LighterViewControllersTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		672F54C12C3FE96724B961DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		71F0D4E4D73D3344B9766E97 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LighterViewControllersTests/Pods-LighterViewControllersTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FDCC46EA468402B4E123F1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LighterViewControllers/Pods-LighterViewControllers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE1650EC8D0361C44AD46A91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D98682B31EFFC9EC0042F166 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D98682E61EFFDD390042F166 /* Photo.swift in Sources */,
+				D98682DF1EFFD8D70042F166 /* PhotoCell.swift in Sources */,
 				D98682BD1EFFC9EC0042F166 /* ViewController.swift in Sources */,
+				D98682DB1EFFD4B20042F166 /* ArrayDataSource.swift in Sources */,
+				D98682EC1EFFFDB40042F166 /* CustomCell.swift in Sources */,
+				D98682EA1EFFF7700042F166 /* ArrayDataSourceManager.swift in Sources */,
+				D98682E21EFFDB4F0042F166 /* PhotoCell+ConfigureForPhoto.swift in Sources */,
 				D98682BB1EFFC9EC0042F166 /* AppDelegate.swift in Sources */,
+				D98682E81EFFDD470042F166 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +504,7 @@
 		};
 		D98682D51EFFC9EC0042F166 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AD322FD9CD00561D4B208B5 /* Pods-LighterViewControllers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SQ372R9AF7;
@@ -354,6 +518,7 @@
 		};
 		D98682D61EFFC9EC0042F166 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 133799CB1E3600BFBA8BFEBF /* Pods-LighterViewControllers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SQ372R9AF7;
@@ -367,6 +532,7 @@
 		};
 		D98682D81EFFC9EC0042F166 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AC3CC9978A373ED5AF67E71 /* Pods-LighterViewControllersTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -382,6 +548,7 @@
 		};
 		D98682D91EFFC9EC0042F166 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25EA7098F6B4AAA6A1A6AEFD /* Pods-LighterViewControllersTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -414,6 +581,7 @@
 				D98682D61EFFC9EC0042F166 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D98682D71EFFC9EC0042F166 /* Build configuration list for PBXNativeTarget "LighterViewControllersTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +590,7 @@
 				D98682D91EFFC9EC0042F166 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
