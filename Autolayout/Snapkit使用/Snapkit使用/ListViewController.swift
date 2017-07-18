@@ -23,6 +23,10 @@ class ListViewController: UITableViewController {
         self.tableView?.register(UITableViewCell.self, forCellReuseIdentifier: kCellIdentifier)
     }
     
+    override func loadView() {
+        super.loadView()
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return demos.count
     }

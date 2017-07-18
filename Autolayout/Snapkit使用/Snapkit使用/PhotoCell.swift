@@ -22,10 +22,21 @@ class PhotoCell: UITableViewCell {
     
     private var isDidSetupConstraints = false
     
+//    override func prepareForReuse() {
+//        super.prepareForReuse()
+//        print("whether is reused")
+//    }
+    
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         configSubViews()
+    }
+    
+    class func dequeueReusableCell(tableView: UITableView, indexPath: IndexPath, style: UITableViewCellStyle,reuseIdentifier: String) ->PhotoCell? {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
+        return cell as? PhotoCell
     }
     
     required init?(coder aDecoder: NSCoder) {

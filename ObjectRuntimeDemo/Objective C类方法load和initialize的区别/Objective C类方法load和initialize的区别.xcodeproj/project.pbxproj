@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D954B5BC1F10F9C300FE566C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D954B5BB1F10F9C300FE566C /* main.m */; };
+		D954B5BF1F10F9C300FE566C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D954B5BE1F10F9C300FE566C /* AppDelegate.m */; };
+		D954B5C21F10F9C300FE566C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D954B5C11F10F9C300FE566C /* ViewController.m */; };
+		D954B5C51F10F9C300FE566C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D954B5C31F10F9C300FE566C /* Main.storyboard */; };
+		D954B5C71F10F9C300FE566C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D954B5C61F10F9C300FE566C /* Assets.xcassets */; };
+		D954B5CA1F10F9C300FE566C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D954B5C81F10F9C300FE566C /* LaunchScreen.storyboard */; };
+		D954B5D51F10F9C400FE566C /* Objective_C___load_initialize___Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D954B5D41F10F9C400FE566C /* Objective_C___load_initialize___Tests.m */; };
+		D954B5E11F10F9DB00FE566C /* SuperClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D954B5E01F10F9DB00FE566C /* SuperClass.m */; };
+		D954B5E41F10F9ED00FE566C /* ChildClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D954B5E31F10F9ED00FE566C /* ChildClass.m */; };
+		D954B5E71F10FA0300FE566C /* Insideinitialize.m in Sources */ = {isa = PBXBuildFile; fileRef = D954B5E61F10FA0300FE566C /* Insideinitialize.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D954B5D11F10F9C400FE566C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D954B5AF1F10F9C300FE566C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D954B5B61F10F9C300FE566C;
+			remoteInfo = "Objective C类方法load和initialize的区别";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D954B5B71F10F9C300FE566C /* Objective C类方法load和initialize的区别.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Objective C类方法load和initialize的区别.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D954B5BB1F10F9C300FE566C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D954B5BD1F10F9C300FE566C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D954B5BE1F10F9C300FE566C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D954B5C01F10F9C300FE566C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D954B5C11F10F9C300FE566C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D954B5C41F10F9C300FE566C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D954B5C61F10F9C300FE566C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D954B5C91F10F9C300FE566C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D954B5CB1F10F9C300FE566C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D954B5D01F10F9C400FE566C /* Objective C类方法load和initialize的区别Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Objective C类方法load和initialize的区别Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D954B5D41F10F9C400FE566C /* Objective_C___load_initialize___Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Objective_C___load_initialize___Tests.m"; sourceTree = "<group>"; };
+		D954B5D61F10F9C400FE566C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D954B5DF1F10F9DB00FE566C /* SuperClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperClass.h; sourceTree = "<group>"; };
+		D954B5E01F10F9DB00FE566C /* SuperClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperClass.m; sourceTree = "<group>"; };
+		D954B5E21F10F9ED00FE566C /* ChildClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildClass.h; sourceTree = "<group>"; };
+		D954B5E31F10F9ED00FE566C /* ChildClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildClass.m; sourceTree = "<group>"; };
+		D954B5E51F10FA0300FE566C /* Insideinitialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Insideinitialize.h; sourceTree = "<group>"; };
+		D954B5E61F10FA0300FE566C /* Insideinitialize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Insideinitialize.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D954B5B41F10F9C300FE566C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D954B5CD1F10F9C400FE566C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D954B5AE1F10F9C300FE566C = {
+			isa = PBXGroup;
+			children = (
+				D954B5B91F10F9C300FE566C /* Objective C类方法load和initialize的区别 */,
+				D954B5D31F10F9C400FE566C /* Objective C类方法load和initialize的区别Tests */,
+				D954B5B81F10F9C300FE566C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D954B5B81F10F9C300FE566C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D954B5B71F10F9C300FE566C /* Objective C类方法load和initialize的区别.app */,
+				D954B5D01F10F9C400FE566C /* Objective C类方法load和initialize的区别Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D954B5B91F10F9C300FE566C /* Objective C类方法load和initialize的区别 */ = {
+			isa = PBXGroup;
+			children = (
+				D954B5BD1F10F9C300FE566C /* AppDelegate.h */,
+				D954B5BE1F10F9C300FE566C /* AppDelegate.m */,
+				D954B5C01F10F9C300FE566C /* ViewController.h */,
+				D954B5C11F10F9C300FE566C /* ViewController.m */,
+				D954B5DF1F10F9DB00FE566C /* SuperClass.h */,
+				D954B5E01F10F9DB00FE566C /* SuperClass.m */,
+				D954B5E21F10F9ED00FE566C /* ChildClass.h */,
+				D954B5E31F10F9ED00FE566C /* ChildClass.m */,
+				D954B5E51F10FA0300FE566C /* Insideinitialize.h */,
+				D954B5E61F10FA0300FE566C /* Insideinitialize.m */,
+				D954B5C31F10F9C300FE566C /* Main.storyboard */,
+				D954B5C61F10F9C300FE566C /* Assets.xcassets */,
+				D954B5C81F10F9C300FE566C /* LaunchScreen.storyboard */,
+				D954B5CB1F10F9C300FE566C /* Info.plist */,
+				D954B5BA1F10F9C300FE566C /* Supporting Files */,
+			);
+			path = "Objective C类方法load和initialize的区别";
+			sourceTree = "<group>";
+		};
+		D954B5BA1F10F9C300FE566C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D954B5BB1F10F9C300FE566C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D954B5D31F10F9C400FE566C /* Objective C类方法load和initialize的区别Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D954B5D41F10F9C400FE566C /* Objective_C___load_initialize___Tests.m */,
+				D954B5D61F10F9C400FE566C /* Info.plist */,
+			);
+			path = "Objective C类方法load和initialize的区别Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D954B5B61F10F9C300FE566C /* Objective C类方法load和initialize的区别 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D954B5D91F10F9C400FE566C /* Build configuration list for PBXNativeTarget "Objective C类方法load和initialize的区别" */;
+			buildPhases = (
+				D954B5B31F10F9C300FE566C /* Sources */,
+				D954B5B41F10F9C300FE566C /* Frameworks */,
+				D954B5B51F10F9C300FE566C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Objective C类方法load和initialize的区别";
+			productName = "Objective C类方法load和initialize的区别";
+			productReference = D954B5B71F10F9C300FE566C /* Objective C类方法load和initialize的区别.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D954B5CF1F10F9C400FE566C /* Objective C类方法load和initialize的区别Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D954B5DC1F10F9C400FE566C /* Build configuration list for PBXNativeTarget "Objective C类方法load和initialize的区别Tests" */;
+			buildPhases = (
+				D954B5CC1F10F9C400FE566C /* Sources */,
+				D954B5CD1F10F9C400FE566C /* Frameworks */,
+				D954B5CE1F10F9C400FE566C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D954B5D21F10F9C400FE566C /* PBXTargetDependency */,
+			);
+			name = "Objective C类方法load和initialize的区别Tests";
+			productName = "Objective C类方法load和initialize的区别Tests";
+			productReference = D954B5D01F10F9C400FE566C /* Objective C类方法load和initialize的区别Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D954B5AF1F10F9C300FE566C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = mfang032;
+				TargetAttributes = {
+					D954B5B61F10F9C300FE566C = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = SQ372R9AF7;
+						ProvisioningStyle = Automatic;
+					};
+					D954B5CF1F10F9C400FE566C = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = SQ372R9AF7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D954B5B61F10F9C300FE566C;
+					};
+				};
+			};
+			buildConfigurationList = D954B5B21F10F9C300FE566C /* Build configuration list for PBXProject "Objective C类方法load和initialize的区别" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D954B5AE1F10F9C300FE566C;
+			productRefGroup = D954B5B81F10F9C300FE566C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D954B5B61F10F9C300FE566C /* Objective C类方法load和initialize的区别 */,
+				D954B5CF1F10F9C400FE566C /* Objective C类方法load和initialize的区别Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D954B5B51F10F9C300FE566C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D954B5CA1F10F9C300FE566C /* LaunchScreen.storyboard in Resources */,
+				D954B5C71F10F9C300FE566C /* Assets.xcassets in Resources */,
+				D954B5C51F10F9C300FE566C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D954B5CE1F10F9C400FE566C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D954B5B31F10F9C300FE566C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D954B5E11F10F9DB00FE566C /* SuperClass.m in Sources */,
+				D954B5E41F10F9ED00FE566C /* ChildClass.m in Sources */,
+				D954B5C21F10F9C300FE566C /* ViewController.m in Sources */,
+				D954B5BF1F10F9C300FE566C /* AppDelegate.m in Sources */,
+				D954B5BC1F10F9C300FE566C /* main.m in Sources */,
+				D954B5E71F10FA0300FE566C /* Insideinitialize.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D954B5CC1F10F9C400FE566C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D954B5D51F10F9C400FE566C /* Objective_C___load_initialize___Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D954B5D21F10F9C400FE566C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D954B5B61F10F9C300FE566C /* Objective C类方法load和initialize的区别 */;
+			targetProxy = D954B5D11F10F9C400FE566C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D954B5C31F10F9C300FE566C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D954B5C41F10F9C300FE566C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D954B5C81F10F9C300FE566C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D954B5C91F10F9C300FE566C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D954B5D71F10F9C400FE566C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D954B5D81F10F9C400FE566C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D954B5DA1F10F9C400FE566C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SQ372R9AF7;
+				INFOPLIST_FILE = "Objective C类方法load和initialize的区别/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pwc.RWPickFlavor.Objective-C---load-initialize---";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D954B5DB1F10F9C400FE566C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SQ372R9AF7;
+				INFOPLIST_FILE = "Objective C类方法load和initialize的区别/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pwc.RWPickFlavor.Objective-C---load-initialize---";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D954B5DD1F10F9C400FE566C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = SQ372R9AF7;
+				INFOPLIST_FILE = "Objective C类方法load和initialize的区别Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pwc.RWPickFlavor.Objective-C---load-initialize---Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Objective C类方法load和initialize的区别.app/Objective C类方法load和initialize的区别";
+			};
+			name = Debug;
+		};
+		D954B5DE1F10F9C400FE566C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = SQ372R9AF7;
+				INFOPLIST_FILE = "Objective C类方法load和initialize的区别Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pwc.RWPickFlavor.Objective-C---load-initialize---Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Objective C类方法load和initialize的区别.app/Objective C类方法load和initialize的区别";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D954B5B21F10F9C300FE566C /* Build configuration list for PBXProject "Objective C类方法load和initialize的区别" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D954B5D71F10F9C400FE566C /* Debug */,
+				D954B5D81F10F9C400FE566C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D954B5D91F10F9C400FE566C /* Build configuration list for PBXNativeTarget "Objective C类方法load和initialize的区别" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D954B5DA1F10F9C400FE566C /* Debug */,
+				D954B5DB1F10F9C400FE566C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D954B5DC1F10F9C400FE566C /* Build configuration list for PBXNativeTarget "Objective C类方法load和initialize的区别Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D954B5DD1F10F9C400FE566C /* Debug */,
+				D954B5DE1F10F9C400FE566C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D954B5AF1F10F9C300FE566C /* Project object */;
+}

@@ -3,7 +3,7 @@ import Foundation
 public struct memoryUtil {
     
     public static func address(_ o: UnsafeRawPointer) -> String {
-        let address  = unsafeBitCast(o, to: Int.self)
+        let address  = Int(bitPattern: o)
         return String(format: "%p", address)
     }
     

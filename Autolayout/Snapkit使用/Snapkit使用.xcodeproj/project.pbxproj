@@ -19,6 +19,7 @@
 		D95D6DFB1F0003CE000FECEC /* SimpleLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95D6DF81F0003CE000FECEC /* SimpleLayoutViewController.swift */; };
 		D95D6DFC1F0003CE000FECEC /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95D6DF91F0003CE000FECEC /* ListViewController.swift */; };
 		D990B0BF1F00065A001E4FA8 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D990B0BE1F00065A001E4FA8 /* PhotoCell.swift */; };
+		D9C956F71F07776C003C9FE5 /* MemeoryUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C956F61F07776C003C9FE5 /* MemeoryUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		D95D6DF81F0003CE000FECEC /* SimpleLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleLayoutViewController.swift; sourceTree = "<group>"; };
 		D95D6DF91F0003CE000FECEC /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		D990B0BE1F00065A001E4FA8 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		D9C956F61F07776C003C9FE5 /* MemeoryUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemeoryUtil.swift; sourceTree = "<group>"; };
 		DDC2FE6D72011CA5836507E9 /* Pods_Snapkit__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snapkit__.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F20404D4425F0FF5A27BB126 /* Pods-Snapkit使用.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapkit使用.release.xcconfig"; path = "Pods/Target Support Files/Pods-Snapkit使用/Pods-Snapkit使用.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +125,7 @@
 				D95D6DD71F0003BF000FECEC /* AppDelegate.swift */,
 				D95D6DD91F0003BF000FECEC /* ViewController.swift */,
 				D990B0BE1F00065A001E4FA8 /* PhotoCell.swift */,
+				D9C956F61F07776C003C9FE5 /* MemeoryUtil.swift */,
 				D95D6DDB1F0003BF000FECEC /* Main.storyboard */,
 				D95D6DDE1F0003BF000FECEC /* Assets.xcassets */,
 				D95D6DE01F0003BF000FECEC /* LaunchScreen.storyboard */,
@@ -346,6 +349,7 @@
 			files = (
 				D95D6DFB1F0003CE000FECEC /* SimpleLayoutViewController.swift in Sources */,
 				D95D6DDA1F0003BF000FECEC /* ViewController.swift in Sources */,
+				D9C956F71F07776C003C9FE5 /* MemeoryUtil.swift in Sources */,
 				D95D6DFA1F0003CE000FECEC /* BasicUIScrollViewController.swift in Sources */,
 				D95D6DFC1F0003CE000FECEC /* ListViewController.swift in Sources */,
 				D990B0BF1F00065A001E4FA8 /* PhotoCell.swift in Sources */,

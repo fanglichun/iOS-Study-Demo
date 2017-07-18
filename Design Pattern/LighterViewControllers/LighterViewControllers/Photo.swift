@@ -101,8 +101,10 @@ extension Photo {
         return adjustedRating
     }
     
+    //
+    
     func authorFullName() -> String? {
-        return ""
+        return user?.fullName ?? ""
     }
 }
 

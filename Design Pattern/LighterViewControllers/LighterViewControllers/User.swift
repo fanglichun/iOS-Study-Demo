@@ -10,9 +10,6 @@ import UIKit
 
 class User: NSCoding {
     
-    
-    
-    
     // MARK: Declaration for string constants to be used to decode and also serialize.
     private struct SerializationKeys {
         static let firstname = "firstname"
@@ -85,7 +82,7 @@ class User: NSCoding {
 extension User {
     
     func fullName() -> String? {
-        return firstname ?? ""
+        return (firstname ?? "") + " " +   (lastname ?? "")
     }
     
     func numberOfPhotosTaken() ->NSInteger {

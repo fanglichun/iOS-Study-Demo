@@ -61,6 +61,7 @@ enum V2exNodeRouter: URLRequestConvertible {
             }
         }()
         print(url)
+        print(params)
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = method.rawValue
         let encoding = JSONEncoding.default

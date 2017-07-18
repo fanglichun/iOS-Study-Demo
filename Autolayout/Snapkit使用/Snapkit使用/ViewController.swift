@@ -30,14 +30,18 @@ extension ViewController: UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 1000
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoCell") as! PhotoCell
-        cell.photoTitleLabel.text = "Michael"
-        cell.photoDateLabel.text = "\(Date())"
-        return cell
+        var cell = tableView.dequeueReusableCell(withIdentifier: "PhotoCell") as? PhotoCell
+        if (cell == nil) {
+            cell = PhotoCell(style: .default, reuseIdentifier: "PhotoCell")
+        }
+        cell?.photoTitleLabel.text = "Michael"
+        cell?.photoDateLabel.text = "\(Date())"
+        print(memoryUtil.address(&cell))
+        return cell!
     }
 }
 

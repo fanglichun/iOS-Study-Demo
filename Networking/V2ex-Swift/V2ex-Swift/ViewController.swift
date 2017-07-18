@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+       
         
     }
 
@@ -21,5 +22,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func callServiceAction(_ sender: UIButton) {
+//        V2exServiceManager.shared.getAllNodes(.all) { (result) in
+//            
+//        }
+        
+//        V2exServiceManager.shared.getNode(V2exNodeRouter.one(name: "olivida", id: "id")) { (result) in
+//            
+//        }
+        V2exServiceManager.shared.favNodeWithName(V2exNodeRouter.favNode(name: "olivida")) { (result) in
+            
+        }
+    }
 }
 
