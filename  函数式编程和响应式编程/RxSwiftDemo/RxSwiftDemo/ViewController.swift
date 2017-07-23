@@ -8,6 +8,9 @@
 
 import UIKit
 
+import RxSwift
+
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -21,5 +24,11 @@ class ViewController: UIViewController {
     }
 
 
+}
+
+extension ViewController {
+    
+    func judgeDeviceOrientation() {
+    }
 }
 

@@ -1,0 +1,34 @@
+Reactive systems is a rather abstract term and covers web or iOS apps that exhibit
+most or all of the following qualities:
+
+• Responsive: Always keep the UI up to date, representing the latest app state.
+
+• Resilient: Each behavior is defined in isolation and provides for flexible error
+recovery.
+
+• Elastic: The code handles varied workload, often implementing features such as
+lazy pull-driven data collections, event throttling, and resource sharing.
+RxSwift - Reactive Programming with Swift Chapter 1: Hello RxSwift!
+
+• Message driven: Components use message-based communication for improved
+reusability and isolation, decoupling the lifecycle and implementation of classes.
+
+
+Observables
+The Observable<T> class provides the foundation of Rx code: the ability to
+asynchronously produce a sequence of events that can “carry” an immutable
+snapshot of data T. In the simplest words, it allows classes to subscribe for values
+emitted by another class over time.
+The Observable<T> class allows one or more observers to react to any events in real
+time and update the app UI, or otherwise process and utilize new and incoming
+data.
+
+An Observable can emit (and observers can receive) only three types of
+events:
+• A next event: An event which “carries” the latest (or "next") data value. This is
+the way observers “receive” values.
+• A completed event: This event terminates the event sequence with success. It
+means the Observable completed its life-cycle successfully and won’t emit any
+other events.
+• An error event: The Observable terminates with an error and it will not emit
+other events.
