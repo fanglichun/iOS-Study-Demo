@@ -45,6 +45,7 @@
 		D9DA29971F1E5BCA00446847 /* RxSwiftDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftDemoTests.swift; sourceTree = "<group>"; };
 		D9DA29991F1E5BCA00446847 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9DA29A21F1FA67700446847 /* 笔记 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "笔记"; sourceTree = "<group>"; };
+		D9FCE87F1F36CFC30044F97F /* RxSwift-Subject.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "RxSwift-Subject.playground"; sourceTree = "<group>"; };
 		F92132D1C60486B66EFB8C50 /* Pods-RxSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftDemo/Pods-RxSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +92,7 @@
 		D9DA29761F1E5BC900446847 = {
 			isa = PBXGroup;
 			children = (
+				D9FCE87F1F36CFC30044F97F /* RxSwift-Subject.playground */,
 				D9DA29811F1E5BC900446847 /* RxSwiftDemo */,
 				D9DA29961F1E5BCA00446847 /* RxSwiftDemoTests */,
 				D9DA29801F1E5BC900446847 /* Products */,

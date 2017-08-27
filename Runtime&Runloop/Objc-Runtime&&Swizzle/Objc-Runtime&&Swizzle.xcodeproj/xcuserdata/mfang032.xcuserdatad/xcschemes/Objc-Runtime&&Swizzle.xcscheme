@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BC5CB6A116922B1B075F1E15A79E0CB3"
-               BuildableName = "Pods_RxSwiftDemo.framework"
-               BlueprintName = "Pods-RxSwiftDemo"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "D94BA8261F49A1A100C67082"
+               BuildableName = "Objc-Runtime&amp;&amp;Swizzle.app"
+               BlueprintName = "Objc-Runtime&amp;&amp;Swizzle"
+               ReferencedContainer = "container:Objc-Runtime&amp;&amp;Swizzle.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,6 +29,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D94BA8261F49A1A100C67082"
+            BuildableName = "Objc-Runtime&amp;&amp;Swizzle.app"
+            BlueprintName = "Objc-Runtime&amp;&amp;Swizzle"
+            ReferencedContainer = "container:Objc-Runtime&amp;&amp;Swizzle.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -42,15 +51,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BC5CB6A116922B1B075F1E15A79E0CB3"
-            BuildableName = "Pods_RxSwiftDemo.framework"
-            BlueprintName = "Pods-RxSwiftDemo"
-            ReferencedContainer = "container:Pods.xcodeproj">
+            BlueprintIdentifier = "D94BA8261F49A1A100C67082"
+            BuildableName = "Objc-Runtime&amp;&amp;Swizzle.app"
+            BlueprintName = "Objc-Runtime&amp;&amp;Swizzle"
+            ReferencedContainer = "container:Objc-Runtime&amp;&amp;Swizzle.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -60,6 +70,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D94BA8261F49A1A100C67082"
+            BuildableName = "Objc-Runtime&amp;&amp;Swizzle.app"
+            BlueprintName = "Objc-Runtime&amp;&amp;Swizzle"
+            ReferencedContainer = "container:Objc-Runtime&amp;&amp;Swizzle.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

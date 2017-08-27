@@ -32,3 +32,26 @@ means the Observable completed its life-cycle successfully and won’t emit any
 other events.
 • An error event: The Observable terminates with an error and it will not emit
 other events.
+
+
+
+Subjects act as both an observable and an observer.The subject received .next events, and
+each time it received an event, it turned around and emitted it to its subscriber.
+
+There are four subject types in RxSwift:
+• PublishSubject: Starts empty and only emits new elements to subscribers.
+• BehaviorSubject: Starts with an initial value and replays it or the latest element
+to new subscribers.
+• ReplaySubject: Initialized with a buffer size and will maintain a buffer of
+elements up to that size and replay it to new subscribers.
+• Variable: Wraps a BehaviorSubject, preserves its current value as state, and
+replays only the latest/initial value to new subscribers.
+
+
+
+
+
+
+
+
+
